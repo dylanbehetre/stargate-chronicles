@@ -67,7 +67,7 @@ You **MUST** consider the user input before proceeding (if not empty).
     Executing: `/{command}`
     EXECUTE_COMMAND: {command}
 
-    Wait for the result of the hook command before proceeding to the Execution Steps.
+    **Agent Instruction**: You must immediately execute the `{command}` skill yourself using your available tools. Do not stop generation to wait for the user to do it. After the skill has been successfully executed, proceed directly to the next section.
     ```
 - If no hooks are registered or `.specify/extensions.yml` does not exist, skip silently
 
