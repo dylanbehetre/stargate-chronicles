@@ -1,4 +1,4 @@
-# 🌌 [NOM DE TON JEU] - Stargate Fan Game
+# 🌌 Stargate - Legacy (Fan Game & Projet IA)
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
@@ -10,19 +10,46 @@
 ---
 
 ## 🚀 À propos du projet
-Ce jeu est né d'une passion pour l'univers de la Porte des Étoiles. 
-L'objectif est de proposer une expérience gratuite pour la communauté.
+
+Bienvenue sur le repository de **Stargate - Legacy** ! 
+Ce jeu, né d'une passion pour l'univers de la Porte des Étoiles, a un double objectif :
+1. **Créer une expérience de jeu hybride** (Gestion / RPG / Stratégie tactique) gratuite pour la communauté.
+2. **Expérimenter le développement assisté par IA** avec l'aide d'**Antigravity** et l'écosystème de **Spec Kit** dans un domaine exploratoire (le développement de jeu vidéo).
+
+**Le Gameplay :**
+**Stargate - Legacy** vous met aux commandes du SGC. Le gameplay est un mélange de :
+- **Gestion Stratégique (60%)** : Développement de la Terre, relations politiques (CIS/Pentagone), recherche technologique.
+- **Combat Tactique / RPG (40%)** : Commandement de l'escouade SG-Prime en temps réel avec pause (RTwP).
+- **Univers Sandbox** : Factions dynamiques et système Nemesis.
+
+👉 **Veuillez consulter le Game Design Document [IDEE.md](./IDEE.md) pour la vision complète.**
 
 ---
 
-## 🛠️ Installation et Jeu
-1. Téléchargez la dernière version dans l'onglet **Releases**.
+## 🤖 Développement Dirigé par AI (Spec Kit & Antigravity)
+
+Ce projet est expérimentalement guidé de bout en bout par l'Agent Antigravity.
+
+### Instructions Auto-Mise à Jour (Antigravity)
+Ce fichier est **vivant** et doit être maintenu par l'IA. À chaque étape majeure, l'agent devra acter :
+- **L'État d'avancement actuel** (Ce qui marche, ce qui est en développement).
+- **L'Architecture technique** (Moteur de jeu choisi, base de code).
+- **Le Roadmap immédiat** (Prochaines étapes de développement).
+
+---
+
+## 🛠️ Installation et Jeu (À venir)
+1. Téléchargez la dernière version dans l'onglet **Releases** (bientôt disponible).
 2. Extrayez l'archive.
-3. Lancez `[NomDuFichier].exe`.
+3. Lancez `StargateLegacy.exe`.
 
 *(Pour les développeurs)* : 
-- Clonez le repo : `git clone https://github.com/ton-pseudo/ton-jeu.git`
-- Moteur utilisé : [Unreal Engine / Unity / Godot]
+- Clonez le repo : `git clone https://github.com/dylanbehetre/stargate-command.git`
+
+## ⚙️ Stack Technique (En cours d'évaluation)
+
+- **Moteur de jeu** : [À déterminer - Ex: Godot, Unity, Java custom]
+- **Outils AI** : Antigravity, GitHub Spec Kit
 
 ---
 
@@ -44,6 +71,6 @@ L'entité légale détentrice de la licence **Stargate** (MGM/Amazon) conserve t
 ---
 
 ## 🤝 Crédits
-- **Développement :** [@dylanbehetre](https://github.com/dylanbehetre)
+- **Développement :** [@dylanbehetre](https://github.com/dylanbehetre) & Agent Antigravity
 - **Inspiré par :** L'oeuvre de Brad Wright et Jonathan Glassner.
 - **Remerciements :** À tous les fans de la franchise !
