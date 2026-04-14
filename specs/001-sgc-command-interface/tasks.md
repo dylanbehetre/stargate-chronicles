@@ -1,88 +1,140 @@
 # Tasks: SGC Command Interface
 
-**Feature**: 001-sgc-command-interface | **Plan**: [plan.md](./plan.md)
+**Input**: Design documents from `/specs/001-sgc-command-interface/`
+**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
+
+**Tests**: Vitest 2.x is used for domain logic testing as specified in plan.md.
+
+**Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
+
+## Format: `[ID] [P?] [Story] Description`
+
+- **[P]**: Can run in parallel (different files, no dependencies)
+- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
+- Include exact file paths in descriptions
+
+## Phase 1: Setup (Shared Infrastructure)
+
+**Purpose**: Project initialization and basic structure
+
+- [x] T001 Initialize Vite 6 project with basic dependencies in `./`
+- [x] T002 Create project directory structure (domain, infrastructure, ui, data, styles, tests) per `plan.md`
+- [x] T003 [P] Configure Vitest and ESLint in `package.json` and config files
+
+---
+
+## Phase 2: Foundational (Blocking Prerequisites)
+
+**Purpose**: Core infrastructure and data that MUST be complete before ANY user story can be implemented
+
+**⚠️ CRITICAL**: No user story work can begin until this phase is complete
+
+- [x] T004 Define `IStorageRepository.js` interface and implement `LocalStorageRepository.js` in `src/infrastructure/`
+- [x] T005 Create core entities `Planet.js` and `GameState.js` in `src/domain/entities/`
+- [x] T006 Populate static data files: `planets.json` and `gate-symbols.json` in `src/data/`
+- [x] T007 Setup design system: `main.css` (variables) and `sgc-theme.css` (CRT style) in `src/styles/`
+- [x] T008 [P] Implement base `main.js` and `index.html` shell
+
+**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+
+---
+
+## Phase 3: User Story 1 - Sélection et saisie de coordonnées (Priority: P1) 🎯 MVP
+
+**Goal**: Enable operators to select a destination from a list or dial manually.
+
+**Independent Test**: Select a planet from the filtered list OR dial a valid 7-chevron address and verify the gate "activates" and state updates.
+
+### Tests for User Story 1
+- [x] T009 [P] [US1] Create unit tests for `GateService` in `tests/domain/GateService.test.js`
+
+### Implementation for User Story 1
+- [x] T010 [US1] Implement `GateService.js` logic for address validation and state updates in `src/domain/services/`
+- [x] T011 [P] [US1] Create `PlanetListPanel.js` UI component in `src/ui/components/`
+- [x] T012 [P] [US1] Create `ManualDialingPanel.js` UI component in `src/ui/components/`
+- [x] T013 [US1] Create `GateAnimation.js` (rotation/vortex) in `src/ui/animations/` and `animations.css`
+- [x] T014 [US1] Integrate US1 components into `main.js` and `index.html`
+
+**Checkpoint**: User Story 1 is fully functional. Operators can lock destinations.
+
+---
+
+## Phase 4: User Story 2 - Envoi d'un MALP (Priority: P1)
+
+**Goal**: Scout a planet to reveal biome information and anime-style visuals.
+
+**Independent Test**: Clicking "Envoyer MALP" on a locked destination plays the animation and reveals biome data + image.
+
+### Tests for User Story 2
+- [x] T015 [P] [US2] Create unit tests for `MALPService` in `tests/domain/MALPService.test.js`
+
+### Implementation for User Story 2
+- [x] T016 [US2] Implement `MALPService.js` in `src/domain/services/`
+- [x] T017 [P] [US2] Create `PlanetInfoPanel.js` to display biome details in `src/ui/components/`
+- [x] T018 [P] [US2] Create `ActionPanel.js` with MALP trigger in `src/ui/components/`
+- [x] T019 [US2] Create `MALPAnimation.js` in `src/ui/animations/`
+- [x] T020 [US2] Add anime-style biome assets in `src/ui/assets/biomes/`
+
+**Checkpoint**: User Story 2 is functional. Scouting reveals world details.
+
+---
+
+## Phase 5: User Story 3 - Envoi d'une équipe SG et historique (Priority: P2)
+
+**Goal**: Execute missions, generate narrative reports, and track exploration history.
+
+**Independent Test**: Sending an SG team creates a mission report in the history; verify death/survival logic based on danger.
+
+### Tests for User Story 3
+- [x] T021 [P] [US3] Create unit tests for `SGTeamService` and `NarrativeEngine` in `tests/domain/`
+
+### Implementation for User Story 3
+- [x] T022 [P] [US3] Create `Mission.js` and `MissionReport.js` entities in `src/domain/entities/`
+- [x] T023 [US3] Implement `NarrativeEngine.js` with `narrative-templates.json` in `src/domain/services/` and `src/data/`
+- [x] T024 [US3] Implement `SGTeamService.js` (danger logic, history persistence) in `src/domain/services/`
+- [x] T025 [P] [US3] Create `MissionReportModal.js` and `ConfirmModal.js` (danger warning) in `src/ui/components/`
+- [x] T026 [US3] Create `SGTeamAnimation.js` in `src/ui/animations/`
+- [x] T027 [US3] Add SG moment assets in `src/ui/assets/moments/`
+
+**Checkpoint**: All user stories functional. Full mission lifecycle implemented.
+
+---
+
+## Phase 6: Polish & Cross-Cutting Concerns
+
+**Purpose**: Final refinements and verification.
+
+- [x] T028 Performance optimization: Ensure animations run at 60fps
+- [x] T029 UX Polish: Add scanline filters and terminal sound effects (if requested)
+- [x] T030 Final validation against `quickstart.md` scenarios
+
+---
+
+## Dependencies & Execution Order
+
+1. **Setup (Phase 1)** → **Foundational (Phase 2)** (Blocks all stories)
+2. **US1 (Phase 3)**: Primary entry point.
+3. **US2 (Phase 4)**: Depends on `PlanetInfoPanel` shell but independent of US3.
+4. **US3 (Phase 5)**: Depends on US2 for scouting warnings (T025 checks scouting status).
+
+```mermaid
+graph TD
+    P1[Phase 1: Setup] --> P2[Phase 2: Foundational]
+    P2 --> US1[Phase 3: US1 - Dialing]
+    P2 --> US2[Phase 4: US2 - MALP]
+    P2 --> US3[Phase 5: US3 - SG Team]
+    US1 --> Polish[Phase 6: Polish]
+    US2 --> Polish
+    US3 --> Polish
+```
 
 ---
 
 ## Implementation Strategy
 
-L'implémentation suit une approche **MVP First** et **Spec-Driven**. Nous construisons d'abord le socle technique (Vite, Architecture domaine/infra), puis nous livrons chaque User Story de manière indépendante et testable.
+### MVP First
+Complete Phase 1, 2, and 3 first to have a working dialing interface. Then add MALP (US2) for data visualization.
 
-> [!IMPORTANT]
-> Conformément à la Constitution IV, la logique métier dans `src/domain` doit rester pure (sans DOM/window/localStorage) pour être testable via Vitest.
-
----
-
-## Phase 1: Setup
-
-- [ ] T001 Initialiser le projet web avec Vite 6.x (`npm create vite@latest . -- --template vanilla`)
-- [ ] T002 Configurer Vitest 2.x pour les tests unitaires du domaine
-- [ ] T003 Créer l'arborescence complète des dossiers (`src/domain`, `src/infrastructure`, `src/ui`, `src/data`, `src/styles`)
-- [ ] T004 Configurer `vite.config.js` et le `package.json` avec les scripts de build/test
-
-## Phase 2: Foundational (Core Data & Persistence)
-
-- [ ] T005 [P] Créer `src/data/gate-symbols.json` avec les 36 glyphes de la Voie Lactée
-- [ ] T006 [P] Compiler l'intégralité du corpus canonique (~200+ planètes) dans `src/data/planets.json` via le skill `stargate-specialist`
-- [ ] T007 [P] Créer les interfaces de base dans `src/domain/entities/Planet.js`, `Mission.js` et `GameState.js`
-- [ ] T008 [P] Définir l'interface `src/domain/repositories/IStorageRepository.js`
-- [ ] T009 [P] Implémenter `src/infrastructure/LocalStorageRepository.js` pour la persistance navigateur
-
-## Phase 3: [US1] Sélection et Composition Manuelle
-
-**Story**: Sélectionner dans la liste ou composer manuellement 7 chevrons pour verrouiller une destination.
-**Test**: Composer "Abydos" manuellement → la porte s'ouvre, la planète est ajoutée/sélectionnée. Filtrer la liste → les résultats changent.
-
-- [ ] T010 [Story1] Implémenter `src/domain/services/GateService.js` (validation adresse, filtrage, dialing logic)
-- [ ] T011 [P] [Story1] Créer `src/ui/components/PlanetListPanel.js` (liste filtrable)
-- [ ] T012 [P] [Story1] Créer `src/ui/components/ManualDialingPanel.js` (clavier de chevrons)
-- [ ] T013 [Story1] Implémenter `src/ui/animations/GateAnimation.js` (CSS keyframes : rotation → verrouillage → vortex)
-- [ ] T014 [Story1] Intégrer la logique de composition dans `src/main.js` et `index.html` (shell UI SGC)
-
-## Phase 4: [US2] Exploration MALP (Reconnaissance)
-
-**Story**: Envoyer un MALP pour révéler le biome et l'environnement avec une illustration anime.
-**Test**: Sélectionner une planète inconnue → Envoyer MALP → Voir l'image du biome et les données environnementales apparaître.
-
-- [ ] T015 [Story2] Implémenter `src/domain/services/MALPService.js` (mise à jour profil planète après envoi)
-- [ ] T016 [P] [Story2] Créer `src/ui/components/PlanetInfoPanel.js` (affichage biome, informations découvertes)
-- [ ] T017 [P] [Story2] Étendre `src/ui/components/ActionPanel.js` avec l'option "Envoyer MALP"
-- [ ] T018 [Story2] Implémenter `src/ui/animations/MALPAnimation.js` (transition scanlines/transmission)
-- [ ] T019 [Story2] Générer les assets de biomes canoniques dans `src/ui/assets/biomes/` (style anime)
-
-## Phase 5: [US3] Équipe SG, Mission & Comptes Rendus (CR)
-
-**Story**: Envoyer une équipe SG, auto-résoudre la mission et générer un rapport narratif historisé.
-**Test**: Envoyer SG-1 sur une planète dangereuse sans MALP → confirmer l'alerte → voir le CR annonçant les pertes avec illustration du moment fort.
-
-- [ ] T020 [Story3] Implémenter `src/domain/services/NarrativeEngine.js` avec le système de templates multi-sections
-- [ ] T021 [Story3] Implémenter `src/domain/services/SGTeamService.js` (résolution mission, calcul danger, génération rapports)
-- [ ] T022 [P] [Story3] Créer `src/ui/components/MissionReportModal.js` (UI du CR style terminal militaire)
-- [ ] T023 [P] [Story3] Créer `src/ui/components/ConfirmModal.js` (alerte envoi sans MALP)
-- [ ] T024 [Story3] Implémenter `src/ui/animations/SGTeamAnimation.js` (silhouettes traversant le vortex)
-- [ ] T025 [Story3] Compiler les templates narratifs spécifiques dans `src/data/planet-narratives.json`
-
-## Phase 6: Polish, Persistence & Assets
-
-- [ ] T026 [P] Appliquer le thème CSS final (`src/styles/sgc-theme.css`) : effets CRT, scanlines, lueurs holographiques
-- [ ] T027 [P] Générer le pool d'illustrations moments forts dans `src/ui/assets/moments/` (style anime)
-- [ ] T028 Finaliser l'orchestration de l'auto-save dans `src/main.js` (sauvegarde à chaque action majeure)
-- [ ] T029 Optimiser les performances des animations et le poids des assets (WebP conversion)
-
----
-
-## Dependencies
-
-```mermaid
-graph TD
-    P1[Phase 1: Setup] --> P2[Phase 2: Core Data]
-    P2 --> US1[Phase 3: US1 - Gate & Dialing]
-    US1 --> US2[Phase 4: US2 - MALP]
-    US2 --> US3[Phase 5: US3 - SG Team & CR]
-    US3 --> P6[Phase 6: Polish]
-```
-
-## Parallel Execution
-
-- T005, T006, T007, T008 peuvent être réalisés en parallèle après T003.
-- Les composants UI ([P]) de chaque story peuvent souvent être développés en même temps que les services de domaine associés.
+### Parallel Opportunities
+- UI Component creation (T011, T012, T017, T018, T025) can happen in parallel.
+- Unit Testing (T009, T015, T021) can happen before or during implementation.

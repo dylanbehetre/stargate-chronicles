@@ -1,0 +1,13 @@
+{
+  "exploration": [
+    "L'équipe a exploré les environs de la porte. {discovery}",
+    "Reconnaissance effectuée. {discovery} Les conditions locales sont stables.",
+    "Mission de routine. {discovery} Aucun signe d'hostilité immédiate."
+  ],
+  "discoveries": [
+    "Des ruines anciennes ont été découvertes.",
+    "Des traces de Naquadah ont été localisées.",
+    "Une population locale amicale a été rencontrée.",
+    "Des artefacts technologiques d'origine inconnue ont été récupérés."
+  ]
+}

@@ -1,0 +1,80 @@
+.sgc-container {
+  display: grid;
+  grid-template-columns: 350px 1fr 350px;
+  grid-template-rows: 60px 1fr 200px;
+  gap: 15px;
+  height: 100vh;
+  padding: 15px;
+}
+
+.panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  box-shadow: var(--glow-shadow);
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--terminal-green);
+}
+
+.status-bar {
+  grid-column: 1 / span 3;
+}
+
+.left-panel {
+  grid-row: 2;
+}
+
+.central-display {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-panel {
+  grid-row: 2;
+}
+
+.bottom-panel {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+/* Buttons */
+button {
+  background: transparent;
+  border: 1px solid var(--terminal-green);
+  color: var(--terminal-green);
+  padding: 8px 15px;
+  font-family: var(--font-main);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+button:hover {
+  background: var(--terminal-green);
+  color: var(--bg-color);
+  box-shadow: 0 0 15px var(--terminal-green);
+}
+
+button.warning {
+  border-color: var(--terminal-amber);
+  color: var(--terminal-amber);
+}
+
+button.warning:hover {
+  background: var(--terminal-amber);
+  color: var(--bg-color);
+}

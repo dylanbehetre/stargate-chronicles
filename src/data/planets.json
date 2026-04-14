@@ -1,0 +1,34 @@
+[
+  {
+    "id": "abydos",
+    "name": "Abydos",
+    "address": [26, 6, 14, 31, 11, 29, 1],
+    "biome": "desert",
+    "danger": "none",
+    "description": "Première planète visitée par le SGC. Désertique et riche en Naquadah."
+  },
+  {
+    "id": "chulak",
+    "name": "Chulak",
+    "address": [8, 1, 22, 14, 3, 19, 1],
+    "biome": "forest",
+    "danger": "moderate",
+    "description": "Monde d'origine de Teal'c et forteresse d'Apophis."
+  },
+  {
+    "id": "dakara",
+    "name": "Dakara",
+    "address": [12, 14, 3, 22, 8, 19, 1],
+    "biome": "wasteland",
+    "danger": "high",
+    "description": "Lieu de l'arme des Anciens et site sacré pour les Jaffas."
+  },
+  {
+    "id": "lantea",
+    "name": "Lantea",
+    "address": [18, 20, 1, 15, 14, 7, 1],
+    "biome": "oceanic",
+    "danger": "none",
+    "description": "Monde d'origine de la cité d'Atlantis dans la galaxie de Pégase."
+  }
+]
