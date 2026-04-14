@@ -30,25 +30,50 @@ Ce jeu, né d'une passion pour l'univers de la Porte des Étoiles, a un double o
 
 Ce projet est expérimentalement guidé de bout en bout par l'Agent Antigravity.
 
-### Instructions Auto-Mise à Jour (Antigravity)
-Ce fichier est **vivant** et doit être maintenu par l'IA. À chaque étape majeure, l'agent devra acter :
-- **L'État d'avancement actuel** (Ce qui marche, ce qui est en développement).
-- **L'Architecture technique** (Moteur de jeu choisi, base de code).
-- **Le Roadmap immédiat** (Prochaines étapes de développement).
+## 🚀 État d'avancement (Phase 1 - MVP)
+
+**Dernière mise à jour (14/04/2026) :** 
+L'interface de commandement du SGC (Phase 1) est désormais fonctionnelle et implémentée.
+
+### Ce qui est opérationnel :
+- **Dialing Computer** : Sélection de planètes canoniques et numérotation manuelle (7 chevrons).
+- **Sondage MALP** : Reconnaissance automatisée, révélation de biomes et animations de transmission.
+- **Missions SG** : Déploiement d'équipes, gestion du danger (MIA) et génération de rapports narratifs.
+- **Système de Diagnostic** : 100% de couverture de tests sur le domaine logique.
 
 ---
 
-## 🛠️ Installation et Jeu (À venir)
-1. Téléchargez la dernière version dans l'onglet **Releases** (bientôt disponible).
-2. Extrayez l'archive.
-3. Lancez `StargateLegacy.exe`.
+## 🛠️ Installation et Jeu
 
-*(Pour les développeurs)* : 
-- Clonez le repo : `git clone https://github.com/dylanbehetre/stargate-command.git`
+### Prérequis
+- [Node.js 22 LTS](https://nodejs.org/) ou supérieur.
 
-## ⚙️ Stack Technique (En cours d'évaluation)
+### Démarrage rapide
+1. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+2. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+3. Ouvrez votre navigateur sur `http://localhost:5173`.
 
-- **Moteur de jeu** : [À déterminer - Ex: Godot, Unity, Java custom]
+### Tests
+Pour lancer la suite de tests unitaires (Vitest) :
+```bash
+npm test
+```
+
+---
+
+## ⚙️ Stack Technique (Phase 1)
+
+- **Moteur/Bundler** : [Vite 6.x](https://vitejs.dev/) (Vanilla JS / ES Modules)
+- **Styling** : Vanilla CSS3 (Custom properties, Keyframes, CRT Filters)
+- **Logique Domaine** : Plain JavaScript (Clean Architecture)
+- **Persistance** : `localStorage` via Repository Pattern
+- **Testing** : [Vitest 2.x](https://vitest.dev/)
 - **Outils AI** : Antigravity, GitHub Spec Kit
 
 ---
