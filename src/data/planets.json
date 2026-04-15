@@ -4,7 +4,8 @@
     "name": "Abydos",
     "address": [26, 6, 14, 31, 11, 29, 1],
     "biome": "desert",
-    "danger": "none",
+    "dangerLevel": 0,
+    "status": "EXPLORED",
     "description": "Première planète visitée par le SGC. Désertique et riche en Naquadah."
   },
   {
@@ -12,23 +13,28 @@
     "name": "Chulak",
     "address": [8, 1, 22, 14, 3, 19, 1],
     "biome": "forest",
-    "danger": "moderate",
-    "description": "Monde d'origine de Teal'c et forteresse d'Apophis."
+    "dangerLevel": 4,
+    "status": "UNKNOWN",
+    "description": "Monde suspecté d'être une base arrière des Goa'ulds. Analyse atmosphérique requise."
   },
   {
     "id": "dakara",
     "name": "Dakara",
     "address": [12, 14, 3, 22, 8, 19, 1],
     "biome": "wasteland",
-    "danger": "high",
-    "description": "Lieu de l'arme des Anciens et site sacré pour les Jaffas."
+    "dangerLevel": 8,
+    "status": "UNKNOWN",
+    "description": "Ancien site d'importance capitale. Signatures énergétiques instables détectées."
   },
   {
     "id": "lantea",
     "name": "Lantea",
     "address": [18, 20, 1, 15, 14, 7, 1],
     "biome": "oceanic",
-    "danger": "none",
+    "dangerLevel": 0,
+    "status": "EXPLORED",
     "description": "Monde d'origine de la cité d'Atlantis dans la galaxie de Pégase."
   }
 ]
+
+

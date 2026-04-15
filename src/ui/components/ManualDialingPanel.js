@@ -12,26 +12,39 @@ export class ManualDialingPanel {
 
   render() {
     this.container.innerHTML = `
-      <div class="manual-dial-container" style="text-align: center;">
-        <div class="current-address" id="dialed-address-display" style="font-size: 1.5rem; letter-spacing: 10px; margin-bottom: 15px; min-height: 2em; border: 1px dashed var(--glass-border); padding: 10px;">
-          ${this.currentAddress.map(s => `<span>${this.symbols.find(sym => sym.id === s).symbol}</span>`).join('')}
+      <div class="manual-dial-container" style="padding: 10px;">
+        <div class="current-address glass-panel" id="dialed-address-display" 
+          style="font-size: 1.8rem; letter-spacing: 12px; margin-bottom: 20px; min-height: 50px; display: flex; align-items: center; justify-content: center; color: var(--color-cyan); text-shadow: var(--glow-cyan); border-color: rgba(0, 255, 242, 0.3);">
+          ${this.currentAddress.map(s => `<span>${this.symbols.find(sym => sym.id === s)?.symbol || ''}</span>`).join('')}
         </div>
-        <div class="symbols-grid" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px;">
+        <div class="symbols-grid" style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px;">
           ${this.symbols.map(sym => `
-            <button class="symbol-btn" data-id="${sym.id}" title="${sym.name}" style="padding: 10px; font-size: 1.2rem;">
+            <button class="symbol-btn transition-smooth" data-id="${sym.id}" title="${sym.name}" 
+              style="padding: 12px 5px; font-size: 1.2rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(0, 255, 242, 0.2); color: rgba(255,255,255,0.7);">
               ${sym.symbol}
             </button>
           `).join('')}
         </div>
-        <div class="controls" style="margin-top: 15px;">
-          <button id="clear-dial" class="warning">EFFACER</button>
-          <button id="execute-dial" style="font-weight: bold;">ENCODER</button>
+        <div class="controls" style="margin-top: 20px; display: flex; gap: 10px;">
+          <button id="clear-dial" style="flex: 1; border-color: var(--color-amber); color: var(--color-amber);">RÉINITIALISER</button>
+          <button id="execute-dial" class="glow-border-cyan" style="flex: 2; font-weight: bold; background: rgba(0, 255, 242, 0.1);">VÉRIFIER & ENCODER</button>
         </div>
       </div>
     `;
 
     // Events
     this.container.querySelectorAll('.symbol-btn').forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        btn.style.color = 'var(--color-cyan)';
+        btn.style.borderColor = 'var(--color-cyan)';
+        btn.style.boxShadow = 'var(--glow-cyan)';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.color = 'rgba(255,255,255,0.7)';
+        btn.style.borderColor = 'rgba(0, 255, 242, 0.2)';
+        btn.style.boxShadow = 'none';
+      });
+
       btn.addEventListener('click', () => {
         if (this.currentAddress.length < 7) {
           this.currentAddress.push(parseInt(btn.getAttribute('data-id')));
@@ -49,7 +62,8 @@ export class ManualDialingPanel {
       if (this.currentAddress.length === 7) {
         this.onDial(this.currentAddress);
       } else {
-        alert("ADRESSE INVALIDE : 7 CHEVRONS REQUIS.");
+        // We could use a custom modal but for now alert is fine if we want quick results
+        alert("SÉQUENCE INCOMPLÈTE : 7 CHEVRONS REQUIS.");
       }
     });
   }
@@ -62,3 +76,4 @@ export class ManualDialingPanel {
     }).join('');
   }
 }
+

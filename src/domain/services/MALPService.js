@@ -31,7 +31,7 @@ export class MALPService {
     return new Promise((resolve) => {
       setTimeout(() => {
         // Use Factory to generate data if unknown
-        const scoutedPlanet = PlanetFactory.createScoutedPlanet(dest.id);
+        const scoutedPlanet = PlanetFactory.createScoutedPlanet(dest);
         
         // Update local state if necessary (or return for caller to update)
         this.state.lockedDestination = scoutedPlanet;

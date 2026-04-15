@@ -1,6 +1,5 @@
 import { GameState } from './src/domain/entities/GameState.js';
 import { LocalStorageRepository } from './src/infrastructure/LocalStorageRepository.js';
-import { GateService } from './src/domain/services/GateService.js';
 import { Planet } from './src/domain/entities/Planet.js';
 
 // UI Components
@@ -32,13 +31,25 @@ const planets = planetsData.map(p => new Planet(p));
 
 // Services
 const gateService = new GateService(planets, state);
-const malpService = new MALPService(state);
+const malpService = new MALPService(state, repository);
 const narrativeEngine = new NarrativeEngine(narrativeData);
-const sgTeamService = new SGTeamService(state, narrativeEngine);
+const sgTeamService = new SGTeamService(state, repository);
 
 // Animations
 const malpAnimation = new MALPAnimation('app');
 const sgTeamAnimation = new SGTeamAnimation('app');
+
+// Add Flicker CSS dynamically
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes flicker {
+        0% { opacity: 0.8; }
+        50% { opacity: 1; }
+        100% { opacity: 0.9; }
+    }
+`;
+document.head.appendChild(style);
+
 
 // DOM elements
 const clockEl = document.getElementById('clock');
@@ -53,24 +64,55 @@ function updateClock() {
 
 function log(message, type = 'info') {
     const entry = document.createElement('div');
-    entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
-    if (type === 'warning') entry.style.color = 'var(--terminal-amber)';
-    if (type === 'error') entry.style.color = 'var(--terminal-red)';
+    entry.style.marginBottom = '4px';
+    entry.style.paddingLeft = '10px';
+    entry.style.borderLeft = `2px solid var(--color-${type === 'error' ? 'amber' : 'cyan'})`;
+    entry.innerHTML = `<span style="color: rgba(255,255,255,0.4); font-size: 0.7rem;">[${new Date().toLocaleTimeString()}]</span> ${message}`;
+    
+    if (type === 'warning') entry.style.color = 'var(--color-amber)';
+    if (type === 'error') entry.style.color = '#ff4444';
+    
     missionLogsEl.prepend(entry);
 }
 
 // UI Initialization
-const planetInfoPanel = new PlanetInfoPanel('planet-info');
+const planetInfoPanel = new PlanetInfoPanel('planet-info', symbolsData);
 
 const planetListPanel = new PlanetListPanel('planet-list', planets, (planet) => {
+
     state.setDestination(planet);
     planetInfoPanel.update(planet);
     log(`Destination sélectionnée : ${planet.name}`);
 });
 
 const manualDialingPanel = new ManualDialingPanel('coordinates-input', symbolsData, (address) => {
-    log(`Tentative de numérotation : ${address.join('-')}`, 'warning');
+    log(`Numérotation manuelle amorcée : ${address.join('-')}`, 'warning');
     handleDial(address);
+});
+
+// Tabs Logic
+const tabs = document.querySelectorAll('.tab-btn');
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-target');
+        
+        // Update Buttons
+        tabs.forEach(t => {
+            t.classList.remove('active');
+            t.style.borderBottom = 'none';
+        });
+        tab.classList.add('active');
+        tab.style.borderBottom = '2px solid var(--color-cyan)';
+
+        // Update Content
+        document.querySelectorAll('.tab-content').forEach(c => {
+            c.style.display = 'none';
+            c.classList.remove('active');
+        });
+        const target = document.getElementById(targetId);
+        target.style.display = targetId === 'gate-display' ? 'flex' : 'block';
+        target.classList.add('active');
+    });
 });
 
 function handleDial(address) {
@@ -78,21 +120,41 @@ function handleDial(address) {
     animateGate(success);
 }
 
-function animateGate(success) {
-    const ring = gateDisplayEl.querySelector('.gate-ring');
-    ring.classList.add('spinning');
+async function animateGate(success) {
+    const gateRing = document.querySelector('.gate-ring');
+    const innerRing = gateRing.querySelector('.gate-inner-ring');
+    const chevrons = gateRing.querySelectorAll('.chevron');
+    const vortex = gateRing.querySelector('.vortex');
+
+    // Reset
+    chevrons.forEach(c => c.classList.remove('locked'));
+    vortex.classList.remove('active');
     
-    log("Numérotation en cours...");
-    
+    // Switch to Gate View if not active
+    document.querySelector('[data-target="gate-display"]').click();
+
+    log("Séquence de numérotation engagée. Encodeur en rotation...");
+    innerRing.style.animationDuration = '5s';
+
+    // Lock 7 chevrons one by one
+    for (let i = 0; i < 7; i++) {
+        await new Promise(r => setTimeout(r, 600));
+        chevrons[i].classList.add('locked');
+        log(`Chevron ${i + 1} enclenché.`);
+    }
+
     setTimeout(() => {
-        ring.classList.remove('spinning');
+        innerRing.style.animationDuration = '40s';
         if (success) {
-            ring.innerHTML = '<div class="vortex active"></div>';
-            log("VORTEX ÉTABLI. DESTINATION VERROUILLÉE.", 'info');
+            vortex.classList.add('active');
+            log("VORTEX ÉTABLI. HORIZON D'ÉVÉNEMENTS STABLE.", 'info');
+            state.isGateActive = true;
         } else {
-            log("ÉCHEC DE LA NUMÉROTATION : ADRESSE INVALIDE.", 'error');
+            log("ÉCHEC : SÉQUENCE DE NUMÉROTATION INTERROMPUE.", 'error');
+            state.isGateActive = false;
         }
-    }, 2000);
+        if (state.lockedDestination) planetInfoPanel.update(state.lockedDestination);
+    }, 1000);
 }
 
 // Bootstrap
@@ -101,47 +163,49 @@ function init() {
     setInterval(updateClock, 1000);
     
     // Load state
-    const savedState = repository.load('sgc_game_state');
+    const savedState = repository.load('sgc_global_state');
     if (savedState) {
-        // Hydrate state... (omitted for brevity in MVP)
+        Object.assign(state, savedState);
     }
 
-    log("Système SGC opérationnel. En attente de coordonnées.");
-    
-    // Initial UI state
-    gateDisplayEl.innerHTML = '<div class="gate-ring"></div>';
+    log("Système SGC - BIOS v4.2.0 chargé. Connexion satellite établie.");
 }
+
 
 init();
 
-// Hook for buttons in the Info Panel
-document.addEventListener('click', (e) => {
+// Hook for buttons in the Info Panel (Delegated)
+document.addEventListener('click', async (e) => {
     if (!e.target) return;
 
     if (e.target.id === 'btn-lock-gate') {
         if (state.lockedDestination) {
             handleDial(state.lockedDestination.address);
+        } else {
+            log("ERREUR : AUCUNE DESTINATION SÉLECTIONNÉE.", "error");
         }
     }
 
     if (e.target.id === 'btn-deploy-malp') {
-        if (malpService.deploy()) {
+        log("Lancement du MALP en cours. Attente du signal...", "warning");
+        const scoutedPlanet = await malpService.deploy();
+        if (scoutedPlanet) {
             malpAnimation.play(() => {
-                planetInfoPanel.update(state.lockedDestination);
-                log(`Sondage terminé pour ${state.lockedDestination.name}. Données reçues.`);
+                planetInfoPanel.update(scoutedPlanet);
+                log(`Sondage terminé pour ${scoutedPlanet.name}. Biome détecté : ${scoutedPlanet.biome}.`);
             });
         } else {
-            log("ERREUR : IMPOSSIBLE D'ENVOYER LE MALP. PORTE INACTIVE.", "error");
+            log("ÉCHEC DU LANCEMENT : VORTEX INEXISTANT OU INSTABLE.", "error");
         }
     }
 
     if (e.target.id === 'btn-deploy-sg') {
         const dest = state.lockedDestination;
-        if (dest.status !== 'scouted' && (dest.danger === 'high' || dest.danger === 'extreme')) {
+        if (dest.dangerLevel >= 8 && dest.status === 'unexplored') {
             new ConfirmModal(
-                "DANGER EXTRÊME DÉTECTÉ. AUCUN MALP ENVOYÉ. PROCÉDER QUAND MÊME ?",
+                "DANGER ÉLEVÉ DÉTECTÉ. AUCUNE RECONNAISSANCE MALP PRÉALABLE. CONTINUER ?",
                 () => executeSGDeployment(),
-                () => log("DÉPLOIEMENT ANNULÉ.", "warning")
+                () => log("DÉPLOIEMENT ANNULÉ PAR SÉCURITÉ.", "warning")
             );
         } else {
             executeSGDeployment();
@@ -149,16 +213,18 @@ document.addEventListener('click', (e) => {
     }
 });
 
-function executeSGDeployment() {
-    const report = sgTeamService.deploy();
+async function executeSGDeployment() {
+    log("Déploiement équipe SG-1. Fermeture radio dans 5s...", "warning");
+    const report = await sgTeamService.deploy();
     if (report) {
         sgTeamAnimation.play(() => {
             new MissionReportModal(report, () => {
                 planetInfoPanel.update(state.lockedDestination);
-                log(`Mission terminée sur ${state.lockedDestination.name}. Rapport classifié généré.`);
+                log(`Mission terminée sur ${state.lockedDestination.name}. Rapport technique disponible.`);
             });
         });
     } else {
-        log("ERREUR : IMPOSSIBLE DE DÉPLOYER L'ÉQUIPE. PORTE INACTIVE.", "error");
+        log("ERREUR : DÉPLOIEMENT IMPOSSIBLE SANS VORTEX ACTIF.", "error");
     }
 }
+

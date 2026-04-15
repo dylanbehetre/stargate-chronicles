@@ -1,5 +1,23 @@
 @import './theme-anime.css';
 
+/* STAR GATE CANON FONT */
+@font-face {
+    font-family: 'StargateAddress';
+    src: url('https://fonts.cdnfonts.com/s/15410/Stargate.woff') format('woff');
+}
+
+:root {
+  --color-cyan: #00c8ff;
+  --color-amber: #ffaa00;
+  --color-glass: rgba(10, 14, 20, 0.85);
+  --color-glass-border: rgba(0, 200, 255, 0.3);
+  --font-ui: 'Eurostile', 'Rajdhani', sans-serif;
+  --font-narrative: 'Inter', sans-serif;
+  --font-glyphs: 'StargateAddress', sans-serif;
+  --glow-cyan: 0 0 10px rgba(0, 200, 255, 0.5);
+  --glow-amber: 0 0 10px rgba(255, 170, 0, 0.5);
+}
+
 /* Reset & Base Layout */
 * {
   box-sizing: border-box;
@@ -26,21 +44,30 @@ h1, h2, h3 {
 
 /* Main Layout Shell */
 #app {
-  flex: 1;
-  display: flex;
-  padding: 20px;
-  gap: 20px;
+  height: 100vh;
+  width: 100vw;
+  padding: 15px;
   background: radial-gradient(circle at center, #1a2a4a 0%, #0a192f 100%);
+  display: flex;
+  overflow: hidden;
 }
 
 .screen-container {
   display: grid;
-  grid-template-columns: 350px 1fr 350px;
-  grid-template-rows: 1fr 300px;
+  grid-template-columns: 380px 1fr 380px;
+  grid-template-rows: 70px 1fr 250px;
   width: 100%;
   height: 100%;
-  gap: 20px;
+  gap: 15px;
 }
+
+.glass-panel {
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* Interactive Elements */
 button {

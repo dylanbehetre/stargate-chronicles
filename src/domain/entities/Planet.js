@@ -8,20 +8,24 @@ export class Planet {
   constructor({
     id,
     name,
+    address = [],
     status = ExplorationStatus.UNKNOWN,
     biome = null,
     dangerLevel = 0,
+    description = '',
     scannedAt = null,
     environment = {}
   }) {
-    if (!id || !id.match(/^[A-Z0-9-]{7}$/)) {
-      throw new Error('Invalid Planet ID: Must be 7 characters [A-Z0-9-].');
+    if (!id) {
+      throw new Error('Planet ID is required.');
     }
     this.id = id;
-    this.name = name;
+    this.name = name || id;
+    this.address = address;
     this.status = status;
     this.biome = biome;
     this.dangerLevel = dangerLevel;
+    this.description = description;
     this.scannedAt = scannedAt;
     this.environment = environment;
   }
@@ -38,3 +42,4 @@ export class Planet {
     return this.status === ExplorationStatus.EXPLORED;
   }
 }
+
