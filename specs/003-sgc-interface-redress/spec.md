@@ -1,4 +1,4 @@
-# Feature Specification: SGC Command Interface Redress (Anime-Style)
+# Feature Specification: Stargate: Chronicles - SGC Interface Redress (Anime-Style)
 
 **Feature Branch**: `[003-sgc-interface-redress]`  
 **Created**: 2026-04-14  

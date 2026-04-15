@@ -1,4 +1,4 @@
-# Feature Specification: SGC Command Interface
+# Feature Specification: Stargate: Chronicles - Command Interface
 
 **Feature Branch**: `[001-sgc-command-interface]`  
 **Created**: 2026-04-13  

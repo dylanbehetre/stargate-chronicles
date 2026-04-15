@@ -1,4 +1,4 @@
-# 🌌 Stargate - Legacy (Fan Game & Projet IA)
+# 🌌 Stargate: Chronicles (Fan Game & Projet IA)
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
@@ -11,13 +11,13 @@
 
 ## 🚀 À propos du projet
 
-Bienvenue sur le repository de **Stargate - Legacy** ! 
+Bienvenue sur le repository de **Stargate: Chronicles** ! 
 Ce jeu, né d'une passion pour l'univers de la Porte des Étoiles, a un double objectif :
 1. **Créer une expérience de jeu hybride** (Gestion / RPG / Stratégie tactique) gratuite pour la communauté.
 2. **Expérimenter le développement assisté par IA** avec l'aide d'**Antigravity** et l'écosystème de **Spec Kit** dans un domaine exploratoire (le développement de jeu vidéo).
 
 **Le Gameplay :**
-**Stargate - Legacy** vous met aux commandes du SGC. Le gameplay est un mélange de :
+**Stargate: Chronicles** vous met aux commandes du SGC. Le gameplay est un mélange de :
 - **Gestion Stratégique (60%)** : Développement de la Terre, relations politiques (CIS/Pentagone), recherche technologique.
 - **Combat Tactique / RPG (40%)** : Commandement de l'escouade SG-Prime en temps réel avec pause (RTwP).
 - **Univers Sandbox** : Factions dynamiques et système Nemesis.

@@ -1,9 +1,9 @@
 ---
 name: image-art-direction
-description: Directives de direction artistique pour la génération d'images du projet Stargate Legacy (Style Concept Art Graphic Novel).
+description: Directives de direction artistique pour la génération d'images du projet Stargate: Chronicles (Style Concept Art Graphic Novel).
 ---
 
-# Skill : Image Art Direction — Stargate Legacy
+# Skill : Image Art Direction — Stargate: Chronicles
 
 > **Usage** : Ce skill est la référence absolue pour toute génération d'image dans le projet.
 > L'agent DOIT consulter ce document avant de produire, commander ou valider un asset graphique.
