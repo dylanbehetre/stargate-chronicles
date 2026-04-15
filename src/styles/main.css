@@ -1,64 +1,85 @@
-:root {
-  /* SGC Color Palette */
-  --bg-color: #050a05;
-  --terminal-green: #33ff33;
-  --terminal-green-dim: #1a881a;
-  --terminal-amber: #ffb000;
-  --terminal-red: #ff3333;
-  --glass-bg: rgba(10, 20, 10, 0.8);
-  --glass-border: rgba(51, 255, 51, 0.2);
-  
-  /* Typography */
-  --font-main: 'Share Tech Mono', monospace;
-  
-  /* Effects */
-  --scanline-color: rgba(18, 16, 16, 0.1);
-  --glow-shadow: 0 0 10px rgba(51, 255, 51, 0.5);
-}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import './theme-anime.css';
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--terminal-green);
-  font-family: var(--font-main);
-  overflow: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-ui);
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* CRT Scanline Overlay */
-body::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(var(--scanline-color) 50%, rgba(0, 0, 0, 0) 50%),
-              linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 9999;
-  background-size: 100% 4px, 3px 100%;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-/* Flicker Animation */
-@keyframes flicker {
-  0% { opacity: 0.97; }
-  5% { opacity: 0.95; }
-  10% { opacity: 0.9; }
-  15% { opacity: 0.95; }
-  20% { opacity: 0.98; }
-  100% { opacity: 1; }
+button {
+  background: transparent;
+  border: 1px solid var(--color-text-primary);
+  color: var(--color-text-primary);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
-main {
-  animation: flicker 0.15s infinite;
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
+
+.terminal-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 400px 1fr 350px;
+  grid-template-rows: 1fr 300px;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: radial-gradient(circle at center, rgba(0, 255, 242, 0.05) 0%, transparent 70%);
+}
+
+.panel-header {
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--color-glass-border);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.panel-content {
+  padding: 1rem;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 5px currentColor;
+}
+
+.status-online { color: var(--color-accent-cyan); background-color: var(--color-accent-cyan); }
+.status-warning { color: var(--color-accent-amber); background-color: var(--color-accent-amber); }
+
+/* Remove old CRT effects if any existed */
+.scanline, .crt-flicker {
+  display: none !important;
+}
+

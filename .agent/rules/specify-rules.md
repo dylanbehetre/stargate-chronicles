@@ -1,12 +1,14 @@
----
+﻿---
 trigger: always_on
 ---
 
 # stargate-command Development Guidelines
 
-Auto-generated from all feature plans. Last updated: 2026-04-14
+Auto-generated from all feature plans. Last updated: 2026-04-15
 
 ## Active Technologies
+- JavaScript (ES2023 Modules) + Vite 6.x, Vitest 2.x, Capacitor.js (Phase 1 encapsulation) (003-sgc-interface-redress)
+- `localStorage` via `IStorageRepository` implementation (003-sgc-interface-redress)
 
 - **Language**: JavaScript (ES2023 Modules) — Vanilla JS sans framework, domaine pur testable sans DOM
 - **Build Tool**: Vite 6.x
@@ -72,6 +74,7 @@ npm run preview   # Prévisualiser le build
 - **Esthétique**: Terminaux CRT + scanlines + style anime japonais cohérent
 
 ## Recent Changes
+- 003-sgc-interface-redress: Added JavaScript (ES2023 Modules) + Vite 6.x, Vitest 2.x, Capacitor.js (Phase 1 encapsulation)
 
 - feature/speckit_game_specs: SGC Command Interface MVP — spec + plan + data-model + contracts établis (2026-04-14)
 

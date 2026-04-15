@@ -1,23 +1,16 @@
 import { IStorageRepository } from '../domain/repositories/IStorageRepository.js';
 
-/**
- * LocalStorage implementation of IStorageRepository.
- */
 export class LocalStorageRepository extends IStorageRepository {
-  save(key, data) {
-    localStorage.setItem(key, JSON.stringify(data));
+  async get(key) {
+    const value = localStorage.getItem(key);
+    return value ? JSON.parse(value) : null;
   }
 
-  load(key) {
-    const data = localStorage.getItem(key);
-    return data ? JSON.parse(data) : null;
+  async set(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
   }
 
-  delete(key) {
+  async remove(key) {
     localStorage.removeItem(key);
-  }
-
-  clear() {
-    localStorage.clear();
   }
 }

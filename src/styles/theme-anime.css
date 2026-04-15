@@ -1,0 +1,62 @@
+:root {
+  /* Anime SF Palette */
+  --color-bg: #0a192f;
+  --color-accent-cyan: #00fff2;
+  --color-accent-amber: #ffaa00;
+  --color-glass-bg: rgba(255, 255, 255, 0.1);
+  --color-glass-border: rgba(255, 255, 255, 0.2);
+  --color-text-primary: #e0faff;
+  
+  /* Glows */
+  --glow-cyan: 0 0 10px rgba(0, 255, 242, 0.6);
+  --glow-amber: 0 0 10px rgba(255, 170, 0, 0.6);
+  
+  /* Glassmorphism */
+  --glass-blur: blur(12px);
+  --glass-bg-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  
+  /* Typography */
+  --font-header: 'Eurostile', 'Rajdhani', sans-serif;
+  --font-ui: 'Rajdhani', sans-serif;
+}
+
+.glass-panel {
+  background: var(--color-glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: var(--glass-bg-gradient);
+  pointer-events: none;
+}
+
+.glow-cyan {
+  box-shadow: var(--glow-cyan);
+  border-color: var(--color-accent-cyan);
+}
+
+.glow-amber {
+  box-shadow: var(--glow-amber);
+  border-color: var(--color-accent-amber);
+}
+
+.text-cyan {
+  color: var(--color-accent-cyan);
+  text-shadow: 0 0 5px var(--color-accent-cyan);
+}
+
+.text-amber {
+  color: var(--color-accent-amber);
+  text-shadow: 0 0 5px var(--color-accent-amber);
+}

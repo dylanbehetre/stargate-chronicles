@@ -1,32 +1,52 @@
-# Quickstart: SGC Command Interface
+# Quickstart: SGC Interface Redress (Anime-Style)
 
-## Development Setup
+This guide helps you set up and test the new "Anime-style" interface and repaired services.
 
-1. **Install dependencies**: `npm install`
-2. **Launch dev server**: `npm run dev`
-3. **Open browser**: `http://localhost:5174`
+## Prerequisites
 
-## Basic Controls
+- Node.js 22 LTS
+- Vite 6.x
+- Git (feature branch: `003-sgc-interface-redress`)
 
-### 1. Dialing a Destination
-- Select a planet from the **DESTINATIONS** list on the left.
-- Or use the **Dialing Computer** in the center to manually enter 7 symbols.
-- If the address is valid, the Stargate will spin and a blue vortex will appear.
+## Installation & Setup
 
-### 2. Reconnaissance (MALP)
-- With an active wormhole, go to the **ACTION** tab.
-- Click **Envoyer MALP**.
-- Wait for the probe to transit.
-- Biome data and an anime illustration of the site will appear in the **PLANET INFO** panel.
+1. **Switch to Feature Branch**:
+   ```bash
+   git checkout 003-sgc-interface-redress
+   ```
 
-### 3. Deploying SG Team
-- After scouting (recommended), click **Envoyer équipe SG**.
-- If no MALP was sent, you will be warned of potential risks.
-- On mission completion, a **Mission Report (CR)** will pop up with:
-    - Narrative summary of the mission.
-    - Status of the team (ALIVE/WOUNDED/KIA).
-    - Anime-style "moment" illustration.
+2. **Clean Install**:
+   ```bash
+   npm install
+   ```
 
-### 4. Viewing History
-- Click on any explored planet in the list.
-- The **MISSION LOGS** panel at the bottom shows the history of all deployments to that address.
+3. **Verify Build**:
+   ```bash
+   npm run build
+   ```
+
+## Running the Dev Server
+
+Launch the SGC Command Center with the new CSS theme and repaired services:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`.
+
+## Testing the New Loop
+
+1. **Dial an Address**: Use the Gate terminal to enter a 7-chevron code.
+2. **Deploy MALP**: If the address is valid, click the `DEPLOIER MALP` button. Wait 3 seconds for the "Anime-style" biome illustration to appear.
+3. **Mission Deployment**: Select SG-1 and click `ENVOYER ÉQUIPE`. Wait 5 seconds for the mission report modale (CR).
+4. **Resilience Test**: Refresh the page (F5). All scanned planets and mission reports MUST persist in the history.
+
+## Technical Notes
+
+- **Anime Aesthetics**: Managed via `styles/theme-anime.css`.
+- **Glassmorphism**: Requires modern Chrome/Edge/Firefox for `backdrop-filter`.
+- **Logic Repair**: ALL domain logic is unit-testable via:
+  ```bash
+  npm run test
+  ```

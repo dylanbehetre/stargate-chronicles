@@ -1,0 +1,29 @@
+{
+  "biomes": {
+    "Foresta": {
+      "id": "foresta",
+      "name": "Forêt Tempérée",
+      "illustration": "/assets/illustrations/biome-foresta.webp"
+    },
+    "Deserto": {
+      "id": "deserto",
+      "name": "Désert Aride",
+      "illustration": "/assets/illustrations/biome-deserto.webp"
+    },
+    "Ghiaccio": {
+      "id": "ghiaccio",
+      "name": "Plaines Glaciaires",
+      "illustration": "/assets/illustrations/biome-ghiaccio.webp"
+    },
+    "Vulcanico": {
+      "id": "vulcanico",
+      "name": "Enfer Volcanique",
+      "illustration": "/assets/illustrations/biome-vulcanico.webp"
+    },
+    "Oceanico": {
+      "id": "oceanico",
+      "name": "Monde Océanique",
+      "illustration": "/assets/illustrations/biome-oceanico.webp"
+    }
+  }
+}

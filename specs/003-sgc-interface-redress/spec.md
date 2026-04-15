@@ -5,6 +5,12 @@
 **Status**: Draft  
 **Input**: User description: "Rectifier l'implémentation de l'interface du SGC pour qu'elle corresponde aux attentes : esthétique 'anime-style' (vibrante, moderne, stylisée) au lieu du terminal monochrome, et correction des services métier (biome, MALP, SG Team, comptes rendus avec illustrations) qui sont actuellement cassés ou incomplets."
 
+## Clarifications
+
+### Session 2026-04-15
+
+- Q: La mission produit-elle un résultat instantané ou temporisé ? → A: Temporisé court (3-5s) avec animation, préparation pour une future gestion du temps réel.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Modern Anime Interface (Priority: P1)
@@ -65,11 +71,12 @@ En tant qu'opérateur du SGC, je veux envoyer une équipe SG et recevoir un comp
 - **FR-006**: System MUST générer un Compte Rendu (CR) après chaque mission SG, incluant : un texte narratif, l'état de santé de l'équipe (Vivant/Blessé/Mort) et une illustration d'un moment fort (ruines, forêt dense, rencontre).
 - **FR-007**: System MUST sauvegarder automatiquement et restaurer l'état (planètes explorées, rapports de mission) via le stockage local (localStorage).
 - **FR-008**: System MUST afficher un avertissement de confirmation si une équipe SG est envoyée sans scan MALP préalable sur une zone à risque.
+- **FR-009**: System MUST implémenter un délai de mission simulé (3 à 5 secondes) avec animation de "transit" avant d'afficher le résultat.
 
 ### Key Entities *(include if feature involves data)*
 
 - **Planet**: Adresse (7 chevrons), Nom, Biome, Niveau de Danger, Statut Exploration (Inconnu/Scanné/Exploré).
-- **MissionReport (CR)**: Type (MALP/SG), Date, Narration, Illustration (Moment fort), Bilan santé, Planète associée.
+- **MissionReport (CR)**: Type (MALP/SG), Date, Narration, Illustration (Moment fort), Bilan santé, Planète associée, Durée (simulée).
 
 ## Success Criteria *(mandatory)*
 

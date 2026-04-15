@@ -1,0 +1,25 @@
+@keyframes pulse-cyan {
+  0% { box-shadow: 0 0 5px rgba(0, 255, 242, 0.4); }
+  50% { box-shadow: 0 0 15px rgba(0, 255, 242, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(0, 255, 242, 0.4); }
+}
+
+@keyframes pulse-amber {
+  0% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.4); }
+  50% { box-shadow: 0 0 15px rgba(255, 170, 0, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.4); }
+}
+
+.animate-pulse-cyan {
+  animation: pulse-cyan 2s infinite ease-in-out;
+}
+
+.animate-pulse-amber {
+  animation: pulse-amber 2s infinite ease-in-out;
+}
+
+.glow-hover:hover {
+  filter: drop-shadow(0 0 8px var(--color-accent-cyan));
+  transform: scale(1.02);
+  transition: all 0.2s ease-out;
+}

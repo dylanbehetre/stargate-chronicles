@@ -1,21 +1,23 @@
 /**
- * Interface for storage repositories.
- * Concrete implementations must provide these methods.
+ * @interface IStorageRepository
  */
 export class IStorageRepository {
-  save(key, data) {
-    throw new Error('Method not implemented');
-  }
+  /**
+   * @param {string} key
+   * @returns {Promise<any>}
+   */
+  async get(key) { throw new Error('Not implemented'); }
 
-  load(key) {
-    throw new Error('Method not implemented');
-  }
+  /**
+   * @param {string} key
+   * @param {any} value
+   * @returns {Promise<void>}
+   */
+  async set(key, value) { throw new Error('Not implemented'); }
 
-  delete(key) {
-    throw new Error('Method not implemented');
-  }
-
-  clear() {
-    throw new Error('Method not implemented');
-  }
+  /**
+   * @param {string} key
+   * @returns {Promise<void>}
+   */
+  async remove(key) { throw new Error('Not implemented'); }
 }
