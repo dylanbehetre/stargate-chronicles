@@ -1,3 +1,8 @@
+---
+name: image-art-direction
+description: Directives de direction artistique pour la génération d'images du projet Stargate Legacy (Style Concept Art Graphic Novel).
+---
+
 # Skill : Image Art Direction — Stargate Legacy
 
 > **Usage** : Ce skill est la référence absolue pour toute génération d'image dans le projet.
@@ -259,4 +264,3 @@ src/ui/assets/
 - [ ] **Aucun élément photo-réaliste** ni chibi/cartoon simple visible
 - [ ] Le fichier est en `.webp`, < 400 Ko, nom conforme à la convention
 - [ ] L'image est **cohérente** avec les autres assets déjà intégrés
-
