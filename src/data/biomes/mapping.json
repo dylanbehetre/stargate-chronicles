@@ -1,29 +1,30 @@
 {
   "biomes": {
     "Foresta": {
-      "id": "foresta",
-      "name": "Forêt Tempérée",
-      "illustration": "/assets/illustrations/biome-foresta.webp"
+      "illustration": "/assets/illustrations/biome-forest.webp",
+      "description": "Dense forêt tempérée avec une flore luxuriante."
     },
     "Deserto": {
-      "id": "deserto",
-      "name": "Désert Aride",
-      "illustration": "/assets/illustrations/biome-deserto.webp"
+      "illustration": "/assets/illustrations/biome-desert.webp",
+      "description": "Vastes étendues de sable sous un soleil de plomb."
     },
     "Ghiaccio": {
-      "id": "ghiaccio",
-      "name": "Plaines Glaciaires",
-      "illustration": "/assets/illustrations/biome-ghiaccio.webp"
+      "illustration": "/assets/illustrations/biome-ice.webp",
+      "description": "Plaines glacées et températures subarctiques."
     },
     "Vulcanico": {
-      "id": "vulcanico",
-      "name": "Enfer Volcanique",
-      "illustration": "/assets/illustrations/biome-vulcanico.webp"
+      "illustration": "/assets/illustrations/biome-volcanic.webp",
+      "description": "Activité sismique intense et rivières de lave."
     },
-    "Oceanico": {
-      "id": "oceanico",
-      "name": "Monde Océanique",
-      "illustration": "/assets/illustrations/biome-oceanico.webp"
+    "Antico": {
+      "illustration": "/assets/illustrations/biome-ruins.webp",
+      "description": "Vestiges d'une civilisation disparue, ruines de pierre."
     }
+  },
+  "moments": {
+    "SUCCESS": "/assets/illustrations/moment-success.webp",
+    "PARTIAL": "/assets/illustrations/moment-partial.webp",
+    "TRAGIC": "/assets/illustrations/moment-tragic.webp",
+    "DISCOVERY": "/assets/illustrations/moment-discovery.webp"
   }
 }

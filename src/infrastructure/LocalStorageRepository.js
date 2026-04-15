@@ -1,16 +1,23 @@
 import { IStorageRepository } from '../domain/repositories/IStorageRepository.js';
 
+/**
+ * Browser-based implementation of storage using localStorage.
+ */
 export class LocalStorageRepository extends IStorageRepository {
-  async get(key) {
-    const value = localStorage.getItem(key);
-    return value ? JSON.parse(value) : null;
+  save(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
   }
 
-  async set(key, value) {
-    localStorage.setItem(key, JSON.stringify(value));
+  load(key) {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
   }
 
-  async remove(key) {
+  delete(key) {
     localStorage.removeItem(key);
+  }
+
+  clear() {
+    localStorage.clear();
   }
 }

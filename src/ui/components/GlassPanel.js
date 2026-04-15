@@ -1,29 +1,32 @@
 /**
- * Creates a Glassmorphic Panel element
+ * Functional component for a glassmorphic panel.
  */
-export class GlassPanel {
-  /**
-   * @param {Object} options
-   * @param {string} [options.id]
-   * @param {string[]} [options.classes]
-   * @param {string} [options.title]
-   */
-  static create({ id, classes = [], title = '' } = {}) {
-    const panel = document.createElement('div');
-    if (id) panel.id = id;
-    panel.className = `glass-panel ${classes.join(' ')}`;
-    
-    if (title) {
-      const header = document.createElement('div');
-      header.className = 'panel-header text-cyan';
-      header.textContent = title;
-      panel.appendChild(header);
-    }
-    
-    const content = document.createElement('div');
-    content.className = 'panel-content';
-    panel.appendChild(content);
-    
-    return panel;
+export function createGlassPanel({ id, title, content = '', className = '' }) {
+  const panel = document.createElement('div');
+  panel.id = id;
+  panel.className = `glass-panel transition-smooth ${className}`;
+  panel.style.padding = '20px';
+  panel.style.display = 'flex';
+  panel.style.flexDirection = 'column';
+
+  if (title) {
+    const header = document.createElement('h2');
+    header.textContent = title;
+    header.style.marginBottom = '15px';
+    header.style.color = 'var(--color-cyan)';
+    header.style.borderBottom = '1px solid var(--color-cyan)';
+    header.style.paddingBottom = '5px';
+    panel.appendChild(header);
   }
+
+  const body = document.createElement('div');
+  body.className = 'panel-body';
+  if (typeof content === 'string') {
+    body.innerHTML = content;
+  } else {
+    body.appendChild(content);
+  }
+  panel.appendChild(body);
+
+  return panel;
 }

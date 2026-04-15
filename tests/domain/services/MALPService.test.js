@@ -1,38 +1,42 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { MALPService } from '../../../src/domain/services/MALPService.js';
-import { Planet, PlanetStatus } from '../../../src/domain/entities/Planet.js';
 import { PlanetFactory } from '../../../src/domain/services/PlanetFactory.js';
+import { ExplorationStatus } from '../../../src/domain/entities/Planet.js';
 
 describe('MALPService', () => {
   let malpService;
-  let mockRepo;
+  let mockStorage;
+  let mockState;
 
   beforeEach(() => {
-    mockRepo = {
-      get: vi.fn(),
-      set: vi.fn()
+    mockStorage = {
+      save: vi.fn(),
+      load: vi.fn()
     };
-    malpService = new MALPService(mockRepo);
+    mockState = {
+      lockedDestination: { id: 'CHV-001', status: ExplorationStatus.UNKNOWN },
+      isGateActive: true
+    };
+    malpService = new MALPService(mockState, mockStorage);
+    vi.useFakeTimers();
   });
 
-  it('should scout an unknown planet and resolve after delay', async () => {
-    const planetId = 'P3X-999';
-    const planet = new Planet({ id: planetId, name: 'Abydos' });
+  it('should transition planet to SCOUTED after 3 seconds', async () => {
+    const deployment = malpService.deploy();
     
-    // Mock factory to return controlled data
-    vi.spyOn(PlanetFactory, 'generateDiscoveryData').mockReturnValue({
-      biome: 'Deserto',
-      dangerLevel: 3,
-      environment: { atmosphere: 'Breathable' }
-    });
-
-    const promise = malpService.deployMALP(planet);
+    // Fast-forward 3 seconds
+    vi.advanceTimersByTime(3000);
     
-    // Fast-forward 3 seconds simulate (manually calling resolve if needed or just wait)
-    const result = await promise;
+    const result = await deployment;
+    
+    expect(result.status).toBe(ExplorationStatus.SCOUTED);
+    expect(result.biome).toBeDefined();
+    expect(mockStorage.save).toHaveBeenCalled();
+  });
 
-    expect(result.status).toBe(PlanetStatus.SCOUTED);
-    expect(result.biome).toBe('Deserto');
-    expect(mockRepo.set).toHaveBeenCalled();
-  }, 10000); // 10s timeout because of the 3s simulation
+  it('should fail if gate is not active', async () => {
+    mockState.isGateActive = false;
+    const result = await malpService.deploy();
+    expect(result).toBeNull();
+  });
 });

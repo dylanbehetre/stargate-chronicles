@@ -1,27 +1,30 @@
+import templates from '../../data/templates/narrative.json';
+
 /**
- * Engine for generating narrative mission reports.
+ * Engine for generating narrative mission reports using templates.
  */
 export class NarrativeEngine {
-  constructor(templates) {
-    this.templates = templates;
-  }
-
   /**
-   * Generate a report summary and debrief.
+   * Generates a narrative report based on planet data and mission outcome.
    * @param {Planet} planet 
-   * @returns {Object} { summary, debrief }
+   * @param {string} teamStatus - INTACT, WOUNDED, CASUALTIES
+   * @returns {string} The narrated summary.
    */
-  generateReport(planet) {
-    const template = this.getRandom(this.templates.exploration);
-    const discovery = this.getRandom(this.templates.discoveries);
-    
-    const debrief = template.replace('{discovery}', discovery);
-    const summary = `Exploration de ${planet.name} réussie.`;
-    
-    return { summary, debrief };
+  static generateReport(planet, teamStatus) {
+    let text = this.getRandom(templates.exploration);
+    const detail = this.getRandom(templates.details);
+    const healthNote = templates.health[teamStatus];
+
+    text = text.replace('{biome}', planet.biome || 'sconosciuto')
+               .replace('{planet_id}', planet.id)
+               .replace('{climate}', planet.environment.temperature || 'variabile')
+               .replace('{visibility}', 'ottimale')
+               .replace('{details}', detail);
+
+    return `${text} ${healthNote}`;
   }
 
-  getRandom(array) {
+  static getRandom(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
 }

@@ -1,25 +1,48 @@
-@keyframes pulse-cyan {
+/* Interactives Glows */
+@keyframes glow-pulse {
   0% { box-shadow: 0 0 5px rgba(0, 255, 242, 0.4); }
-  50% { box-shadow: 0 0 15px rgba(0, 255, 242, 0.8); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 242, 0.8); }
   100% { box-shadow: 0 0 5px rgba(0, 255, 242, 0.4); }
 }
 
-@keyframes pulse-amber {
-  0% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.4); }
-  50% { box-shadow: 0 0 15px rgba(255, 170, 0, 0.8); }
-  100% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.4); }
+.glow-interactive:hover {
+  animation: glow-pulse 2s infinite;
 }
 
-.animate-pulse-cyan {
-  animation: pulse-cyan 2s infinite ease-in-out;
+/* Border Trace Animation */
+.border-draw {
+  position: relative;
 }
 
-.animate-pulse-amber {
-  animation: pulse-amber 2s infinite ease-in-out;
+.border-draw::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, var(--color-cyan), transparent, var(--color-cyan));
+  background-size: 200% 100%;
+  z-index: -1;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.glow-hover:hover {
-  filter: drop-shadow(0 0 8px var(--color-accent-cyan));
-  transform: scale(1.02);
-  transition: all 0.2s ease-out;
+.border-draw:hover::after {
+  opacity: 1;
+  animation: border-slide 1.5s linear infinite;
+}
+
+@keyframes border-slide {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+/* Scanline/Grid Replacement (Anime-Style) */
+.glass-grid {
+  background-image: 
+    linear-gradient(rgba(0, 255, 242, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 242, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
 }

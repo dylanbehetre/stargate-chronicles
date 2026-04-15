@@ -1,21 +1,22 @@
-export const PlanetStatus = Object.freeze({
+export const ExplorationStatus = Object.freeze({
   UNKNOWN: 'UNKNOWN',
   SCOUTED: 'SCOUTED',
   EXPLORED: 'EXPLORED'
 });
 
 export class Planet {
-  /**
-   * @param {Object} data
-   * @param {string} data.id - 7-chevron address
-   * @param {string} data.name
-   * @param {string} [data.status]
-   * @param {string} [data.biome]
-   * @param {number} [data.dangerLevel]
-   * @param {Date} [data.scannedAt]
-   * @param {Object} [data.environment]
-   */
-  constructor({ id, name, status = PlanetStatus.UNKNOWN, biome = null, dangerLevel = 0, scannedAt = null, environment = {} }) {
+  constructor({
+    id,
+    name,
+    status = ExplorationStatus.UNKNOWN,
+    biome = null,
+    dangerLevel = 0,
+    scannedAt = null,
+    environment = {}
+  }) {
+    if (!id || !id.match(/^[A-Z0-9-]{7}$/)) {
+      throw new Error('Invalid Planet ID: Must be 7 characters [A-Z0-9-].');
+    }
     this.id = id;
     this.name = name;
     this.status = status;
@@ -25,23 +26,15 @@ export class Planet {
     this.environment = environment;
   }
 
+  isUnknown() {
+    return this.status === ExplorationStatus.UNKNOWN;
+  }
+
   isScouted() {
-    return this.status !== PlanetStatus.UNKNOWN;
+    return this.status === ExplorationStatus.SCOUTED || this.status === ExplorationStatus.EXPLORED;
   }
 
   isExplored() {
-    return this.status === PlanetStatus.EXPLORED;
-  }
-
-  markAsScouted(biome, dangerLevel, environment) {
-    this.status = PlanetStatus.SCOUTED;
-    this.biome = biome;
-    this.dangerLevel = dangerLevel;
-    this.environment = environment;
-    this.scannedAt = new Date();
-  }
-
-  markAsExplored() {
-    this.status = PlanetStatus.EXPLORED;
+    return this.status === ExplorationStatus.EXPLORED;
   }
 }

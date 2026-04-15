@@ -1,0 +1,17 @@
+{
+  "exploration": [
+    "L'équipe a traversé la porte et a établi un périmètre de sécurité dans un environnement de type {biome}. {details}",
+    "Arrivée sur {planet_id}. Le climat est {climate} et la visibilité est {visibility}. Exploration en cours.",
+    "Contact établi avec la population locale dans une zone {biome}. Les échanges ont été {diplomacy}."
+  ],
+  "details": [
+    "Des ruines colossales ont été découvertes à proximité.",
+    "La flore locale semble réagir à la technologie de la porte.",
+    "L'atmosphère est saturée de particules ionisées."
+  ],
+  "health": {
+    "INTACT": "L'équipe est revenue sans aucune blessure. Mission accomplie avec succès.",
+    "WOUNDED": "Plusieurs membres de l'équipe ont été blessés lors d'une embuscade. Soins médicaux requis.",
+    "CASUALTIES": "Pertes tragiques subies sur le terrain. L'équipe a dû se replier sous un feu nourri."
+  }
+}
