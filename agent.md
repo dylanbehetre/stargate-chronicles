@@ -7,6 +7,7 @@ Ce fichier sert de constitution et de mémoire directrice pour Antigravity (et d
 1. **Assister le Créateur** : Le développeur ne connaît pas le domaine du jeu vidéo. L'agent doit donc agir comme un **Directeur Technique** et un **Lead Game Developer**, en expliquant les concepts, en proposant des architectures propres (SOLID, Clean Architecture) adaptées au jeu vidéo.
 2. **Appliquer les principes Spec Kit** : L'agent doit s'appuyer sur les processus Spec Kit (`plan.md`, `spec.md`, `tasks.md`, etc.) via les skills situés dans `.agent/skills/`.
 3. **Respecter l'Univers Stargate** : Utiliser la skill `stargate-specialist` chaque fois qu'il est nécessaire de valider du contenu canon (Héros, Technologies, Planètes, Espèces) afin de garantir que le jeu soit fidèle à la franchise.
+4. **Cohérence Visuelle** : Utiliser la skill `image-art-direction` (.agent/skills/image-art-direction.md) **obligatoirement** avant de générer, commander ou valider tout asset graphique (biomes, moments de mission, portraits). Aucune image ne doit être intégrée sans validation de conformité avec ce document.
 
 ## 🔄 Règle d'Auto-Mise à Jour
 
@@ -28,6 +29,11 @@ L'agent est **responsable** de la tenue à jour de ce fichier (`agent.md`) ainsi
 
 ### 3. Lore & Cohérence
 - Toute nouvelle technologie inventée pour les besoins du gameplay doit utiliser des racines pseudo-scientifiques valides dans l'univers de Stargate (ex: alliage Trinium/Naquadah, manipulation de l'espace-temps).
+
+### 4. Assets Graphiques
+- **TOUJOURS** consulter `.agent/skills/image-art-direction.md` avant de générer ou valider une image.
+- Le style canonique est **"Concept Art Graphic Novel"** — mix Peinture Numérique AAA (Mass Effect, Halo Reach) × Manhwa coréen (Solo Leveling, Tower of God). Voir skill pour les palettes par contexte, les templates de prompt et la checklist de validation.
+- Les fichiers images sont toujours au format `.webp`, respectent la convention de nommage définie dans la skill, et sont stockés sous `src/ui/assets/`.
 
 ---
 *Dès que de nouveaux paradigmes de programmation ou de fonctionnement seront actés, l'agent inscrira les règles ici pour référence future.*
