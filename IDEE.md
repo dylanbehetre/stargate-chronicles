@@ -1,5 +1,11 @@
 
-🚀 Game Design Document : Stargate - Legacy
+> ⚠️ **Note importante** : Ce document est le résultat d'une **première réflexion exploratoire** et d'une séance de brainstorming initiale.
+> Il ne constitue en aucun cas une spécification officielle du projet.
+> Son contenu ne doit pas parasiter, remplacer ou contraindre les spécifications officielles qui seront définies dans les documents dédiés (GDD, PRD, Architecture, etc.). Il est conservé ici à titre de référence et d'inspiration uniquement.
+
+---
+
+🚀 Game Design Document : Stargate : Chronicles
 Genre : Hybride Gestion / RPG / Stratégie (4X et Tactique)
 Cible Technique : Projet personnel, optimisé pour PC configuration moyenne.
 Vision : Incarner le commandement du SGC, alternant entre la gestion géopolitique de la Terre face à la galaxie, et la direction tactique d'une escouade d'élite (SG-Prime) sur le terrain.

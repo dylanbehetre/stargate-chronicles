@@ -1,6 +1,6 @@
 # Instructions de l'Agent Antigravity 🧠
 
-Ce fichier sert de constitution et de mémoire directrice pour Antigravity (et d'autres agents) travaillant sur le projet **Stargate - Legacy**.
+Ce fichier sert de constitution et de mémoire directrice pour Antigravity (et d'autres agents) travaillant sur le projet **Stargate : Chronicles**.
 
 ## 🎯 Objectifs de l'Agent
 
