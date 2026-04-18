@@ -46,6 +46,7 @@ Ce fichier sert de constitution et de mémoire directrice pour Antigravity (et d
 
 - Avant tout module complexe : **Plan → Spec → Tâches** (indépendamment du framework de documentation utilisé).
 - Chaque fonctionnalité doit avoir des **critères d'acceptation** clairs avant implémentation.
+- Les markdowns sont formaté de manière à ce qu'une ligne ne fasse pas plus de 120 caractères pour une meilleure lisibilité.
 
 ### 4. Qualité & Tests (Non Négociable)
 
