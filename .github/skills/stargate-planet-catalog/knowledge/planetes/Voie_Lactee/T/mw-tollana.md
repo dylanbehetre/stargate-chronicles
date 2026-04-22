@@ -1,88 +1,88 @@
-﻿# ðŸŒ Tollana
+# 🌍 Tollana
 
 - **ID :** `mw-tollana`
-- **Galaxie :** Voie LactÃ©e
-- **CoordonnÃ©es (DHD) :**
-  - **SÃ©quence :** `04-29-08-22-13-37`
+- **Galaxie :** Voie Lactée
+- **Coordonnées (DHD) :**
+  - **Séquence :** `04-29-08-22-13-37`
   - **Symboles :** `Centaurus, Orion, Scorpius, Triangulum, Microscopium, Leo Minor`
   - **Source :** Canon (Stargate-Fusion)
-- **Description :** Nouvelle planÃ¨te des Tollans, choisie aprÃ¨s la destruction de Tollan (leur planÃ¨te d'origine, ravagÃ©e par une catastrophe volcanique). Tollana est une planÃ¨te dÃ©veloppÃ©e aux paysages propres et ordonnÃ©s â€” architecture d'une prÃ©cision gÃ©omÃ©trique, matÃ©riaux translucides et lumineux, jardins planifiÃ©s, ciel lÃ©gÃ¨rement bleutÃ©. La technologie Tollan est plusieurs gÃ©nÃ©rations en avance sur celle des Goa'uld et Ã  des niveaux incomparables avec celle des Asgard. Leur droit interne interdit formellement tout partage technologique avec des civilisations "moins avancÃ©es" â€” une loi rigide issue de leur traumatisme passÃ©.
+- **Description :** Nouvelle planète des Tollans, choisie après la destruction de Tollan (leur planète d'origine, ravagée par une catastrophe volcanique). Tollana est une planète développée aux paysages propres et ordonnés — architecture d'une précision géométrique, matériaux translucides et lumineux, jardins planifiés, ciel légèrement bleuté. La technologie Tollan est plusieurs générations en avance sur celle des Goa'uld et à des niveaux incomparables avec celle des Asgard. Leur droit interne interdit formellement tout partage technologique avec des civilisations "moins avancées" — une loi rigide issue de leur traumatisme passé.
 
-##### ðŸ‘¥ Habitants
+##### 👥 Habitants
 
 - **Nom du peuple :** Tollans
-- **Description :** Civilisation humaine hautement avancÃ©e, philosophiquement pacifiste mais politique dans ses dÃ©cisions. Les Tollans ont dÃ©veloppÃ©, entre autres, des armes qui traversent la matiÃ¨re solide ("ion cannons"), des appareils de dÃ©tection mentale (zatarc detectors), et maÃ®trisent la science des matÃ©riaux Ã  un niveau extraordinaire. Leur gouvernance est assurÃ©e par un Haut Conseil (*Curia*). **Omoc** et plus tard **Narim** sont leurs reprÃ©sentants principaux dans les interactions avec la Terre. MalgrÃ© leur avance, leur refus de coopÃ©rer militairement les laisse vulnÃ©rables face aux menaces politiques.
+- **Description :** Civilisation humaine hautement avancée, philosophiquement pacifiste mais politique dans ses décisions. Les Tollans ont développé, entre autres, des armes qui traversent la matière solide ("ion cannons"), des appareils de détection mentale (zatarc detectors), et maîtrisent la science des matériaux à un niveau extraordinaire. Leur gouvernance est assurée par un Haut Conseil (*Curia*). **Omoc** et plus tard **Narim** sont leurs représentants principaux dans les interactions avec la Terre. Malgré leur avance, leur refus de coopérer militairement les laisse vulnérables face aux menaces politiques.
 
 ---
 
-##### ðŸŽ¬ Historique Ã‰pisodique
+##### 🎬 Historique Épisodique
 
 ---
 
-- **SG-1 S01E18 â€” "Enigma" (Ã‰nigme)**
-  *(Note : Cet Ã©pisode se dÃ©roule principalement sur Terre, mais concerne les Tollans qui viennent de Tollan, leur planÃ¨te d'origine dÃ©truite. Tollana (leur nouveau monde) est l'aboutissement de l'arc.)*
+- **SG-1 S01E18 — "Enigma" (Énigme)**
+  *(Note : Cet épisode se déroule principalement sur Terre, mais concerne les Tollans qui viennent de Tollan, leur planète d'origine détruite. Tollana (leur nouveau monde) est l'aboutissement de l'arc.)*
   - **Protagonistes principaux :** Colonel Jack O'Neill, Dr. Daniel Jackson, Capitaine Samantha Carter, Teal'c, Omoc, Narim
-  - **Moments clÃ©s (Exploration) :**
-    - SG-1 arrive sur Tollan pour dÃ©couvrir que la planÃ¨te est en cours de destruction â€” Ã©ruptions volcaniques massives provoquÃ©es par le partage technologique incontrÃ´lÃ© avec une civilisation voisine (une erreur passÃ©e tollane).
-    - L'Ã©quipe Ã©vacue un groupe de survivants Tollans Ã  travers la Porte, les ramenant sur Terre.
-    - Sur Terre, les Tollans sont de fait prisonniers du SGC â€” le NID cherche Ã  accÃ©der Ã  leur technologie avancÃ©e par tous les moyens.
-    - Omoc refuse catÃ©goriquement tout partage technologique avec la Terre, la jugeant trop primitive. Sa rigiditÃ© crÃ©e des tensions.
-    - Narim, plus jeune et moins fermÃ©, dÃ©veloppe une amitiÃ© (et une attirance) pour Carter.
-    - SG-1 aide les Tollans Ã  contacter les Nox â€” une autre race avancÃ©e â€” qui viennent chercher les survivants et les conduisent vers leur nouveau monde : **Tollana**.
+  - **Moments clés (Exploration) :**
+    - SG-1 arrive sur Tollan pour découvrir que la planète est en cours de destruction — éruptions volcaniques massives provoquées par le partage technologique incontrôlé avec une civilisation voisine (une erreur passée tollane).
+    - L'équipe évacue un groupe de survivants Tollans à travers la Porte, les ramenant sur Terre.
+    - Sur Terre, les Tollans sont de fait prisonniers du SGC — le NID cherche à accéder à leur technologie avancée par tous les moyens.
+    - Omoc refuse catégoriquement tout partage technologique avec la Terre, la jugeant trop primitive. Sa rigidité crée des tensions.
+    - Narim, plus jeune et moins fermé, développe une amitié (et une attirance) pour Carter.
+    - SG-1 aide les Tollans à contacter les Nox — une autre race avancée — qui viennent chercher les survivants et les conduisent vers leur nouveau monde : **Tollana**.
     - Les Tollans partent, emportant leurs secrets mais laissant une relation diplomatique fragile avec la Terre.
   - **Bilan de l'exploration :**
-    - **Gains :** Alliance tendue mais rÃ©elle entre Tollans et SGC. Contacts des Nox Ã©tablis indirectement. Les Tollans sont sauvÃ©s.
-    - **Pertes :** Tollan (planÃ¨te originelle) est dÃ©truite. La technologie Tollan reste inaccessible.
-    - **ConsÃ©quences :** Les Tollans sont Ã©tablis sur Tollana. Un canal diplomatique existe dÃ©sormais.
-  - **Ã‰valuation des Menaces :**
-    - **Niveau de dangerositÃ© :** ModÃ©rÃ©
-    - **Raison :** Destruction planÃ©taire en cours (Tollan), pression du NID sur Terre.
-    - **Faction propriÃ©taire :** Tollans (autonomes)
+    - **Gains :** Alliance tendue mais réelle entre Tollans et SGC. Contacts des Nox établis indirectement. Les Tollans sont sauvés.
+    - **Pertes :** Tollan (planète originelle) est détruite. La technologie Tollan reste inaccessible.
+    - **Conséquences :** Les Tollans sont établis sur Tollana. Un canal diplomatique existe désormais.
+  - **Évaluation des Menaces :**
+    - **Niveau de dangerosité :** Modéré
+    - **Raison :** Destruction planétaire en cours (Tollan), pression du NID sur Terre.
+    - **Faction propriétaire :** Tollans (autonomes)
 
 ---
 
-- **SG-1 S03E15 â€” "Pretense" (PrÃ©tention)**
+- **SG-1 S03E15 — "Pretense" (Prétention)**
   - **Protagonistes principaux :** Colonel Jack O'Neill, Dr. Daniel Jackson, Capitaine Samantha Carter, Teal'c, Narim, Omoc, Lya (Nox), Skaara, Klorel (symbiote de Skaara)
-  - **Moments clÃ©s (Exploration) :**
-    - Un vaisseau Goa'uld s'Ã©crase sur Tollana. Ã€ bord : **Skaara**, encore hÃ´te du symbiote **Klorel** (fils d'Apophis). Skaara sollicite officiellement une **Trinium** â€” un procÃ¨s Tollan â€” pour obtenir la libÃ©ration de son corps.
-    - SG-1 est invitÃ©e sur Tollana pour servir de reprÃ©sentants de Skaara lors du procÃ¨s. C'est l'occasion pour eux de visiter Tollana pour la premiÃ¨re fois.
-    - Tollana est impressionnante : architecture Ã©purÃ©e, ordre impeccable, technologie visible mais intÃ©grÃ©e. L'accueil est froid mais protocolaire.
-    - Le procÃ¨s (Trinium) est officiellement arbitrÃ© par le Haut Conseil Tollan avec une reprÃ©sentante Nox (Lya) et un reprÃ©sentant Asgard (Narim?). En rÃ©alitÃ©, le tribunal comprend Omoc et d'autres Tollans neutres.
-    - Klorel argumente sa souverainetÃ© sur le corps de Skaara. O'Neill et Daniel dÃ©fendent la personnalitÃ© originale de Skaara et ses droits en tant qu'Ãªtre humain.
-    - Le procÃ¨s est compliquÃ© par l'arrivÃ©e d'un vaisseau Goa'uld en orbite â€” Heru-ur, qui exige le retour de Klorel en menaÃ§ant Tollana.
-    - Les Tollans rÃ©vÃ¨lent leurs "ion cannons" â€” des canons planÃ©taires capables de traverser les boucliers des vaisseaux Goa'uld. Ils abattent le vaisseau d'Heru-ur sans hÃ©siter, dÃ©montrant leur supÃ©rioritÃ© dÃ©fensive.
-    - Le Trinium accorde la victoire Ã  Skaara : Klorel est extrait de force et Skaara retrouve son propre corps et son libre-arbitre. C'est l'une des rares fois oÃ¹ un hÃ´te Goa'uld est lÃ©galement et physiquement libÃ©rÃ©.
+  - **Moments clés (Exploration) :**
+    - Un vaisseau Goa'uld s'écrase sur Tollana. À bord : **Skaara**, encore hôte du symbiote **Klorel** (fils d'Apophis). Skaara sollicite officiellement une **Trinium** — un procès Tollan — pour obtenir la libération de son corps.
+    - SG-1 est invitée sur Tollana pour servir de représentants de Skaara lors du procès. C'est l'occasion pour eux de visiter Tollana pour la première fois.
+    - Tollana est impressionnante : architecture épurée, ordre impeccable, technologie visible mais intégrée. L'accueil est froid mais protocolaire.
+    - Le procès (Trinium) est officiellement arbitré par le Haut Conseil Tollan avec une représentante Nox (Lya) et un représentant Asgard (Narim?). En réalité, le tribunal comprend Omoc et d'autres Tollans neutres.
+    - Klorel argumente sa souveraineté sur le corps de Skaara. O'Neill et Daniel défendent la personnalité originale de Skaara et ses droits en tant qu'être humain.
+    - Le procès est compliqué par l'arrivée d'un vaisseau Goa'uld en orbite — Heru-ur, qui exige le retour de Klorel en menaçant Tollana.
+    - Les Tollans révèlent leurs "ion cannons" — des canons planétaires capables de traverser les boucliers des vaisseaux Goa'uld. Ils abattent le vaisseau d'Heru-ur sans hésiter, démontrant leur supériorité défensive.
+    - Le Trinium accorde la victoire à Skaara : Klorel est extrait de force et Skaara retrouve son propre corps et son libre-arbitre. C'est l'une des rares fois où un hôte Goa'uld est légalement et physiquement libéré.
     - Skaara rentre sur Abydos.
   - **Bilan de l'exploration :**
-    - **Gains :** Skaara libÃ©rÃ©. La procÃ©dure lÃ©gale Tollan (Trinium) est documentÃ©e comme un outil potentiel dans d'autres cas d'hÃ´tes. La puissance dÃ©fensive de Tollana confirmÃ©e.
+    - **Gains :** Skaara libéré. La procédure légale Tollan (Trinium) est documentée comme un outil potentiel dans d'autres cas d'hôtes. La puissance défensive de Tollana confirmée.
     - **Pertes :** Aucune perte directe pour SG-1.
-    - **ConsÃ©quences :** Skaara revit sur Abydos jusqu'Ã  sa mort lors du bombardement d'Anubis (S06E22). Les relations Terre-Tollans sont lÃ©gÃ¨rement amÃ©liorÃ©es.
-  - **Ã‰valuation des Menaces :**
-    - **Niveau de dangerositÃ© :** Ã‰levÃ© (menace extÃ©rieure de la flotte d'Heru-ur, neutralisÃ©e)
-    - **Raison :** Tentative de pression militaire Goa'uld sur Tollana â€” efficacement repoussÃ©e.
-    - **Faction propriÃ©taire :** Tollans (indÃ©pendants et dÃ©fensivement supÃ©rieurs)
+    - **Conséquences :** Skaara revit sur Abydos jusqu'à sa mort lors du bombardement d'Anubis (S06E22). Les relations Terre-Tollans sont légèrement améliorées.
+  - **Évaluation des Menaces :**
+    - **Niveau de dangerosité :** Élevé (menace extérieure de la flotte d'Heru-ur, neutralisée)
+    - **Raison :** Tentative de pression militaire Goa'uld sur Tollana — efficacement repoussée.
+    - **Faction propriétaire :** Tollans (indépendants et défensivement supérieurs)
 
 ---
 
-- **SG-1 S05E09 â€” "Between Two Fires" (Entre deux feux)**
+- **SG-1 S05E09 — "Between Two Fires" (Entre deux feux)**
   - **Protagonistes principaux :** Colonel Jack O'Neill, Dr. Daniel Jackson, Major Samantha Carter, Teal'c, Narim, Travell (dirigeante Tollan)
-  - **Moments clÃ©s (Exploration) :**
-    - Omoc dÃ©cÃ¨de dans des circonstances suspectes. Les Tollans invitent SG-1 sur Tollana pour les funÃ©railles, ce qui est exceptionnel.
-    - Narim contacte secrÃ¨tement Carter en lui envoyant un message cryptÃ© d'avertissement.
-    - En arrivant sur Tollana, SG-1 est accueillie chaleureusement â€” trop chaleureusement. Travell, la nouvelle dirigeante du Haut Conseil, propose soudainement de partager la technologie des ion cannons avec la Terre.
+  - **Moments clés (Exploration) :**
+    - Omoc décède dans des circonstances suspectes. Les Tollans invitent SG-1 sur Tollana pour les funérailles, ce qui est exceptionnel.
+    - Narim contacte secrètement Carter en lui envoyant un message crypté d'avertissement.
+    - En arrivant sur Tollana, SG-1 est accueillie chaleureusement — trop chaleureusement. Travell, la nouvelle dirigeante du Haut Conseil, propose soudainement de partager la technologie des ion cannons avec la Terre.
     - Ce renversement radical de politique choque SG-1. Quelque chose ne va pas.
-    - L'investigation rÃ©vÃ¨le qu'un **Grand MaÃ®tre Goa'uld anonyme** (on comprend que c'est Ba'al agissant au nom d'un collectif Goa'uld dont les noms varient selon les sources) a menacÃ© d'annihilation totale de Tollana Ã  moins que les Tollans ne livrent leur technologie d'armement en quantitÃ© industrielle â€” pour que les Goa'uld puissent l'utiliser contre leurs ennemis communs (dont la Terre).
-    - Le faux "partage" avec la Terre Ã©tait en rÃ©alitÃ© un plan pour rÃ©cupÃ©rer secrÃ¨tement des donnÃ©es de calibrage et de construction que les Goa'uld ne pouvaient pas extraire seuls.
-    - Narim tente de saboter les canons Goa'uld en prÃ©paration (des versions piratÃ©es), mais le plan est dÃ©couvert.
-    - Les Goa'uld mettent leur menace Ã  exÃ©cution : **Tollana est bombardÃ©e depuis l'orbite**. Les ion cannons retournÃ©s contre la planÃ¨te elle-mÃªme, ou des frappes orbitales massives â€” Tollana est dÃ©truite.
-    - Narim envoie un dernier message Ã  Carter depuis la surface en flammes. Il pÃ©rit dans la destruction.
-    - SG-1 Ã©chappe de justesse via la Porte.
+    - L'investigation révèle qu'un **Grand Maître Goa'uld anonyme** (on comprend que c'est Ba'al agissant au nom d'un collectif Goa'uld dont les noms varient selon les sources) a menacé d'annihilation totale de Tollana à moins que les Tollans ne livrent leur technologie d'armement en quantité industrielle — pour que les Goa'uld puissent l'utiliser contre leurs ennemis communs (dont la Terre).
+    - Le faux "partage" avec la Terre était en réalité un plan pour récupérer secrètement des données de calibrage et de construction que les Goa'uld ne pouvaient pas extraire seuls.
+    - Narim tente de saboter les canons Goa'uld en préparation (des versions piratées), mais le plan est découvert.
+    - Les Goa'uld mettent leur menace à exécution : **Tollana est bombardée depuis l'orbite**. Les ion cannons retournés contre la planète elle-même, ou des frappes orbitales massives — Tollana est détruite.
+    - Narim envoie un dernier message à Carter depuis la surface en flammes. Il périt dans la destruction.
+    - SG-1 échappe de justesse via la Porte.
   - **Bilan de l'exploration :**
-    - **Gains :** SG-1 obtient des donnÃ©es partielles sur la technologie des ion cannons. La menace Goa'uld collective (Ba'al et ses associÃ©s) est identifiÃ©e.
-    - **Pertes :** Tollana est entiÃ¨rement dÃ©truite. Narim et l'ensemble de la civilisation Tollan sont tuÃ©s. Perte d'un alliÃ© technologiquement avancÃ© majeur et irremplaÃ§able.
-    - **ConsÃ©quences :** Les Tollans n'existent plus. Leur technologie est perdue. Le SGC perd l'une de ses rares ressources d'armement supÃ©rieur aux Goa'uld. Ba'al/les Goa'uld dÃ©montrent leur capacitÃ© Ã  manipuler mÃªme des civilisations avancÃ©es.
-  - **Ã‰valuation des Menaces :**
-    - **Niveau de dangerositÃ© :** Critique (destruction planÃ©taire)
-    - **Raison :** Bombardement orbital Goa'uld massif aprÃ¨s manipulation politique rÃ©ussie.
-    - **Faction propriÃ©taire :** Tollans (indÃ©pendants) â†’ DÃ©truite
+    - **Gains :** SG-1 obtient des données partielles sur la technologie des ion cannons. La menace Goa'uld collective (Ba'al et ses associés) est identifiée.
+    - **Pertes :** Tollana est entièrement détruite. Narim et l'ensemble de la civilisation Tollan sont tués. Perte d'un allié technologiquement avancé majeur et irremplaçable.
+    - **Conséquences :** Les Tollans n'existent plus. Leur technologie est perdue. Le SGC perd l'une de ses rares ressources d'armement supérieur aux Goa'uld. Ba'al/les Goa'uld démontrent leur capacité à manipuler même des civilisations avancées.
+  - **Évaluation des Menaces :**
+    - **Niveau de dangerosité :** Critique (destruction planétaire)
+    - **Raison :** Bombardement orbital Goa'uld massif après manipulation politique réussie.
+    - **Faction propriétaire :** Tollans (indépendants) → Détruite
 

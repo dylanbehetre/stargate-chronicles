@@ -1,42 +1,42 @@
-﻿# ðŸŒ Bedrosia (Monde des Deux Nations)
+# 🌍 Bedrosia (Monde des Deux Nations)
 
 - **ID :** `mw-bedrosia`
-- **Galaxie :** Voie LactÃ©e
-- **CoordonnÃ©es (DHD) :**
-  - **SÃ©quence :** `02-15-28-33-19-06`
+- **Galaxie :** Voie Lactée
+- **Coordonnées (DHD) :**
+  - **Séquence :** `02-15-28-33-19-06`
   - **Symboles :** `Virgo, Piscis Austrinus, Eridanus, Hydra, Sculptor, Serpens Caput`
-  - **Source :** GÃ©nÃ©rÃ© par Antigravity
-- **Description :** PlanÃ¨te continentale divisÃ©e entre deux nations : les **Bedrosiens** Ã  l'est (sociÃ©tÃ© militariste, autoritaire, technologiquement avancÃ©e en armement) et les **Optriens** Ã  l'ouest (sociÃ©tÃ© plus ouverte, scientifiquement curieuse). Le paysage est une steppe vallonnÃ©e, avec des prairies Ã  perte de vue et des villes de pierre fortifiÃ©es. La Porte des Ã‰toiles de Bedrosia avait Ã©tÃ© enfouie pendant des siÃ¨cles et vient d'Ãªtre excavÃ©e par des archÃ©ologues optriens â€” sa dÃ©couverte constitue un enjeu politique et religieux explosif entre les deux nations.
+  - **Source :** Généré par Antigravity
+- **Description :** Planète continentale divisée entre deux nations : les **Bedrosiens** à l'est (société militariste, autoritaire, technologiquement avancée en armement) et les **Optriens** à l'ouest (société plus ouverte, scientifiquement curieuse). Le paysage est une steppe vallonnée, avec des prairies à perte de vue et des villes de pierre fortifiées. La Porte des Étoiles de Bedrosia avait été enfouie pendant des siècles et vient d'être excavée par des archéologues optriens — sa découverte constitue un enjeu politique et religieux explosif entre les deux nations.
 
-##### ðŸ‘¥ Habitants
+##### 👥 Habitants
 
-- **Bedrosiens :** SociÃ©tÃ© militaire expansionniste, guidÃ©e par la doctrine du dieu Nefertum, selon laquelle leur peuple a Ã©tÃ© *crÃ©Ã© directement* sur cette planÃ¨te. La Porte des Ã‰toiles est considÃ©rÃ©e par eux comme une menace Ã  leurs croyances fondatrices et Ã  leur autoritÃ©. DirigÃ©s par le commandant **Rigar**.
-- **Optriens :** SociÃ©tÃ© scientifique et philosophiquement ouverte. Ils croient, Ã  juste titre, que leur peuple est *arrivÃ©* sur cette planÃ¨te via la Porte â€” une vÃ©ritÃ© que les Bedrosiens cherchent Ã  effacer. Le scientifique **Nyan** reprÃ©sente l'Ã©lite intellectuelle optrienne.
-
----
-
-##### ðŸŽ¬ Historique Ã‰pisodique
+- **Bedrosiens :** Société militaire expansionniste, guidée par la doctrine du dieu Nefertum, selon laquelle leur peuple a été *créé directement* sur cette planète. La Porte des Étoiles est considérée par eux comme une menace à leurs croyances fondatrices et à leur autorité. Dirigés par le commandant **Rigar**.
+- **Optriens :** Société scientifique et philosophiquement ouverte. Ils croient, à juste titre, que leur peuple est *arrivé* sur cette planète via la Porte — une vérité que les Bedrosiens cherchent à effacer. Le scientifique **Nyan** représente l'élite intellectuelle optrienne.
 
 ---
 
-- **SG-1 S03E19 â€” "New Ground" (Terrain nouveau)**
+##### 🎬 Historique Épisodique
+
+---
+
+- **SG-1 S03E19 — "New Ground" (Terrain nouveau)**
   - **Protagonistes principaux :** Colonel Jack O'Neill, Dr. Daniel Jackson, Major Samantha Carter, Teal'c, Nyan, Rigar (antagoniste)
-  - **Moments clÃ©s (Exploration) :**
-    - SG-1 arrive sur Bedrosia via une Porte rÃ©cemment dÃ©terrÃ©e. Ils Ã©mergent directement dans un camp de fouilles optriens â€” Nyan et ses collÃ¨gues sont stupÃ©fiÃ©s de voir le portail s'activer pour la premiÃ¨re fois devant eux.
-    - La joie de la dÃ©couverte est de courte durÃ©e : des forces militaires bedrosiennes arrivent en blindÃ©s. Rigar accuse immÃ©diatement SG-1 d'Ãªtre des agents optriens dÃ©guisÃ©s pour valider leur "mensonge religieux" de la Porte.
-    - SG-1 est capturÃ©. O'Neill, Carter et Daniel sont emprisonnÃ©s dans des cellules souterraines equipÃ©es de colliers de contention Ã©lectrique â€” tout mouvement brusque provoque une dÃ©charge paralysante.
-    - Teal'c parvient Ã  s'Ã©chapper temporairement et tente de saboter les communications bedrosiennes depuis l'extÃ©rieur, mais est blessÃ© et privÃ© de lumiÃ¨re â€” sans lumiÃ¨re, le symbiote Goa'uld perd en efficacitÃ© curative, mettant Teal'c en danger de mort.
-    - Nyan, bouleversÃ© par ce qu'il a vu (des gens arriver depuis un autre monde Ã  travers la Porte), prend la dÃ©cision risquÃ©e d'aider SG-1 contre les ordres de son gouvernement.
-    - Rigar soumet Carter Ã  des interrogatoires agressifs. Il est convaincu que la Porte est une fabrication optriÃ©enne pour dÃ©stabiliser les fondements de la sociÃ©tÃ© bedrosienne.
-    - Nyan aide Teal'c Ã  se mettre Ã  l'abri de la lumiÃ¨re solaire retrouvÃ©e, permettant sa guÃ©rison. Ensemble, ils prÃ©parent un plan de diversion pour libÃ©rer les prisonniers.
-    - L'assaut final : Nyan dÃ©truit le gÃ©nÃ©rateur de colliers, libÃ©rant O'Neill, Carter et Daniel. SG-1 s'extrait du camp sous le feu des forces bedrosiennes.
-    - Nyan dÃ©cide de partir avec SG-1 sur Terre â€” rester sur Bedrosia l'exposerait Ã  la persÃ©cution certaine pour sa trahison.
+  - **Moments clés (Exploration) :**
+    - SG-1 arrive sur Bedrosia via une Porte récemment déterrée. Ils émergent directement dans un camp de fouilles optriens — Nyan et ses collègues sont stupéfiés de voir le portail s'activer pour la première fois devant eux.
+    - La joie de la découverte est de courte durée : des forces militaires bedrosiennes arrivent en blindés. Rigar accuse immédiatement SG-1 d'être des agents optriens déguisés pour valider leur "mensonge religieux" de la Porte.
+    - SG-1 est capturé. O'Neill, Carter et Daniel sont emprisonnés dans des cellules souterraines equipées de colliers de contention électrique — tout mouvement brusque provoque une décharge paralysante.
+    - Teal'c parvient à s'échapper temporairement et tente de saboter les communications bedrosiennes depuis l'extérieur, mais est blessé et privé de lumière — sans lumière, le symbiote Goa'uld perd en efficacité curative, mettant Teal'c en danger de mort.
+    - Nyan, bouleversé par ce qu'il a vu (des gens arriver depuis un autre monde à travers la Porte), prend la décision risquée d'aider SG-1 contre les ordres de son gouvernement.
+    - Rigar soumet Carter à des interrogatoires agressifs. Il est convaincu que la Porte est une fabrication optriéenne pour déstabiliser les fondements de la société bedrosienne.
+    - Nyan aide Teal'c à se mettre à l'abri de la lumière solaire retrouvée, permettant sa guérison. Ensemble, ils préparent un plan de diversion pour libérer les prisonniers.
+    - L'assaut final : Nyan détruit le générateur de colliers, libérant O'Neill, Carter et Daniel. SG-1 s'extrait du camp sous le feu des forces bedrosiennes.
+    - Nyan décide de partir avec SG-1 sur Terre — rester sur Bedrosia l'exposerait à la persécution certaine pour sa trahison.
   - **Bilan de l'exploration :**
-    - **Gains :** Nyan rejoint le SGC comme consultant linguistique et archÃ©ologique (il remplace temporairement Daniel lors de l'Ascension de ce dernier en S05). Confirmation que des civilisations peuvent activement nier et combattre la vÃ©ritÃ© de la Porte.
-    - **Pertes :** Aucune perte permanente pour SG-1. Teal'c sÃ©rieusement affaibli temporairement.
-    - **ConsÃ©quences :** Nyan devient un personnage rÃ©current du SGC. La situation politique de Bedrosia n'est pas rÃ©solue â€” le conflit religieux autour de la Porte y persiste probablement.
-  - **Ã‰valuation des Menaces :**
-    - **Niveau de dangerositÃ© :** ModÃ©rÃ©
-    - **Raison :** Militarisme bedrosien, colliers de contention, risque pour Teal'c sans lumiÃ¨re. Pas de Goa'uld actif.
-    - **Faction propriÃ©taire :** Neutre (civilisation locale indÃ©pendante)
+    - **Gains :** Nyan rejoint le SGC comme consultant linguistique et archéologique (il remplace temporairement Daniel lors de l'Ascension de ce dernier en S05). Confirmation que des civilisations peuvent activement nier et combattre la vérité de la Porte.
+    - **Pertes :** Aucune perte permanente pour SG-1. Teal'c sérieusement affaibli temporairement.
+    - **Conséquences :** Nyan devient un personnage récurrent du SGC. La situation politique de Bedrosia n'est pas résolue — le conflit religieux autour de la Porte y persiste probablement.
+  - **Évaluation des Menaces :**
+    - **Niveau de dangerosité :** Modéré
+    - **Raison :** Militarisme bedrosien, colliers de contention, risque pour Teal'c sans lumière. Pas de Goa'uld actif.
+    - **Faction propriétaire :** Neutre (civilisation locale indépendante)
 

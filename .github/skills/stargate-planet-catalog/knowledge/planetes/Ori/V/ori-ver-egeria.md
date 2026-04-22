@@ -1,31 +1,31 @@
-﻿# ðŸŒ Ver Egeria
+# 🌍 Ver Egeria
 
 - **ID :** `ori-ver-egeria`
 - **Galaxie :** Galaxie des Ori
-- **CoordonnÃ©es (DHD) :**
-  - **SÃ©quence :** `18-27-36-07-16-25`
+- **Coordonnées (DHD) :**
+  - **Séquence :** `18-27-36-07-16-25`
   - **Symboles :** `Pegasus, Auriga, Sextans, Norma, Equuleus, Cetus`
-  - **Source :** GÃ©nÃ©rÃ© par Antigravity
-- **Description :** PlanÃ¨te forestiÃ¨re situÃ©e dans la galaxie d'origine des Alterans/Ori. Elle abrite des villages de paysans vivant sous le dogme d'Origine.
+  - **Source :** Généré par Antigravity
+- **Description :** Planète forestière située dans la galaxie d'origine des Alterans/Ori. Elle abrite des villages de paysans vivant sous le dogme d'Origine.
 
-##### ðŸ‘¥ Habitants
+##### 👥 Habitants
 - **Nom du peuple :** Humains (Villageois)
-- **Description :** Population asservie par la foi, mais abritant une cellule de rÃ©sistance secrÃ¨te contre les Ori (l'HÃ©rÃ©sie).
+- **Description :** Population asservie par la foi, mais abritant une cellule de résistance secrète contre les Ori (l'Hérésie).
 
-##### ðŸŽ¬ Historique Ã‰pisodique
+##### 🎬 Historique Épisodique
 
 - **SG-1 S09E01/02 - Avalon**
   - **Protagonistes principaux :** Daniel Jackson, Vala Mal Doran.
-  - **Moments clÃ©s (Exploration) :**
-    - Daniel et Vala utilisent un dispositif de communication Ã  longue portÃ©e des Anciens et leurs esprits sont transfÃ©rÃ©s dans les corps de deux habitants de Ver Egeria (Sallis et Harrid).
-    - Ils dÃ©couvrent la vie quotidienne sous la tyrannie des Ori et le rÃ´le des Administrateurs et des Priors.
-    - Ils sont identifiÃ©s comme des hÃ©rÃ©tiques par l'Administrateur du village.
-    - Vala (dans le corps de Sallis) est condamnÃ©e au supplice du feu sur l'autel du village, mais elle est sauvÃ©e par Daniel et l'intervention de l'HÃ©rÃ©sie.
+  - **Moments clés (Exploration) :**
+    - Daniel et Vala utilisent un dispositif de communication à longue portée des Anciens et leurs esprits sont transférés dans les corps de deux habitants de Ver Egeria (Sallis et Harrid).
+    - Ils découvrent la vie quotidienne sous la tyrannie des Ori et le rôle des Administrateurs et des Priors.
+    - Ils sont identifiés comme des hérétiques par l'Administrateur du village.
+    - Vala (dans le corps de Sallis) est condamnée au supplice du feu sur l'autel du village, mais elle est sauvée par Daniel et l'intervention de l'Hérésie.
   - **Bilan de l'exploration :**
-    - **Gains :** PremiÃ¨re preuve de l'existence des Ori en tant qu'Ãªtres Ã©levÃ©s malveillants.
-    - **Pertes :** Aucune (les esprits retournent sur Terre), mais Sallis et Harrid sont brÃ»lÃ©s par les Ori peu aprÃ¨s.
-    - **ConsÃ©quences :** Alerte gÃ©nÃ©rale au SGC sur la menace imminente de l'invasion Ori.
-  - **Ã‰valuation des Menaces :**
-    - **Niveau de dangerositÃ© :** Critique (ThÃ©ocratie absolue)
-    - **Raison :** Surveillance constante par les Priors et punitions divines immÃ©diates.
-    - **Faction propriÃ©taire :** Ori
+    - **Gains :** Première preuve de l'existence des Ori en tant qu'êtres élevés malveillants.
+    - **Pertes :** Aucune (les esprits retournent sur Terre), mais Sallis et Harrid sont brûlés par les Ori peu après.
+    - **Conséquences :** Alerte générale au SGC sur la menace imminente de l'invasion Ori.
+  - **Évaluation des Menaces :**
+    - **Niveau de dangerosité :** Critique (Théocratie absolue)
+    - **Raison :** Surveillance constante par les Priors et punitions divines immédiates.
+    - **Faction propriétaire :** Ori

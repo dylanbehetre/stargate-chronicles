@@ -1,29 +1,29 @@
-﻿# ðŸŒ Terre (Tau'ri)
+# 🌍 Terre (Tau'ri)
 
 - **ID :** `mw-earth`
-- **Galaxie :** Voie LactÃ©e
-- **CoordonnÃ©es (DHD) :**
-  - **SÃ©quence :** `28-26-05-36-11-29`
+- **Galaxie :** Voie Lactée
+- **Coordonnées (DHD) :**
+  - **Séquence :** `28-26-05-36-11-29`
   - **Symboles :** `Eridanus, Taurus, Libra, Sextans, Sagittarius, Orion`
   - **Source :** Canon (Stargate-Fusion)
-- **Description :** TroisiÃ¨me planÃ¨te rocheuse du systÃ¨me solaire, orbite autour d'une Ã©toile de type G2 (le Soleil). AtmosphÃ¨re azote-oxygÃ¨ne, hydrosphÃ¨re vaste (71% de surface ocÃ©anique), biosphÃ¨re extrÃªmement diverse. La Terre est dÃ©signÃ©e par l'univers Goa'uld sous le nom de **Tau'ri** â€” "ceux du Premier Monde" â€” car c'est la planÃ¨te d'origine de l'espÃ¨ce humaine avant sa dispersion Ã  travers le rÃ©seau stellaire par Ra et les autres Grands MaÃ®tres. La Porte des Ã‰toiles terrestre fut enterrÃ©e en Antarctique il y a des millÃ©naires, puis redÃ©couverte en 1928 par des archÃ©ologues. Elle est installÃ©e Ã  la base militaire de **Cheyenne Mountain** (Colorado, USA) depuis les annÃ©es 1990. La Terre abrite Ã©galement une seconde Porte (la Porte Antarctique, plus ancienne). Le **SGC** (Stargate Command) est l'organisation militaire chargÃ©e du programme spatial secret.
+- **Description :** Troisième planète rocheuse du système solaire, orbite autour d'une étoile de type G2 (le Soleil). Atmosphère azote-oxygène, hydrosphère vaste (71% de surface océanique), biosphère extrêmement diverse. La Terre est désignée par l'univers Goa'uld sous le nom de **Tau'ri** — "ceux du Premier Monde" — car c'est la planète d'origine de l'espèce humaine avant sa dispersion à travers le réseau stellaire par Ra et les autres Grands Maîtres. La Porte des Étoiles terrestre fut enterrée en Antarctique il y a des millénaires, puis redécouverte en 1928 par des archéologues. Elle est installée à la base militaire de **Cheyenne Mountain** (Colorado, USA) depuis les années 1990. La Terre abrite également une seconde Porte (la Porte Antarctique, plus ancienne). Le **SGC** (Stargate Command) est l'organisation militaire chargée du programme spatial secret.
 
-##### ðŸ‘¥ Habitants
+##### 👥 Habitants
 
 - **Nom du peuple :** Humains (Tau'ri)
-- **Description :** 8 milliards d'humains, dont l'immense majoritÃ© ignore l'existence du programme d'exploration interstellaire. Civilisation industrielle avancÃ©e, en dÃ©veloppement technologique rapide grÃ¢ce aux technologies rÃ©cupÃ©rÃ©es via les missions SGC. Le SGC inclut des militaires (USAF principalement) et des scientifiques civils. Les races alliÃ©es (Tok'ra, Asgard, Nox, Furlings) reconnaissent la Terre comme une puissance Ã©mergente.
+- **Description :** 8 milliards d'humains, dont l'immense majorité ignore l'existence du programme d'exploration interstellaire. Civilisation industrielle avancée, en développement technologique rapide grâce aux technologies récupérées via les missions SGC. Le SGC inclut des militaires (USAF principalement) et des scientifiques civils. Les races alliées (Tok'ra, Asgard, Nox, Furlings) reconnaissent la Terre comme une puissance émergente.
 
 ---
 
-##### ðŸŽ¬ Historique Ã‰pisodique
+##### 🎬 Historique Épisodique
 
-*âš ï¸ Exception : Aucun historique Ã©pisodique n'est rÃ©digÃ© pour la Terre (Tau'ri). Voir archives dÃ©diÃ©es.*
+*⚠️ Exception : Aucun historique épisodique n'est rédigé pour la Terre (Tau'ri). Voir archives dédiées.*
 
 ---
 
-**Notes stratÃ©giques :**
-- La Porte de la Terre est classÃ©e parmi les Portes prioritaires pour toute faction cherchant Ã  contrÃ´ler le rÃ©seau galactique.
+**Notes stratégiques :**
+- La Porte de la Terre est classée parmi les Portes prioritaires pour toute faction cherchant à contrôler le réseau galactique.
 - L'Alpha Site (site de secours offworld) est maintenu en secret en cas de compromission de la Terre.
-- La Terre a repoussÃ© plusieurs tentatives d'invasion directe : Apophis (S02E01/02), les RÃ©plicateurs (S06), Anubis (S06E22 orbital & S07E22/23 surface), les Ori (S09-10).
-- **CoordonnÃ©es DHD :** Le glyphe de point d'origine de la Terre est une reprÃ©sentation de la constellation de la Voie LactÃ©e vue de l'extÃ©rieur â€” utilisÃ© comme 7e glyphe pour les adresses vers la Terre depuis l'extÃ©rieur.
+- La Terre a repoussé plusieurs tentatives d'invasion directe : Apophis (S02E01/02), les Réplicateurs (S06), Anubis (S06E22 orbital & S07E22/23 surface), les Ori (S09-10).
+- **Coordonnées DHD :** Le glyphe de point d'origine de la Terre est une représentation de la constellation de la Voie Lactée vue de l'extérieur — utilisé comme 7e glyphe pour les adresses vers la Terre depuis l'extérieur.
 
