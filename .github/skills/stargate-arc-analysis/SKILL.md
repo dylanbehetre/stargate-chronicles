@@ -36,6 +36,21 @@ The output must be a Markdown file with the following structure:
   - **Consequences:** [Political impact, new threats]
 
 ---
+## Knowledge Base
+
+> Toujours lire `knowledge/INDEX.md` en premier pour naviguer dans la base.
+
+| Fichier | Contenu | Portée |
+| :--- | :--- | :--- |
+| `knowledge/INDEX.md` | Index maître, carte globale, statistiques | SG-1 + SGA complet |
+| `knowledge/sg1-arcs-s1s2.md` | SG-1 — Arcs Saisons 1–2 | 1997–1999 · 10 arcs |
+| `knowledge/sg1-arcs-s3s5.md` | SG-1 — Arcs Saisons 3–5 | 1999–2002 · 11 arcs |
+| `knowledge/sg1-arcs-s6s8.md` | SG-1 — Arcs Saisons 6–8 | 2002–2005 · 10 arcs |
+| `knowledge/sg1-arcs-s9s10.md` | SG-1 — Arcs Saisons 9–10 + Films | 2005–2008 · 9 arcs |
+| `knowledge/sga-arcs-s1s5.md` | Atlantis — Arcs Saisons 1–5 + Crossovers | 2004–2009 · 9 arcs |
+| `knowledge/sg1-arcs-narratifs.md` | ⚠️ Fichier initial S1–S2 (remplacé par sg1-arcs-s1s2.md) | Archivé |
+
+---
 ## Deployment Rules
 - Split multi-planet episodes into distinct steps if the narrative shift is significant.
 - Identify "Filler" episodes only if they truly do not contribute to any theme or character arc (rare in Stargate).
