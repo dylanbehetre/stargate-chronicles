@@ -4,7 +4,7 @@ project: 'Stargate Chronicles'
 date: '2026-04-23'
 author: 'Dylan'
 version: '1.2'
-stepsCompleted: [1, 2, 3]
+stepsCompleted: [1, 2, 3, 4]
 status: 'in-progress'
 narrativeComplexity: 'Heavy'
 gdd: '_bmad-output/gdd.md'
@@ -21,7 +21,7 @@ arcAnalysisRef: '.github/skills/stargate-arc-analysis/knowledge/arcs/'
 Ce document narratif est en cours de création via le Workflow Narratif GDS.
 
 **Complexité Narrative :** Lourde (Heavy)  
-**Étapes Complétées :** 3 sur 11 (Story Beats & Arcs Narratifs)  
+**Étapes Complétées :** 4 sur 11 (Personnages — PNJ fixes, arcs Apophis, guides de voix archétypes)  
 **Périmètre V1 :** Tutoriel Onboarding + ARC-G01 Apophis étapes 1–3  
 **Périmètre V2 :** Tous les autres arcs (balisés ⚠️ `[v2]` dans ce document)  
 **Source Arc-Analysis :** `.github/skills/stargate-arc-analysis/knowledge/arcs/` — granularité des sub-beats  
@@ -963,6 +963,195 @@ l'avancement narratif propre à chacune.
 | P06-4 | Mort de Kolya — La Paix des Ennemis | Le héros de l'Expédition tue Kolya en duel. Ladon Radim (nouveau chef Genii) choisit la coopération. L'arc se ferme par changement de direction, pas par victoire militaire. *Les Géniis participent à la coalition contre les Asurans (ARC-P03 P03-4).* *(SGA S3E17 *Sunday*)* | P06-3 | ARC-P03 coalition facilitée |
 
 **🏁 Conclusion :** Les Géniis deviennent des partenaires difficiles mais fiables sous Ladon. La méfiance demeure — la coopération aussi.
+
+---
+
+---
+
+## Personnages
+
+### PNJ Fixes — SGC `[V1]`
+
+---
+
+#### Major Paul Davis — Liaison Pentagone/SGC
+
+**Rôle :** Officier de liaison institutionnel. Voix du Pentagone au SGC, guide du tutoriel, vecteur de la pression politique de Kinsey.
+
+**Phrase culte :** *"Le Pentagone souhaite vous parler, Général. Maintenant."*
+
+**Phrase de cicatrice** *(dite une seule fois, jamais répétée)* : *"J'ai déjà livré cet ordre, Général. Je n'ai pas aimé ce qui s'est passé ensuite."*
+> *Débloquée après la 2e friction Kinsey. Référence canonique : S1E21–22 — Davis a délivré l'ordre de fermeture du SGC. SG-1 a désobéi. La Terre a survécu. Il était dans le bâtiment.*
+
+**Registre de dialogue :** Sobre, formel, professionnel. Il annonce les catastrophes sur le même ton qu'un briefing de routine. Jamais alarmiste — c'est sa façon de protéger.
+
+**Lignes types :**
+- *"Le Pentagone demande un rapport d'incident pour l'événement d'hier."*
+- *"Le Sénat souhaite être informé. Je vous conseille de préparer une réponse."*
+- *"Officiellement, je ne suis pas au courant. Officieusement — faites vite."*
+- *"Je transmettrai votre message, Général."* *(sortie de scène standard)*
+
+**Système de friction mécanique :**
+Davis est le vecteur des ordres de Kinsey. À chaque livraison d'ordre difficile, le joueur choisit : **négocier / résister / obtempérer**. La loyauté de Davis se déplace invisiblement en fonction de ces moments — jamais affichée, jamais quantifiée. Quand le joueur résiste et a raison (validé à la résolution de l'arc), Davis glisse vers l'alliance. Le pivot visible se produit en **I01-2** (*Kinsey Frappe le Général*) — c'est là que la loyauté silencieuse devient un acte concret.
+
+**Évolution relationnelle :**
+
+| Phase | Ton | Déclencheur |
+|---|---|---|
+| Tutoriel | Formel, évaluatif — il *mesure* le général | Premiers briefings |
+| Après I01-1 | Reconnaissable — il a vu SG-1 désobéir et avoir raison | APO-04a / fermeture du SGC |
+| Après 2e friction Kinsey | Phrase de cicatrice débloquée — une fois seulement | 2e confrontation Kinsey |
+| Long terme | Allié silencieux — il couvre ce qu'il peut | Victoires accumulées |
+
+---
+
+#### L'Opérateur de la Porte — Salle de Contrôle SGC
+
+**Rôle :** Technicien permanent de la salle de contrôle. Il compose les adresses, annonce les chevrons, gère les connexions entrantes. Présent à chaque activation.
+
+**Phrase culte :** *"Chevron sept… enclenché."* *(le silence d'une fraction de seconde avant "sept" — le rituel de chaque départ)*
+
+**Registre de dialogue :** Factuel, minimal. Il annonce, jamais ne commente. Ses silences avant une annonce difficile sont plus éloquents que ses mots.
+
+**Lignes types — activation normale :**
+- *"Chevron un, enclenché."* → *"Chevron deux, enclenché."* → … → *"Chevron sept, enclenché."*
+- *"Vortex stable. L'équipe peut franchir, Général."*
+- *"Porte entrante active — identification en cours."*
+
+**Lignes types — situations exceptionnelles :**
+- *"Adresse inconnue. Aucune correspondance dans nos registres, Général."*
+- *"Connexion impossible — destination sous contrôle hostile."*
+- *"Chevron sept… il ne s'enclenche pas, Général."*
+- *"L'équipe n'est pas revenue. Fenêtre dépassée."* *(silence deux secondes)* *"Sur votre ordre, Général."*
+
+**Lignes types — moments narratifs clés :**
+- TUTO-2, premier vortex : *"Chevron sept, enclenché."* *(voix légèrement moins stable — unique, jamais répété)*
+- Après G01-3, victoire orbitale : *"Toutes les connexions sont nominales, Général. La Porte est… toujours là."*
+
+**Évolution relationnelle :**
+
+| Phase | Ton | Déclencheur |
+|---|---|---|
+| Tutoriel | Nerveux, technique — premier vortex réel | TUTO-2 |
+| Après 10 missions | Professionnel rodé | Routine installée |
+| Après une perte d'équipe | Silences plus longs, gestes plus lents | Première mort d'équipe |
+| Long terme | Calme ancré — vétéran de la Porte | G01-3 accompli |
+
+---
+
+#### L'Ingénieur de Maintenance — SGC
+
+**Rôle :** Sous-officier technique omnipresent. Répare, installe, entretient tout ce qui peut casser. Se blesse systématiquement lors des incidents.
+
+**Phrase culte :** *"C'est encore moi, Général."* *(après chaque blessure — résignation presque sereine)*
+
+**Registre de dialogue :** Direct, pragmatique, légèrement résigné. Il a tout vu. Il sait que ça va encore casser.
+
+**Lignes types :**
+- *"C'est réparé, Général. Jusqu'à la prochaine fois."*
+- *"Le générateur secondaire a encore sauté. Troisième fois ce mois-ci."*
+- *"J'ai besoin de deux heures et d'un miracle. Vous pouvez m'en accorder une ?"*
+- *"Bras gauche cette fois. Ça change."*
+
+**Évolution relationnelle :**
+
+| Phase | Ton | Déclencheur |
+|---|---|---|
+| Début | Voix anonyme dans les rapports | Premières constructions |
+| Après 5 incidents | Présence familière reconnaissable | Incidents répétés |
+| Long terme | Figure réconfortante — sa présence signifie que la base tient | V1 complète |
+
+---
+
+### PNJ Narratifs — Arc Apophis `[V1/V2]`
+
+---
+
+#### Apophis — Le Faux Dieu
+
+**Rôle :** Premier grand antagoniste. System Lord Goa'uld convaincu de sa propre divinité. Présent dans ARC-G01 (V1) et au-delà (V2).
+
+**Phrase culte :** *"Jaffa ! Kree !"* *(ordre de combat absolu — une seule intonation, jamais modifiée)*
+
+**Seconde phrase culte :** *"Je suis votre dieu. Et les dieux ne meurent pas."* *(prononcée avant chaque défaite — l'ironie s'accumule)*
+
+**Registre de dialogue :** Impérieux, théâtral, jamais dans le doute. Il ne négocie pas — il ordonne.
+
+**Lignes types :**
+- *"Tau'ri. Vous avez osé."* *(regard — pas de cri)*
+- *"Vous n'êtes que poussière sous les pieds des dieux."*
+- *"Celle-là m'appartient maintenant."* *(sur La Compagne Captive — APO-01a)*
+- *"Un dieu peut mourir mille fois."* *(APO-05, en fuyant — menace finale V1)*
+
+**Évolution V1→V2 :** Dieu invulnérable → System Lord sur le déclin → fantôme qui refuse de mourir → consumé par ses propres ambitions (G01-10). Ne jamais le rendre ridicule dans sa chute — un dieu humilié qui garde sa dignité brisée est plus puissant qu'un méchant vaincu qui grimace.
+
+---
+
+#### La Compagne Captive — Abydos *(Sha're)*
+
+**Rôle :** Symbole de l'innocence perdue et du coût humain du programme. Rencontrée sur Abydos (TUTO-4), capturée par Apophis (APO-01a), prise comme hôte de la Goa'uld **Amaunet**.
+
+**Phrase culte :** *"Je suis encore là."*
+> *Dite par Sha're : victoire silencieuse — elle résiste de l'intérieur, dans l'obscurité, sans témoin.*
+> *Dite par Amaunet : menace froide — la Goa'uld affirme sa permanence dans ce corps.*
+> *La même phrase. Deux âmes. Deux univers.*
+
+**Registre :**
+- *En tant qu'elle-même :* Chaleureuse, espiègle, attachée à son monde
+- *En tant qu'Amaunet :* Froide, méprisante, la voix Goa'uld par-dessus la sienne
+
+**Lignes types (elle-même — Abydos) :**
+- *"Vous venez d'au-delà de la Porte. Il existe d'autres mondes — il avait raison."*
+- *"Prenez soin de lui. Il oublie parfois de prendre soin de lui-même."*
+
+**Lignes types (Amaunet) :**
+- *"Tu cherches quelqu'un qui ne peut pas t'entendre."*
+- *"Elle m'appartient. Comme Apophis m'a choisie."*
+
+**Statut V1 :** Capturée en APO-01a — fil narratif de fond. Résolue en V2 (ARC-G01b).
+
+---
+
+#### Le Jeune Allié Capturé — Abydos *(Skaara)*
+
+**Rôle :** Symbole de l'innocence abydonne. Rencontré sur Abydos (TUTO-4), capturé par Apophis (APO-01a), pris comme hôte de **Klorel**.
+
+**Phrase culte (lui-même) :** *"O'Neill !"* *(cri de reconnaissance sur Abydos — le lien humain avant tout)*
+
+**Phrase culte (Klorel) :** *"Le garçon que tu cherches ne peut pas t'entendre."*
+> *Ce qu'il ne sait pas — ou refuse d'admettre — c'est que Skaara entend. Il ne peut pas répondre.*
+
+**Registre :**
+- *En tant que lui-même :* Curieux, courageux, regard émerveillé
+- *En tant que Klorel :* Voix Goa'uld sur un visage connu — la dissonance est le point
+
+**Lignes types (lui-même — Abydos) :**
+- *"Montrez-moi comment ça fonctionne."* *(sur toute technologie terrestre)*
+- *"Je veux me battre avec vous. J'en suis capable."*
+
+**Lignes types (Klorel — APO-04b, Ha'tak) :**
+- *"Vous avez fait un long voyage pour mourir si près du but."*
+- *"Le père d'Apophis ne mourra pas par des mains Tau'ri."*
+
+**Statut V1 :** Capturé en APO-01a — retrouvé comme Klorel en APO-04b. Libéré en V2 (ARC-A05 A05-5, Tribunal Tollan).
+
+---
+
+### Guides de Voix — Archétypes Joueur
+
+> *Ces guides définissent le registre émotionnel de chaque archétype dans les événements narratifs. Le joueur nomme et crée ces personnages — leur voix doit rester cohérente avec leur archétype même si le nom change. Chaque archétype possède une **phrase de certitude** (identité au quotidien) et une **phrase de rupture** (quand cette identité vacille).*
+
+| Archétype | Certitude | Rupture |
+|---|---|---|
+| **Le Commandant** | *"On fait le travail."* | *"Je ne recommencerai pas."* *(dit après une perte — jamais expliqué, jamais répété)* |
+| **L'Archéologue** | *"Il doit y avoir une autre solution."* | *"Et si j'avais eu tort depuis le début ?"* *(contexte : après un sacrifice inutile ou une trahison de civilisation)* |
+| **La Scientifique** | *"Les chiffres ne mentent pas — mais ils ne disent pas tout."* | *"J'avais les chiffres. J'avais raison. Et ça n'a pas suffi."* |
+| **La Scientifique (spé. médicale)** | *"Ça peut attendre. Lui, non."* | *"J'ai fait exactement ce qu'il fallait faire. Il est quand même mort."* |
+| **Le Combattant (Tau'ri)** | *"C'est pour ça qu'on s'est engagés."* | *"Je pensais que ça serait plus facile la centième fois."* |
+| **Le Combattant Jaffa** | *"Un Jaffa sert. Moi, je choisis."* | *"J'ai déjà obéi sans poser de questions."* *(mémoire du First Prime — quand un ordre est moralement ambigu)* |
+| **Le Maître Jaffa** | *"Tu grandis, jeune Tau'ri."* | *"J'ai survécu à tout. Ce n'est pas toujours une grâce."* *(rare — après une perte majeure)* |
+
+> *Note de design :* Il n'existe pas d'archétype Médecin dans le GDD. La spécialisation médicale est une voie de progression du Scientifique via la compétence "Médecine de terrain". L'entrée "spé. médicale" est un guide de ton pour les événements narratifs impliquant un Scientifique à vocation médicale — pas un archétype distinct.
 
 ---
 

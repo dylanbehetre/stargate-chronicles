@@ -13,8 +13,9 @@
 | ID | Saison/Épisode | Étape | Protagoniste | Résumé Clé | Story Beat | Gains | Pertes | Conséquences | Pré-requis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **SGA-ASU-01** | S3E05 *Progeny* | Découverte d'Asuras | Weir / McKay / Sheppard | Asuras = cité Ancienne apparemment. En réalité : Asurans — Réplicateurs humanoïdes créés par les Anciens contre les Wraith, puis abandonnés. | **Les Faux Anciens** : Des entités plus avancées qu'Atlantis — et irréconciliables. | Technologie Asuran partiellement documentée | Weir compromise (nanites injectées) | Asurans = troisième front en Pégase | SGA-EXP-03 |
-| **SGA-ASU-02** | S4E01–02 *Adrift / Lifeline* | Vol du ZPM Asuran | Weir (sacrifiée) / McKay | McKay conçoit un plan pour voler un ZPM à Asuras. Weir, infectée par nanites, reste sur Asuras. Elle devient Asuran. | **Le Sacrifice du Leader** : Weir disparaît pour faire vivre la cité. | **ZPM récupéré (Asuras)** | Weir disparue (Asuranisée), relation avec Anciens compromise | Woolsey remplacera Weir en S5 | SGA-ASU-01 |
-| **SGA-ASU-03** | S4E11–12 *Be All My Sins Remember'd* | Destruction d'Asuras | Sheppard / McKay / Todd | Coalition Atlantis–Wraith–Genii. McKay programme les nanites à se regrouper. Caldwell détruit la planète depuis l'orbite. | **L'Allié Improbable** : Wraith et Humains coopèrent contre un ennemi commun. | Asuras détruite, menace Asuran éliminée | Lourdes pertes dans la coalition, alliance Wraith très temporaire | Arc Asuran clos ; confiance Wraith non pérenne | SGA-ASU-02 |
+| **SGA-ASU-02** | S4E01 *Adrift* | Atlantis à la Dérive | Weir / McKay / Sheppard | Après l'attaque Asuran, Atlantis flotte dans l'espace sans ZPM. Weir active ses nanites pour se maintenir en vie et piloter les réparations. McKay conçoit le plan pour voler un ZPM à Asuras. | **Le Dernier Souffle** : Atlantis survit à peine — Weir sacrifie son humanité pour maintenir la cité en vie. | Plan de vol ZPM élaboré | Weir progressivement contaminée par nanites | Le plan pour voler le ZPM à Asuras est la seule option | SGA-ASU-01 |
+| **SGA-ASU-02b** | S4E02 *Lifeline* | Le Vol du ZPM d'Asuras | Weir (sacrifiée) / McKay / Sheppard | Mission clandestine sur Asuras : McKay programme les Réplicateurs à l'ignorance. ZPM volé. Weir reste sur Asuras pour influencer les Asurans de l'intérieur — elle devient Asuran. | **Le Sacrifice du Leader** : Weir disparaît pour faire vivre la cité. | **ZPM récupéré (Asuras)** | Weir disparue (Asuranisée), leadership Atlantis vacant | Woolsey viendra remplacer Weir en S5 | SGA-ASU-02 |
+| **SGA-ASU-03** | S4E11–12 *Be All My Sins Remember'd* | Destruction d'Asuras | Sheppard / McKay / Todd | Coalition Atlantis–Wraith–Genii. McKay programme les nanites à se regrouper. Caldwell détruit la planète depuis l'orbite. | **L'Allié Improbable** : Wraith et Humains coopèrent contre un ennemi commun. | Asuras détruite, menace Asuran éliminée | Lourdes pertes dans la coalition, alliance Wraith très temporaire | Arc Asuran clos ; confiance Wraith non pérenne | SGA-ASU-02b |
 
 ---
 
@@ -23,8 +24,9 @@
 ```
 SGA-EXP-03 (S1) — Siège Wraith / vulnérabilités Atlantis
   └→ SGA-ASU-01 [Asuras découverte / Faux Anciens / Weir compromise]
-        └→ SGA-ASU-02 [Vol ZPM / Weir sacrifiée / Woolsey annoncé]
-              └→ SGA-ASU-03 [Coalition Atlantis-Wraith-Genii / Asuras détruite]
+        └→ SGA-ASU-02 [Adrift / Atlantis dérive / Weir nanites]
+              └→ SGA-ASU-02b [Lifeline / Mission Asuras / Weir sacrifiée]
+                    └→ SGA-ASU-03 [Coalition Atlantis-Wraith-Genii / Asuras détruite]
 ```
 
 ---

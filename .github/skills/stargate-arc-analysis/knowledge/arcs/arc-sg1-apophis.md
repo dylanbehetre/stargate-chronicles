@@ -12,19 +12,23 @@
 
 | ID | Saison/Épisode | Étape | Protagoniste | Résumé Clé | Story Beat | Gains SGC | Pertes SGC | Conséquences | Pré-requis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **APO-01** | S1E01–02 *Children of the Gods* | Premier Contact & Chulak | O'Neill / Daniel / Teal'c | Activation de la Porte, retour sur Abydos. Sha're et Skaara pris comme hôtes. Teal'c rejoint SG-1. | **L'Appel de l'aventure** : Le réseau est galactique ; Apophis remplace Râ. | Cartouche de coordonnées, Armes Jaffa, Teal'c | Sha're & Skaara capturés ; équipe quasi-anéantie | Apophis devient ennemi n°1 ; réseau de portes confirmé | Film (1994) |
+| **APO-01** | S1E01 *Children of the Gods — Part 1* | Attaque du SGC & Abydos | O'Neill / Daniel / Apophis | Apophis franchit la Porte au SGC, enlève des soldats. SG-1 part pour Abydos retrouver Daniel. Apophis arrive sur Abydos — Sha're et Skaara pris comme hôtes. Coordinées de Chulak récupérées. | **L'Appel de l'aventure** : La menace extraterrestre est réelle, actuelle, et elle vient de prendre de la famille. | Cartouche de coordonnées de Chulak, armes Jaffa | Sha're & Skaara capturés | Apophis ennemi n°1 ; réseau de Portes galactique confirmé | Film (1994) |
+| **APO-01b** | S1E02 *Children of the Gods — Part 2* | Chulak — Teal'c Rejoint | O'Neill / Teal'c / Bra'tac | SG-1 porte vers Chulak pour libérer les hôtes. Échec partiel : seuls quelques prisonniers sauvés. Teal'c trahit Apophis et guide SG-1 vers la Porte. Retour au SGC. | **L'Allié Inattendu** : Un Premier Jaffa choisit sa conscience — il devient le pilier moral de SG-1. | Teal'c (expertise militaire Jaffa), carte Chulak, otages partiels | Sha're et Skaara toujours captifs | Teal'c = moteur futur de la Rébellion Jaffa | APO-01 |
 | **APO-02** | S1E03 *The Enemy Within* | L'Ennemi Intérieur | Kawalsky | Kawalsky infecté par un larve Goa'uld. Mort lors de l'extraction échouée. | **La Menace Intime** : Le danger est déjà au cœur du SGC. | Données biologiques Goa'uld partielles | Kawalsky (mort), confiance interne ébranlée | Protocole de décontamination nécessaire | APO-01 |
 | **APO-03** | S1E20 *There But for the Grace of God* | Le Miroir Quantique | Daniel | Réalité alternative : la Terre tombe. Daniel récupère les coordonnées de l'assaut d'Apophis. | **Le Présage** : L'échec futur est déjà visible — et évitable. | Miroir Quantique, coordonnées d'attaque | Aucune (mission unilatérale) | Assaut Ha'tak anticipé ; urgence politique | APO-01 |
-| **APO-04** | S1E21–22 *Politics / Within the Serpent's Grasp* | L'Assaut Annoncé | O'Neill / Teal'c | SGC fermé par Kinsey. SG-1 désobéit, s'infiltre dans les Ha'taks d'Apophis. | **Le Climax de Saison** : Sans désobéissance, la Terre tombe. | Zat'nik'tel (récupéré), accès Ha'tak | SGC fermé temporairement ; risque cours martial | Crédibilité de Kinsey ruinée ; SG-1 héroïsé | APO-03, KIN-01 |
-| **APO-05** | S2E01 *The Serpent's Lair* | Victoire Orbitale | O'Neill / Teal'c / Bra'tac | Destruction des deux Ha'taks depuis l'intérieur. Apophis fuit. Bra'tac sauve SG-1. | **La Victoire Fondatrice** : Première défense spatiale de la Terre. | Glider Goa'uld, confiance en Bra'tac | Aucune (victoire totale) | Apophis affaibli mais vivant ; Sokar monte | APO-04 |
+| **APO-04** | S1E21 *Politics* | La Fermeture du SGC | Kinsey / Hammond / O'Neill | Kinsey auditionne au Congrès pour fermer le SGC. SG-1 désarmée, programme menacé. | **L'Hiver Bureaucratique** : Le vrai ennemi peut porter un costume. | Temps gagné politiquement | SGC officiellement fermé ; SG-1 sans ordres légaux | Kinsey = antagoniste institutionnel récurrent | APO-03, KIN-01 |
+| **APO-04b** | S1E22 *Within the Serpent's Grasp* | L'Infiltration des Ha'taks | O'Neill / Teal'c / Daniel | SG-1 désobéit, utilise les coordonnées du Miroir pour s'infiltrer à bord des Ha'taks d'Apophis en route vers la Terre. | **Le Climax de Saison** : Sans désobéissance, la Terre tombe. | Zat'nik'tel (récupéré), accès Ha'tak bord | Risque cours martial, SG-1 coincée à bord | Apophis doit être stoppé depuis l'intérieur — mission S2E01 | APO-04 |
+| **APO-05** | S2E01 *The Serpent's Lair* | Victoire Orbitale | O'Neill / Teal'c / Bra'tac | Destruction des deux Ha'taks depuis l'intérieur. Apophis fuit. Bra'tac sauve SG-1. | **La Victoire Fondatrice** : Première défense spatiale de la Terre. | Glider Goa'uld, confiance en Bra'tac | Aucune (victoire totale) | Apophis affaibli mais vivant ; Sokar monte | APO-04b |
 | **APO-06** | S2E09 *Secrets* | Sha're et l'Enfant Harsèsis | Daniel / Sha're | Daniel retrouve Sha're enceinte sur Abydos. L'enfant (Shifu) possédera toute la connaissance Goa'uld. | **Le Double Enjeu** : L'enfant est arme ET espoir. | Connaissance Goa'uld héréditaire (potentielle) | Sha're reste captive ; Daniel traumatisé | Harsèsis : objectif secondaire critique | APO-01 |
 | **APO-07** | S2E08 *Family* | Rya'c Conditionné | Teal'c / Bra'tac | Apophis brainwash Rya'c comme vecteur biologique contre le SGC. | **La Famille comme Arme** : Les liens de Teal'c weaponisés. | Rya'c déprogrammé | Confiance de Teal'c en Rya'c durablement affectée | Apophis exploite les failles personnelles | TEA-01 |
 | **APO-08** | S2E18 *Serpent's Song* | La Mort Symbolique | Hammond / Apophis | Apophis mourant livré au SGC. Mort dans l'infirmerie. Sokar menace la Terre. | **La Chute du Tyran** : Sa mort libère de la place pour Sokar. | Intel sur Sokar et structure cour Goa'uld | Apophis mort mais Sokar en position dominante | Sokar devient menace principale immédiate | SOK-01 |
 | **APO-09** | S2E22 *Out of Mind* | Résurrection & Piège | Carter / Daniel / Teal'c | Faux SGC orchestré par Hathor + Apophis ressuscité. SG-1 capturée. Cliffhanger. | **Le Piège Identitaire** : Apophis revient — la menace est cyclique. | Aucun (piège total) | SG-1 entière capturée | Apophis ressuscité via sarcophage ; Hathor réactivée | APO-08, HAT-01 |
-| **APO-10** | S3E01–02 *Into the Fire / Seth* | Libération & Hathor Éliminée | O'Neill / Bra'tac | SG-1 libéré du faux SGC. Hathor tuée en cryogénie. Seth (Goa'uld en culte terrestre) neutralisé. | **La Résolution du Piège** : Hathor close ; Seth révèle les Goa'uld cachés sur Terre. | Arme Tok'ra anti-Goa'uld (prototype), Seth neutralisé | Aucune perte majeure | Goa'uld infiltrés sur Terre confirmés — surveillance interne nécessaire | APO-09, HAT-02 |
+| **APO-10** | S3E01 *Into the Fire* | Libération du Faux SGC | O'Neill / Bra'tac | SG-1 libérée du faux SGC construit par Hathor. Hathor tuée en cryogénie. Bra'tac orchestre l'évacuation. | **La Résolution du Piège** : Le faux SGC est détruit — Hathor close définitivement. | SG-1 libérée, Bra'tac confirmé allié de terrain | Aucune perte majeure | Arc Hathor clos (→ HAT-03) ; Goa'uld infiltrés potentiels révélés | APO-09, HAT-02 |
+| **APO-10b** | S3E02 *Seth* | Seth — Goa'uld sur Terre | O'Neill / Carter / Jacob | Seth, Goa'uld en culte terrien aux États-Unis, neutralisé par Jacob et le SGC. | **La Menace Intérieure** : Des Goa'uld se cachent sur Terre même depuis des millénaires. | Arme Tok'ra anti-Goa'uld (prototype), Seth neutralisé | Membres du culte libérés (déconditionnement difficile) | Surveillance interne de nouveaux cultes nécessaire ; Goa'uld infiltrés sur Terre confirmés | APO-10 |
 | **APO-11** | S3E12–13 *Jolinar's Memories / The Devil You Know* | Netu — L'Enfer de Sokar | Carter / Jacob / Martouf | SG-1 sur Netu pour libérer Jacob. Apophis trahit SG-1, détruit Sokar, prend sa flotte. | **La Trahison Calculée** : Apophis supprime Sokar — plus puissant que jamais. | Mémoires Tok'ra (Blood of Sokar), Jacob libéré | Martouf révélé Za'tarc (manipulé) ; confiance fragilisée | Apophis domine la galaxie ; Sokar éliminé | SOK-01, TOK-03 |
 | **APO-12** | S4E14 *Serpent's Venom* | Élimination de Heru-ur | Teal'c / Jacob | Apophis détruit la flotte de Heru-ur. Teal'c capturé récupéré. | **La Consolidation** : Un seul System Lord dominant. | Teal'c récupéré, intel sur trêve Goa'uld | Aucune | Apophis au sommet absolu — avant la chute | APO-11 |
-| **APO-13** | S4E21–22 *Double Jeopardy / Exodus* | Capturé & Supernova de Vorash | SG-1 Robots / Jacob | Supernova utilisée pour piéger la flotte d'Apophis. SG-1 projeté dans autre galaxie. | **La Chute Orbitale** : Apophis coincé hors galaxie avec les Réplicateurs. | Moteur Ha'tak récupéré | SG-1 bloquée dans galaxie inconnue | Apophis et Réplicateurs fusionnés comme menace | APO-12, REP-01 |
+| **APO-13** | S4E21 *Double Jeopardy* | Les Robots sur Juna | SG-1 Robots / Cronus | Les doublons robotiques de SG-1 ont libéré Juna de Cronus. Mais Cronus est de retour. Teal'c robot détruit donne à Teal'c réel la possibilité de vaincre Cronus. | **Le Sacrifice du Double** : La mort du robot permet la victoire de l'original. | Cronus éliminé, Juna libérée | Teal'c robot détruit | Juna libre ; Jacob/Tok'ra peuvent activer le plan Vorash | APO-12 |
+| **APO-13b** | S4E22 *Exodus* | La Supernova de Vorash | Jacob / SG-1 | Jacob utilise le Soleil de Vorash comme bombe : Ha'tak Tok'ra drague le soleil en hypervitesse. Supernova piège et détruit la flotte d'Apophis. SG-1 est projetée dans une galaxie inconnue. | **La Chute Orbitale** : Le SGC weaponise une étoile — mais reste prisonnier du résultat. | Moteur Ha'tak récupéré, flotte Apophis détruite | SG-1 bloquée dans galaxie inconnue | Apophis survit projeté hors galaxie — avec les Réplicateurs | APO-13 |
 | **APO-14** | S5E01 *Enemies* | La Mort Définitive | O'Neill / Teal'c | Réplicateurs envahissent Ha'tak. SG-1 rentre par Porte. Apophis consumé — pas de sarcophage. | **La Fin du Cycle** : Premier grand antagoniste mort sans retour. | Aucun | Données galaxie inconnue perdues | Les Réplicateurs héritent de la menace principale | APO-13, REP-02 |
 
 ---
@@ -33,19 +37,21 @@
 
 ```
 Film (1994)
-  └→ APO-01 [Premier Contact / Teal'c rejoint]
-        ├→ APO-02 [Kawalsky—mort]
-        ├→ APO-03 [Miroir Quantique / Présage assaut]
-        │     └→ APO-04 [SGC fermé / Désobéissance] → APO-05 [Victoire orbitale]
-        ├→ APO-06 [Sha're enceinte / Harsèsis] ──→ SHA arc
-        ├→ APO-07 [Rya'c weaponisé] ──→ TEA arc
-        └→ APO-08 [Mort symbolique / Sokar] ──→ SOK arc
-              └→ APO-09 [Résurrection / SG-1 piégée]
-                    └→ APO-10 [Faux SGC résolu / Seth]
-                          └→ APO-11 [Netu / Apophis tue Sokar]
-                                └→ APO-12 [Heru-ur éliminé]
-                                      └→ APO-13 [Supernova Vorash]
-                                            └→ APO-14 [MORT DÉFINITIVE]
+  └→ APO-01 [SGC attaqué / Abydos / Sha're enlevée]
+        └→ APO-01b [Chulak / Teal'c rejoint SG-1]
+              ├→ APO-02 [Kawalsky—mort]
+              ├→ APO-03 [Miroir Quantique / Présage assaut]
+              │     └→ APO-04 [SGC fermé / Kinsey] → APO-04b [Ha'taks infiltrés / Désobéissance]
+              │           └→ APO-05 [Victoire orbitale]
+              ├→ APO-06 [Sha're enceinte / Harsèsis] ──→ SHA arc
+              ├→ APO-07 [Rya'c weaponisé] ──→ TEA arc
+              └→ APO-08 [Mort symbolique / Sokar] ──→ SOK arc
+                    └→ APO-09 [Résurrection / SG-1 piégée]
+                          └→ APO-10 [Faux SGC résolu / Hathor tuée] → APO-10b [Seth sur Terre]
+                                └→ APO-11 [Netu / Apophis tue Sokar]
+                                      └→ APO-12 [Heru-ur éliminé]
+                                            └→ APO-13 [Juna / Robots] → APO-13b [Supernova Vorash]
+                                                  └→ APO-14 [MORT DÉFINITIVE]
 ```
 
 ---

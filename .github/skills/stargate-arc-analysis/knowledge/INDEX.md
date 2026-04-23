@@ -6,13 +6,43 @@ Index de navigation pour la base de connaissance narrative complète de SG-1 et 
 
 ## Fichiers de la Base de Connaissance
 
-| Fichier | Série | Portée | Arcs Couverts |
+> ⚠️ Source unique : dossier `arcs/`. Les anciens fichiers de période (`sg1-arcs-s*.md`, `sga-arcs-s1s5.md`) sont **archivés** — ne pas les utiliser.
+
+### SG-1
+
+| Fichier | Arc | Code | Portée |
 | :--- | :--- | :--- | :--- |
-| `sg1-arcs-s1s2.md` | SG-1 | S1–S2 (1997–1999) | Apophis (début), Asgard, Anciens, Tok'ra, Jaffa, Politique, Sokar, Hathor, Cultures, Nox |
-| `sg1-arcs-s3s5.md` | SG-1 | S3–S5 (1999–2002) | Apophis (fin), Sokar, Sha're/Harsèsis, Réplicateurs, Ascension Daniel, Anubis (début), Jaffa, Tok'ra, NID |
-| `sg1-arcs-s6s8.md` | SG-1 | S6–S8 (2002–2005) | Ascension Daniel (retour), Anubis, Ba'al, RepliCarter/Dakara, Jaffa Libres, Asgard, NID/Politique, Tok'ra (fin) |
-| `sg1-arcs-s9s10.md` | SG-1 | S9–S10 + Films (2005–2008) | Ori, Merlin/Sangraal, Ba'al (fin), Adria, Asgard (extinction), Jaffa Nation, IOA |
-| `sga-arcs-s1s5.md` | Atlantis | S1–S5 (2004–2009) | Expédition, Wraith, Genii, Asurans, Michael, Anciens Lantéens, Teyla, IOA, Crossovers |
+| `arcs/arc-sg1-apophis.md` | Apophis | `APO` | S1E01 → S5E01 |
+| `arcs/arc-sg1-anciens.md` | Anciens — Éveil de l'Héritage | `ANC` | S1E11 → S8E18 |
+| `arcs/arc-sg1-ascension-daniel.md` | Ascension de Daniel | `ASC` | S3E20 → S7E02 |
+| `arcs/arc-sg1-asgard.md` | Asgard | `ASG` | S1E10 → S10E20 |
+| `arcs/arc-sg1-anubis.md` | Anubis | `ANB` | S5E15 → S8E18 |
+| `arcs/arc-sg1-baal.md` | Ba'al | `BAL` | S6E06 → Film *Continuum* |
+| `arcs/arc-sg1-cultures-nox.md` | Cultures Terriennes & Nox | `CUL` | S1E04 → S1E16 |
+| `arcs/arc-sg1-hathor.md` | Hathor | `HAT` | S1E14 → S3E02 |
+| `arcs/arc-sg1-politique-nid.md` | NID / Politique internationale | `NID` | S2E14 → S8 |
+| `arcs/arc-sg1-adria.md` | Adria / Orici | `ADR` | S9E20 → S10E19 |
+| `arcs/arc-sg1-ori.md` | Ori | `ORI` | S9E01 → Film *Ark of Truth* |
+| `arcs/arc-sg1-merlin.md` | Merlin / Sangraal | `MER` | S9E19 → Film *Ark of Truth* |
+| `arcs/arc-sg1-replicateurs.md` | Réplicateurs | `REP` | S3E22 → S8E17 |
+| `arcs/arc-sg1-sha-harsesis.md` | Sha're & Harsèsis | `SHA` | S1E01 → S4E17 |
+| `arcs/arc-sg1-sokar.md` | Sokar | `SOK` | S2E18 → S3E13 |
+| `arcs/arc-sg1-jaffa.md` | Rébellion Jaffa / Teal'c | `TEA` | S1E02 → S10 |
+| `arcs/arc-sg1-tokra.md` | Tok'ra | `TOK` | S2E02 → S8E19 |
+
+### Atlantis
+
+| Fichier | Arc | Code | Portée |
+| :--- | :--- | :--- | :--- |
+| `arcs/arc-sga-anciens-lanteans.md` | Anciens Lantéens | `SGA-ANC` · `SGA-ATL` | S1E01 → S5 |
+| `arcs/arc-sga-asurans.md` | Asurans / Réplicateurs Pégase | `SGA-ASU` | S3E05 → S4E12 |
+| `arcs/arc-sga-expedition.md` | Expédition Atlantis — Fondation | `SGA-EXP` | S1E01 → S2E01 |
+| `arcs/arc-sga-genii.md` | Genii | `SGA-GNI` | S1E08 → S3E17 |
+| `arcs/arc-sga-ioa.md` | IOA / Commandement | `SGA-IOA` | S2E12 → S5 |
+| `arcs/arc-sga-michael.md` | Michael | `SGA-MCH` | S2E18 → S5E19 |
+| `arcs/arc-sga-teyla.md` | Teyla / Athosiens | `SGA-TEY` | S1E01 → S5 |
+| `arcs/arc-sga-wraith.md` | Wraith | `SGA-WR` | S1E01 → S5E20 |
+| `arcs/arc-sga-crossovers.md` | Crossovers SG-1 / SGA | `CROSS` | S8 SG-1 / S10 SG-1 / S4 SGA |
 
 ---
 
@@ -98,9 +128,10 @@ FILM STARGATE (1994)
 
 ## Convention d'Utilisation
 
-1. **Lire l'index** pour identifier le code d'arc et le fichier concerné
-2. **Ouvrir le fichier** de la période correspondante
+1. **Lire l'index** pour identifier le code d'arc et le fichier correspondant dans `arcs/`
+2. **Ouvrir le fichier arc** directement dans `arcs/` (ex : `arcs/arc-sg1-apophis.md`)
 3. **Suivre les prérequis** dans la colonne `Pré-requis` pour les chaînes de causalité
-4. **Utiliser la Carte des Dépendances** en bas de chaque fichier pour naviguer entre périodes
-5. **Crossovers** : toujours vérifier `sga-arcs-s1s5.md` section CROSS pour les points de fusion SG-1/SGA
+4. **Utiliser la Carte de Progression** en bas de chaque fichier arc pour naviguer
+5. **Crossovers** : toujours vérifier `arcs/arc-sga-crossovers.md` pour les points de fusion SG-1/SGA
+6. **Épisodes multi-planètes** : si un changement narratif significatif se produit, décomposer en étapes distinctes (voir Deployment Rules du skill)
 

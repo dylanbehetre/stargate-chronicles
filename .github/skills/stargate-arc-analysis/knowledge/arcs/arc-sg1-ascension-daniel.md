@@ -16,7 +16,8 @@
 | **ASC-02** | S5E21 *Meridian* | La Mort et l'Ascension de Daniel | Daniel / Jonas / Oma | Daniel irradié sur Langara. Refuse sarcophage. Ascende avec Oma. Jonas Quinn rejoint SG-1. | **Le Sacrifice Conscient** : Daniel choisit l'ascension sur la survie corrompue. | Naquadria (Langara), Jonas Quinn (nouveau membre) | Daniel Jackson (temporairement perdu) | Daniel ascendé = témoin non-intervenant ; Jonas = remplaçant | ASC-01, SHA-03 |
 | **ASC-03** | S6E06 *Abyss* | Daniel Témoin Impuissant | Daniel (ascendé) / O'Neill | O'Neill torturé en boucle par Ba'al. Daniel lui apparaît mais ne peut pas agir — règle de non-intervention. | **Le Paradoxe de la Puissance** : Être ascendé c'est voir souffrir sans agir. | Aucun | O'Neill torturé/tué en boucle (sarcophage Ba'al) | Daniel comprend le prix de l'élévation ; O'Neill traumatisé | ASC-02 |
 | **ASC-04** | S6E22 *Full Circle* | Intervention Interdite | Daniel / Anubis | Anubis détruit Abydos pour l'Œil de Râ. Daniel intervient — repris par les Anciens. Abydosiens ascendent collectivement. | **La Limite Brisée** : Daniel perd son statut d'Ascendé. Arc Abydos clos définitivement. | Aucun (intervention échouée) | Daniel descend sans mémoire ; Abydos détruite | Abydos disparaît — Œil de Râ dans les mains d'Anubis | ASC-03, ANB-03 |
-| **ASC-05** | S7E01–02 *Fallen / Homecoming* | La Descente | Daniel / Jonas | Daniel retrouvé amnésique. Ses souvenirs reviennent. Jonas retourne sur Langara. SG-1 réunie. | **Le Retour du Passeur** : Daniel confirme qu'Anubis est partiellement Ancien. | Fragment de localisation de la Cité Perdue | Jonas Quinn quitte l'équipe | Anubis identifié comme ex-Ancien ; piste Cité Perdue ouverte | ASC-04 |
+| **ASC-05** | S7E01 *Fallen* | La Descente sur Vis Uban | Daniel / Jonas | Daniel retrouvé amnésique et nu sur la planète Vis Uban. SG-1 le recueille. Ses souvenirs reviennent progressivement. Mission pour détruire l'arme d'Anubis depuis son Ha'tak. | **Le Retour du Passeur** : Daniel revient sans mémoire — mais retrouve instinctivement son rôle. | Fragment de localisation de la Cité Perdue | Daniel amnésique (mémoire partielle) | Anubis identifié comme ex-Ancien via souvenirs Daniel récupérés | ASC-04 |
+| **ASC-05b** | S7E02 *Homecoming* | Le Retour au SGC — Jonas Part | Daniel / Jonas / SG-1 | SG-1 poursuit la mission sur Abydos puis retour au SGC. Jonas Quinn retourne sur Langara. Daniel réintègre son poste. Ses souvenirs confirment qu'Anubis est partiellement Ancien. | **L'équilibre Retrouvé** : SG-1 réunie dans sa configuration d'origine. Jonas clôt sa propre trajectoire. | Confirmation Anubis ex-Ancien, piste Cité Perdue confirmée | Jonas Quinn quitte l'équipe (retour Langara) | Arc Ascension clos ; Daniel pleinement réintégré | ASC-05 |
 
 ---
 
@@ -28,8 +29,8 @@ SHA-02 / ANC-03 (S3) — Kheb révèle l'Ascension
         └→ ASC-02 [Daniel irradié / Ascension choisie / Jonas arrive]
               └→ ASC-03 [Daniel ascendé observe O'Neill torturé / Impuissance]
                     └→ ASC-04 [Abydos détruite / Intervention / Descente forcée]
-                          └→ ASC-05 [Retour amnésique / SG-1 réunie / Anubis = ex-Ancien confirmé]
-                                └→ [ORI-01] Extension vs Ori (S9) — même plan ascendé
+                    └→ ASC-05 [Vis Uban / Retour amnésique] → ASC-05b [SGC / SG-1 réunie / Anubis ex-Ancien confirmé]
+                          └→ [ORI-01] Extension vs Ori (S9) — même plan ascendé
 ```
 
 ---

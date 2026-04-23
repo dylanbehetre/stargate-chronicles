@@ -14,7 +14,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **HAT-01** | S1E14 *Hathor* | Infiltration du SGC | Carter / Fraiser | Hathor contrôle les hommes par phéromones, crée des larves. Neutralisée par les femmes du SGC. | **La Menace de l'Intérieur** : Le SGC peut être pris avec des armes biologiques douces. | Larve Goa'uld analysée, protocoles renforcés | Plusieurs hommes compromis temporairement, Daniel presque hôte | Vulnérabilité phéromonale documentée ; protocoles renforcés | APO-01 |
 | **HAT-02** | S2E22 *Out of Mind* | La Simulation Identitaire | Carter / Daniel / Teal'c | Faux SGC par Hathor + Apophis ressuscité. SG-1 capturée. Cliffhanger. | **La Réalité Falsifiée** : L'ennemi connaît SG-1 assez pour recréer leur monde. | Aucun | SG-1 entière prisonnière | Apophis ressuscité ; menace Hathor/Apophis combinée | HAT-01, APO-08 |
-| **Résolution** | S3E01 *Into the Fire* | Hathor Tuée | O'Neill / Bra'tac | Hathor tuée dans la chambre cryogénique. SG-1 libérée. | **La Fin de la Manipulatrice** : Mort dans la glace — métaphore de sa stratégie froide. | SG-1 libérée | Aucune | Arc Hathor définitivement clos *(— voir APO-10)* | HAT-02 |
+| **HAT-03** | S3E01 *Into the Fire* | Hathor Tuée | O'Neill / Bra'tac | Hathor tuée dans la chambre cryogénique. SG-1 libérée. | **La Fin de la Manipulatrice** : Mort dans la glace — métaphore de sa stratégie froide. | SG-1 libérée | Aucune | Arc Hathor définitivement clos *(— voir APO-10)* | HAT-02 |
 
 ---
 
@@ -24,7 +24,7 @@
 APO-01 (S1)
   └→ HAT-01 [Phéromones / SGC infiltré]
         └→ HAT-02 [Faux SGC / SG-1 capturée + Apophis ressuscité]
-              └→ APO-10 / S3E01 [Hathor tuée / SG-1 libérée]
+              └→ HAT-03 / S3E01 [Hathor tuée / SG-1 libérée]
 ```
 
 ---
