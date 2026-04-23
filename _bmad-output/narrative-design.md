@@ -1,13 +1,15 @@
 ---
 title: 'Narrative Design Document'
 project: 'Stargate Chronicles'
-date: '2026-04-19'
+date: '2026-04-23'
 author: 'Dylan'
-version: '1.0'
+version: '1.2'
 stepsCompleted: [1, 2, 3]
 status: 'in-progress'
 narrativeComplexity: 'Heavy'
 gdd: '_bmad-output/gdd.md'
+v1Scope: 'Tutoriel + ARC-G01 étapes 1–3'
+arcAnalysisRef: '.github/skills/stargate-arc-analysis/knowledge/arcs/'
 ---
 
 # Narrative Design Document
@@ -18,8 +20,12 @@ gdd: '_bmad-output/gdd.md'
 
 Ce document narratif est en cours de création via le Workflow Narratif GDS.
 
-**Complexité Narrative :** Lourde (Heavy)
-**Étapes Complétées :** 3 sur 11 (Story Beats & Arcs Narratifs)
+**Complexité Narrative :** Lourde (Heavy)  
+**Étapes Complétées :** 3 sur 11 (Story Beats & Arcs Narratifs)  
+**Périmètre V1 :** Tutoriel Onboarding + ARC-G01 Apophis étapes 1–3  
+**Périmètre V2 :** Tous les autres arcs (balisés ⚠️ `[v2]` dans ce document)  
+**Source Arc-Analysis :** `.github/skills/stargate-arc-analysis/knowledge/arcs/` — granularité des sub-beats  
+**Convention Archétypes :** Les noms des personnages de SG-1 sont remplacés par leurs archétypes joueur. O'Neill → **Le Commandant** · Daniel → **L'Archéologue** · Carter → **La Scientifique** · Teal'c → **Le Combattant Jaffa** · Bra'tac → **Le Maître Jaffa**
 
 ---
 
@@ -129,14 +135,107 @@ viscérale : l'ennemi le plus dangereux est parfois dans le même couloir.
 
 ---
 
+### Tutoriel — Onboarding Narratif `[V1]`
+
+> *Basé sur le GDD §Onboarding — Première Session. Le tutoriel est intégralement narratif, jamais didactique. Le **Major Davis** — officier de liaison Pentagone/SGC, figure canonique de SG-1 — guide le joueur via des dialogues institutionnels sobres et professionnels. Chaque étape débloque la suivante séquentiellement. À la fin du tutoriel, **ARC-G01 se déclenche automatiquement.***
+
+---
+
+#### TUTO-0 — Bienvenue, Général
+
+**Déclencheur :** Premier lancement du jeu.
+
+**Narration :** Le Major Davis accueille le joueur : *"Bienvenue, Général. Le Pentagone vous a confié le Programme de la Porte des Étoiles."* Présentation illustrée du contexte : découverte de la Porte à Gizeh en 1928, décennies de recherche infructueuse, état actuel du programme et backstory du Général *(Gardien du Silence — voir §Identité du Général)*.
+
+**Mécaniques introduites :** Saisie du nom et genre du Général. Aucune autre mécanique — contextualisation narrative pure.
+
+**📍 Planète :** SGC uniquement.
+
+---
+
+#### TUTO-1 — Déchiffrer les Glyphes
+
+**Situation :** La Porte est là. Les symboles restent muets.
+
+**Actions guidées :**
+1. **Recruter** un spécialiste linguiste-archéologue → introduction au Recrutement (première création de personnage). *Archétype suggéré : Archéologue. Bonus canon : nommer le personnage "Daniel Jackson" + race Tau'ri → trait "Génie linguistique" + dialogue narratif exclusif sur Abydos.*
+2. **Construire** le Centre d'Analyse Archéologique → introduction à la Construction d'Infrastructure et au Budget.
+3. **Lancer la recherche** "Déchiffrer les glyphes de la Porte" → introduction à la Recherche.
+
+**Résultat :** `CARTOUCHE-GIZEH` ajouté à la Porte. Fonctionnalité d'activation débloquée.
+
+**📍 Planète :** SGC uniquement.
+
+---
+
+#### TUTO-2 — Première Activation : la Sonde
+
+**Situation :** La Porte peut être composée. Une sonde MALP est disponible.
+
+**Actions guidées :** Composer `CARTOUCHE-GIZEH` → Envoyer la sonde MALP → introduction à **Cadencer la Porte**.
+
+**Séquence narrative :** Premier vortex. Transmission de données depuis une planète désertique. Atmosphère respirable, aucune menace détectée.
+
+**📍 Planète :** Abydos *(P8X-873 — désignation provisoire avant identification)*.
+
+---
+
+#### TUTO-3 — Constituer la Première Équipe SG
+
+**Situation :** La destination est confirmée. Il faut préparer une équipe.
+
+**Actions guidées :**
+- **Construire** Vestiaires & Dortoirs → débloque le slot d'équipe SG-1.
+- **Construire** la Salle de Briefing → débloque la gestion des équipes.
+- **Composer la première équipe** (2–4 membres) → introduction à la Composition d'Équipes.
+
+**Recommandation Davis :** 1 Commandant · 1 Archéologue · 1 Scientifique · 1 Combattant.
+*Bonus canon disponibles dès cette étape : Jack O'Neill (Commandant), Samantha Carter (Scientifique), Charles Kawalsky (Combattant), Louis Ferretti (Combattant) — voir GDD §Bonus Canons.*
+
+**📍 Planète :** SGC uniquement.
+
+---
+
+#### TUTO-4 — À Travers la Porte !
+
+**Situation :** L'équipe est formée et équipée.
+
+**Actions guidées :**
+- Sélectionner l'équipe → "Envoyer en exploration" vers `CARTOUCHE-GIZEH`.
+- Première séquence narrative sur **Abydos** : rencontre des habitants, découverte de la civilisation, premiers choix à conséquences.
+- Le vrai nom de la planète — **Abydos** — est révélé par les habitants.
+
+**Mécaniques introduites :** Décisions narratives · Combat probabiliste · Collecte d'artefacts/coordonnées.
+
+**Fin du tutoriel guidé.** *(Transition immédiate : ARC-G01 → G01-1 se déclenche au retour d'Abydos.)*
+
+**📍 Planète :** **Abydos** (P8X-873) — première planète canonique du programme.
+
+---
+
+#### Récapitulatif Mécaniques — Tutoriel
+
+| Étape | Mécaniques Introduites |
+|---|---|
+| TUTO-0 | *(aucune — contextualisation narrative)* |
+| TUTO-1 | Construire · Recruter · Budget (implicite) · Rechercher |
+| TUTO-2 | Cadencer la Porte |
+| TUTO-3 | Construire (x2) · Composer Équipes |
+| TUTO-4 | Cadencer · Décider · Combattre · Collecter |
+| Post-tutoriel | Former · Diplomatiser · Évacuer *(introduction organique, hors tutoriel)* |
+
+---
+
 ### Structure Narrative
 
 **Modèle : Arcs Parallèles à Conditions de Déblocage**
 
-La narration de Stargate Chronicles s'organise autour d'**arcs thématiques indépendants
-actifs simultanément**, chacun centré sur une faction, une relation ou un enjeu précis.
-Le joueur gère un programme vivant où plusieurs fils narratifs progressent en parallèle,
-chacun à son propre rythme — certains en sommeil, d'autres en crise simultanée.
+La narration de Stargate Chronicles s'organise autour d'**arcs thématiques indépendants actifs simultanément**, chacun centré sur une faction, une relation ou un enjeu précis. Le joueur gère un programme vivant où plusieurs fils narratifs progressent en parallèle, chacun à son propre rythme — certains en sommeil, d'autres en crise simultanée.
+
+**Principe de Découverte Progressive par Exploration :**
+Les arcs narratifs ne se débloquent pas avec le temps — ils se débloquent en **explorant des planètes spécifiques**. Chaque step d'un arc est ancré à une ou plusieurs planètes canoniques du réseau. Visiter une planète libre (non-canonique) entre deux beats narratifs n'interrompt pas la progression — elle l'enrichit en ressources, en diplomatie et en contexte. Les planètes canoniques déclenchent ; les planètes libres soutiennent.
+
+> **Convention de lecture des arcs :** Chaque étape indique ses **📍 Planète(s) Déclenchante(s)** — la visite de cette planète active l'événement narratif.
 
 **Anatomie d'un Arc :**
 - 🔓 **Déblocage** — conditions requises pour que l'arc devienne disponible
@@ -272,6 +371,7 @@ l'avancement narratif propre à chacune.
 > - *(SxExx)* = référence canonique série | *(SGA SxExx)* = Stargate Atlantis
 > - Les références aux personnages canoniques (ex. O'Neill) désignent **l'archétype correspondant** du joueur.
 > Si le joueur a nommé ce membre avec le nom canonique exact + la race correcte, la résonance canonique complète s'active.
+> - **Source arc-analysis :** chaque arc référence le(s) fichier(s) `.github/skills/stargate-arc-analysis/knowledge/arcs/` utilisés pour la reconstruction.
 
 ---
 
@@ -279,107 +379,263 @@ l'avancement narratif propre à chacune.
 
 ---
 
-#### ARC-G01 — Apophis, le Faux Dieu
+#### ARC-G01 — Apophis, le Faux Dieu ✅ `[V1]` *(V2)*
 
-**🔓 Déblocage :** Automatique — dès l'activation de la Porte
-
-| ID | Étape | Événement | Prérequis | Déclenche |
-|---|---|---|---|---|
-| G01-1 | La Menace en chair et en Jaffa | Apophis frappe le SGC. Un Jaffa déserte et change de camp. *(S1E01)* | — | ARC-I01 si Confiance Gov. ≤ 60% |
-| G01-2 | La Flotte d'Apophis | Deux vaisseaux-mères en route vers la Terre. *(S1E22)* | G01-1 | ARC-G02 débloqué |
-| G01-3 | Victoire incomplète | La flotte détruite — Apophis survit et s'échappe. *(S2E01)* | G01-2 | — |
-| G01-4 | Apophis renforcé | Alliance avec Sokar, prise de pouvoir, retour en force. *(S3-S4)* | ARC-G02 étape 1 | — |
-
-**🏁 Conclusion :** La Mort d'Apophis *(S5E01-02)* — Pris dans la trajectoire des Réplicateurs par coïncidence de trajectoire, Apophis est détruit sur leur monde natal. Ses propres démesures l'ont tué — pas l'humanité.
-
-**➡️ Débloque :** ARC-G02 étape finale, ARC-G03 étape 2
+**🔓 Déblocage :** Automatique — immédiatement après la fin du Tutoriel (retour d'Abydos)
+**Source arc-analysis :** `arc-sg1-apophis.md` · Beats APO-01 → APO-14
 
 ---
 
-#### ARC-G02 — Les System Lords, la Politique des Faux Dieux
+##### G01-1 — La Menace en Chair et en Jaffa `[V1]`
+
+**📍 Planètes :** Abydos (P8X-873) · Chulak (P3X-888)
+**Référence canon :** APO-01 (S1E01–02 *Children of the Gods*) · APO-02 (S1E03 *The Enemy Within*)
+
+| Sub-beat | Planète | Événement | Archétypes impliqués | Gains SGC | Pertes SGC |
+|---|---|---|---|---|---|
+| **APO-01a** | Abydos | Retour sur Abydos : Apophis attaque le campement. **La Compagne Captive** et **Le Jeune Allié Capturé** sont pris comme hôtes Goa'uld et emmenés sur Chulak. *Le Général reçoit le premier rapport : la menace est réelle, personnelle, hors de portée immédiate.* | L'Archéologue, Le Commandant | Cartouche de coordonnées Goa'uld, identité d'Apophis confirmée | La Compagne Captive et Le Jeune Allié Capturé enlevés |
+| **APO-01b** | Chulak | SG-1 s'infiltre sur Chulak pour libérer les captifs. **Le Combattant Jaffa** trahit Apophis et guide l'équipe hors de la cité sainte. SG-1 est constituée. | Le Commandant, L'Archéologue, Le Combattant Jaffa | Le Combattant Jaffa rejoint le programme, armes Jaffa, topographie de Chulak | Équipe quasi-anéantie lors de l'évasion ; captifs non retrouvés |
+| **APO-02** | SGC (Cheyenne Mountain) | **Le Combattant de la Première Heure** est infecté par une larve Goa'uld lors du retour de Chulak. L'extraction échoue. Première mort au sein du programme. | Le Commandant, La Médecin | Données biologiques Goa'uld partielles, protocole de décontamination instauré | **Le Combattant de la Première Heure** meurt — mort permanente si le joueur l'a créé avec ce nom canonique |
+
+**Conséquences narratives :**
+- ARC-I01 (Kinsey) potentiellement déclenché si Confiance Gouvernementale ≤ 60% après cette étape
+- Arc Rébellion Jaffa (ARC-A05) amorcé via l'arrivée du Combattant Jaffa *(V2)*
+- La quête de **La Compagne Captive** devient un fil narratif de fond *(résolu en G01b — V2)*
+
+---
+
+##### G01-2 — La Flotte d'Apophis `[V1]`
+
+**📍 Planètes :** P3R-233 *(Miroir Quantique)* · SGC/Washington *(politique)* · Orbite terrestre *(bord des Ha'taks)*
+**Référence canon :** APO-03 (S1E20 *There But for the Grace of God*) · APO-04 (S1E21–22 *Politics / Within the Serpent's Grasp*)
+
+| Sub-beat | Planète | Événement | Archétypes impliqués | Gains SGC | Pertes SGC |
+|---|---|---|---|---|---|
+| **APO-03** | P3R-233 | **L'Archéologue** utilise le Miroir Quantique sur une planète inexplorée. Il voit une réalité alternative où la Terre est détruite par la flotte d'Apophis. Il revient avec les coordonnées de l'assaut. | L'Archéologue | Miroir Quantique, coordonnées d'attaque Ha'tak | Aucune (mission unilatérale) |
+| **APO-04a** | Washington *(événement narratif SGC)* | Kinsey présente devant le Sénat : le SGC est une menace irresponsable. Le programme est officiellement suspendu. **Le Général** défend le programme — premier affrontement direct avec Kinsey. *(→ ARC-I01 I01-1 déclenché)* | Le Général (joueur), Kinsey | Temps gagné, Kinsey partiellement discrédité | SGC officiellement fermé ; dynamique politique permanente instaurée |
+| **APO-04b** | Orbite terrestre *(Ha'taks)* | SG-1 désobéit et s'infiltre dans les Ha'taks d'Apophis en route vers la Terre. Confrontation avec **Le Jeune Allié Capturé** pris comme hôte Goa'uld (Klorel). | Le Commandant, Le Combattant Jaffa | Zat'nik'tel récupéré, accès Ha'tak, sabotage amorcé | Risque de cour martiale ; SG-1 seule dans l'espace ennemi |
+
+**Conséquences narratives :**
+- ARC-I01 → I01-1 définitivement déclenché
+- Kinsey s'installe comme pression politique permanente sur le programme
+- Premier test de commandement du Général : légalité vs survie de l'humanité
+- Si un incident de récupération tech Goa'uld raté s'est produit ici ou antérieurement, **ARC-I04 (Le Scientifique Imposé)** peut se déclencher dès ce beat
+
+---
+
+##### G01-3 — Victoire Incomplète `[V1]`
+
+**📍 Planètes :** Orbite terrestre *(Ha'taks — pas de passage de Porte)*
+**Référence canon :** APO-05 (S2E01 *The Serpent's Lair*)
+
+| Sub-beat | Planète | Événement | Archétypes impliqués | Gains SGC | Pertes SGC |
+|---|---|---|---|---|---|
+| **APO-05** | Orbite terrestre | Destruction des deux Ha'taks depuis l'intérieur. **Le Maître Jaffa** (Bra'tac) sauve SG-1 au dernier moment. Apophis fuit — vivant. Première grande victoire défensive de l'humanité. | Le Commandant, Le Combattant Jaffa, Le Maître Jaffa | Glider Goa'uld, confiance en Le Maître Jaffa, victoire orbitale confirmée | Aucune (victoire totale) |
+
+**Conséquences narratives :**
+- Apophis est affaibli mais vivant — la menace continue *(V2)*
+- **Le Maître Jaffa** = allié NPC confirmé, disponible pour les missions
+- ARC-A05 (Rébellion Jaffa) : conditions d'amorçage renforcées *(V2)*
+- ARC-G02 (System Lords) → déblocage possible *(V2)*
+- ARC-I01 → Confiance Gouvernementale remonte ; Kinsey temporairement discrédité
+- **🔔 Trigger ARC-I05 activé** : la victoire orbitale donne une visibilité inter-agences au SGC *(voir ARC-I05)*
+
+---
+
+##### G01-4 — Sha're Enceinte `[V2]`
+
+> ⚠️ *Hors scope V1 — planifié pour la version 2.*
+
+**Référence canon :** APO-06 (S2E09 *Secrets*) — **Déclencheur de ARC-G01b**
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-4 | Sha're enceinte | Sur Abydos, **L'Archéologue** retrouve **La Compagne Captive** — enceinte. L'enfant (Shifu) possédera toute la connaissance Goa'uld héréditaire. Sha're est reprise avant de pouvoir être libérée. | ARC-G01 G01-3 | **ARC-G01b débloqué** |
+
+---
+
+##### G01-5 — Rya'c Weaponisé `[V2]`
+
+**Référence canon :** APO-07 (S2E08 *Family*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-5 | Rya'c comme arme biologique | Apophis conditionne le fils du **Combattant Jaffa** comme vecteur biologique contre le SGC. Déprogrammation difficile mais réussie. Les liens personnels sont maintenant weaponisés. | G01-4 | ARC-A05 A05-4 (cross-référence) |
+
+---
+
+##### G01-6 — La Mort Symbolique / L'Ascension de Sokar `[V2]`
+
+**Référence canon :** APO-08 (S2E18) + SOK-01→03 (S2E18 + S3E12–13 *Jolinar's Memories / The Devil You Know*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-6 | Mort symbolique d'Apophis | Apophis mourant est livré au SGC par ses ennemis. Il meurt dans l'infirmerie. Sokar — plus sanguinaire — exige le corps sous peine de bombardement terrestre. Hammond gagne du temps. | G01-5 | — |
+| G01-6b | L'Enfer de Netu | SG-1 descend sur Netu, la lune-prison de Sokar, pour libérer Jacob Carter. Apophis utilise la situation pour détruire Sokar et récupérer sa flotte. Apophis = System Lord dominant. | G01-6 | ARC-A04 A04-3 (Jacob libéré) |
+
+---
+
+##### G01-7 — Le Faux SGC / Hathor Éliminée `[V2]`
+
+**Référence canon :** APO-09 (S2E22 *Out of Mind*) + APO-10 (S3E01–02 *Into the Fire*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-7 | Faux SGC et Hathor | Un faux SGC orchestré par Hathor piège SG-1 — Apophis ressuscité via sarcophage. SG-1 libérée, Hathor tuée dans la chambre cryogénique. Seth (Goa'uld en culte terrestre) neutralisé. Les Goa'uld infiltrés sur Terre sont confirmés. | G01-6b | Surveillance interne renforcée |
+
+---
+
+##### G01-8 — Apophis au Sommet `[V2]`
+
+**Référence canon :** APO-11/12 (S3E12–13 + S4E14 *Serpent's Venom*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-8 | Apophis consolide son pouvoir | Sur Netu, Apophis récupère la flotte de Sokar. Il élimine ensuite Heru-ur dans un piège calculé. Un seul System Lord domine la galaxie. | G01-7 | ARC-G02 G02-3 conditions |
+
+---
+
+##### G01-9 — Supernova de Vorash `[V2]`
+
+**Référence canon :** APO-13 (S4E21–22 *Double Jeopardy / Exodus*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-9 | La Chute Orbitale | Une supernova piège la flotte d'Apophis. SG-1 est projetée dans une autre galaxie. Apophis et les Réplicateurs se retrouvent coincés ensemble hors de la Voie Lactée. | G01-8 | ARC-G03 conditions renforcées |
+
+---
+
+##### G01-10 — La Mort Définitive `[V2]`
+
+**Référence canon :** APO-14 (S5E01 *Enemies*)
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01-10 | Apophis consumé | Les Réplicateurs envahissent le Ha'tak d'Apophis. SG-1 s'échappe par la Porte. Apophis consumé — sans sarcophage disponible. Premier grand antagoniste mort sans retour. | G01-9 | ARC-G03 pleinement actif + ARC-G02 étape finale |
+
+**🏁 Conclusion ARC-G01 `[V2]` :** Apophis ne reviendra pas. Ses propres démesures l'ont tué — pas l'humanité.
+
+**➡️ Débloque :** ARC-G02 étape finale, ARC-G03 pleinement actif
+
+---
+
+#### ARC-G01b — SHA'RE & HARSÈSIS, la Quête Personnelle `[V2]`
+
+> ⚠️ *Arc personnel de L'Archéologue — hors scope V1. Déclenché par G01-4. Parallèle à G01-5 → G01-10.*
+
+**🔓 Déblocage :** ARC-G01 G01-4 *(Sha're retrouvée enceinte)*
+**Source arc-analysis :** `arc-sg1-sha-harsesis.md` · Beats SHA-01 → SHA-03
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| G01b-1 | La mort de Sha're | **La Compagne Captive**, toujours hôte d'Amaunet, attaque **L'Archéologue**. **Le Combattant Jaffa** tire pour le sauver — Sha're meurt. Vision : Shifu, l'Harsèsis, est sur Kheb. *(S3E09 *Forever in a Day*)* | G01-4 | — |
+| G01b-2 | Kheb & Oma Desala | Sur Kheb, Shifu est gardé par Oma Desala — Ancienne ascendée. Face aux Jaffa d'Anubis venus s'en emparer, Shifu ascende. **Premier contact avec l'Ascension** — la mort n'est pas une fin. *(S3E20 *Maternal Instinct*)* — *Joint avec ARC-A02 A02-1 (même planète déclenchante)* | G01b-1 | ARC-A02 A02-1 simultané |
+| G01b-3 | La Vision de Shifu | Shifu, désormais enfant, offre à **L'Archéologue** une vision cauchemardesque de ce que serait le monde s'il utilisait la mémoire génétique Goa'uld. La connaissance corromprait absolument. Arc Harsèsis clos. *(S4E17 *Absolute Power*)* — *Joint avec ARC-A02 A02-2* | G01b-2 | ARC-A02 A02-2 simultané |
+
+**🏁 Conclusion :** L'Harsèsis ne sera jamais weaponisé. L'Archéologue perd sa quête initiale — et en trouve une plus grande. La voie de l'Ascension est maintenant connue.
+
+**➡️ Débloque :** ARC-A02 conditions partielles
+
+---
+
+#### ARC-G02 — Les System Lords, la Politique des Faux Dieux `[V2]`
 
 **🔓 Déblocage :** ARC-G01 étape 2 *(existence des System Lords révélée)*
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| G02-1 | Cartographie du pouvoir | Les System Lords identifiés : qui contrôle quoi dans la galaxie. | — | — |
-| G02-2 | Le Traité des Planètes Protégées | Les Asgards négocient pour inclure la Terre. Protection conditionnelle. *(S3E03)* | G02-1 + ARC-A03 étape 1 | ARC-I01 étape 2 facilitée |
-| G02-3 | Sans Issue | Sommet des System Lords. Un nom est prononcé avec terreur : Anubis. *(S5E15-16)* | G02-2 | ARC-G04 débloqué |
+| G02-1 | Cartographie du pouvoir | Les System Lords identifiés : qui contrôle quoi dans la galaxie. Apophis, Sokar, Heru-ur, Ba'al, Anubis — une galaxie de prédateurs. | — | — |
+| G02-2 | Le Traité des Planètes Protégées | Les Asgards négocient pour inclure la Terre. Protection conditionnelle. *(S3E03)* | G02-1 + ARC-A03 étape 2 | ARC-I01 étape 2 facilitée |
+| G02-3 | Sans Issue | Sommet des System Lords. Un nom est prononcé avec terreur : Anubis. Un nom mort depuis des siècles. *(S5E15–16)* | G02-2 | ARC-G04 débloqué |
 
-**🏁 Conclusion :** La Bataille de Dakara *(S8E16-17)* — Les System Lords s'effondrent dans la même bataille qui détruit les Réplicateurs. L'ère des faux dieux prend fin.
+**🏁 Conclusion :** La Bataille de Dakara *(S8E16–17)* — Les System Lords s'effondrent dans la même bataille qui détruit les Réplicateurs. L'ère des faux dieux prend fin.
 
 **➡️ Débloque :** ARC-G05 conditions partielles, diplomatie galactique niveau max
 
 ---
 
-#### ARC-G03 — Les Réplicateurs, la Menace Mécanique
+#### ARC-G03 — Les Réplicateurs, la Menace Mécanique `[V2]`
 
-**🔓 Déblocage :** ARC-A03 étape 1 *(premier contact Asgards)*
+**🔓 Déblocage :** ARC-A03 étape 2 *(contact physique Asgards — Réplicateurs introduits)*
+**Source arc-analysis :** `arc-sg1-replicateurs.md` · Beats REP-01 → REP-06
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| G03-1 | Le Vaisseau Asgard envahi | Une menace d'un ordre différent : pas des conquérants — une force de la nature aveugle. *(S3E22)* | — | — |
-| G03-2 | Les Réplicateurs sur Terre | Sous-marin russe infesté. L'ennemi mécanique atteint notre monde. *(S4E01)* | G03-1 + ARC-G01 conclusion | — |
-| G03-3 | Les Réplicateurs humanoïdes | Un réplicateur à l'image du membre Scientifique de SG-1. L'identité comme arme. *(S8)* | G03-2 | — |
+| G03-1 | Le *Beliskner* envahi | Le vaisseau Asgard *Beliskner* est infesté de Réplicateurs. **Le Commandant** le détruit en le faisant s'écraser dans le Pacifique. Une menace que même les Asgards ne contrôlent pas. *(S3E22 *Nemesis*)* | — | — |
+| G03-2 | Le sous-marin russe | Un Réplicateur infiltre un sous-marin russe. Stratégie de l'arme primitive — l'avantage Tau'ri est leur technologie basique. *(S4E01–02 *Small Victories*)* | G03-1 + ARC-G01 conclusion | — |
+| G03-3 | Reese — L'Origine | Androïde Reese : créatrice accidentelle des Réplicateurs. **L'Archéologue** tente de la raisonner. **Le Commandant** la tue. Impossible à négocier — aucun créateur conscient. *(S5E19–20 *Menace*)* | G03-2 | — |
+| G03-4 | Les Réplicateurs Humanoïdes | Les Réplicateurs évoluent — humanoïdes capables de lire les esprits. Fifth aime **La Scientifique**. La menace est désormais psychologique autant que physique. *(S7E12–13)* | G03-3 | — |
+| G03-5 | RepliScienfique | Fifth crée une copie de **La Scientifique** — sans éthique, sans limite. RepliScienfique trahit Fifth et devient autonome. L'identité comme arme. *(S8E01–02 *New Order*)* — *Si nommée Carter : résonance canonique maximale* | G03-4 | — |
 
-**🏁 Conclusion :** Destruction via l'Arme de Dakara *(S8E16-17)* — liée à la conclusion de ARC-G02.
+**🏁 Conclusion :** Invasion galactique + Arme de Dakara *(S8E16–17)* — Jacob Carter et **La Scientifique** activent l'Arme de Dakara. Tous les Réplicateurs détruits simultanément. *Simultané avec ARC-G02 conclusion et ARC-A05 A05-9.*
 
 **➡️ Débloque :** Technologie Dakara accessible
 
 ---
 
-#### ARC-G04 — Anubis, l'Ennemi Hors-Norme
+#### ARC-G04 — Anubis, l'Ennemi Hors-Norme `[V2]`
 
-**🔓 Déblocage :** ARC-G02 étape 3 *(Sommet des System Lords)*
+**🔓 Déblocage :** ARC-G02 étape 3 *(Sommet des System Lords — le nom d'Anubis est prononcé)*
+**Source arc-analysis :** `arc-sg1-anubis.md` · Beats ANB-01 → ANB-07
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| G04-1 | Anubis surgit | Demi-ascensionné, connaissance des Anciens. Les règles changent. *(S6)* | — | ARC-I02 conditions facilitées |
-| G04-2 | Anubis vise la Porte SGC | Arme de suppression depuis l'orbite. L'équipe court la Porte depuis un autre monde. *(S6E01-02)* | G04-1 | — |
-| G04-3 | Abydos détruite | La première planète connue du programme est rasée. Le membre-archéologue transgresse les règles des Anciens. *(S6E22)* | G04-2 | Moral des équipes — |
-| G04-4 | Les Guerriers Kull | Super-soldats quasiment invincibles. L'ennemi est passé de faux dieu à armurerie vivante. *(S7)* | G04-3 | — |
-| G04-5 | Lost City — La Connaissance Libérée | Le commandant de SG-1 télécharge pour la seconde fois la connaissance des Anciens et guide l'équipe vers l'avant-poste antarctique. Incapacité par le téléchargement, c'est le soldat au gène ATA qui active l'arme Ancienne — et détruit la flotte d'Anubis. Quelque part au-delà de notre galaxie, une cité attend. *(S7E21-22 "Lost City")* | G04-4 + ARC-A02 étape 5 + ARC-I05 étape 1 | ARC-A02 conclusion, ARC-P00 conditions, ARC-I05 rôle confirmé |
+| G04-0 | Attaque Asgard | Anubis capture Thor pour voler la technologie Asgard. SG-1 libère Thor. Anubis frappe Tok'ra ET Asgard simultanément — menace d'ordre supérieur. *(S5E22 *Revelations*)* | G02-3 | ARC-A03 A03-4 conditions |
+| G04-1 | Anubis surgit | Osiris, émissaire d'Anubis, décime le Haut Conseil Tok'ra. Anubis = partiellement Ancien — au-delà des capacités classiques Goa'uld. Les règles changent. *(S5E15–16 *Summit / Last Stand*)* | G04-0 | ARC-I01 I01-2 conditions ; ARC-A04 A04-4 |
+| G04-2 | Les Six Yeux — Arme Suprême | Anubis collecte les six Yeux pour alimenter une super-arme orbitale. Le SGC ne peut pas l'en priver. *(S6 diffus)* | G04-1 | — |
+| G04-3 | Abydos détruite | Anubis détruit Abydos pour récupérer l'Œil de Râ. **L'Archéologue** (ascendé) intervient — et est puni, forcé de descendre sans mémoire. La première planète canonique du programme n'existe plus. *(S6E22 *Full Circle*)* | G04-2 | ARC-A02 A02-5 simultané ; moral des équipes — |
+| G04-4 | Les Guerriers Kull | Anubis crée des super-soldats Anciens quasi-invincibles. La course à la Cité Perdue s'ouvre — Anubis la cherche aussi. *(S7)* | G04-3 | — |
+| G04-5 | Lost City — La Connaissance Libérée | **Le Commandant** télécharge pour la seconde fois la connaissance des Anciens, guide l'équipe vers l'avant-poste antarctique. Incapacité par le téléchargement, c'est **Le Soldat à Gène ATA** qui active l'arme Ancienne — et détruit la flotte d'Anubis. Quelque part au-delà de notre galaxie, une cité attend. *(S7E21–22 *Lost City*)* | G04-4 + ARC-A02 A02-7 + ARC-I05 I05-1 | ARC-A02 conclusion, ARC-P00 conditions, ARC-I05 rôle confirmé |
 
-**🏁 Conclusion :** Anubis neutralisé par les Anciens *(S8E18-20)* — Gelé dans un sursis éternel. Pas une victoire : un report.
+**🏁 Conclusion :** Anubis neutralisé par les Anciens *(S8E18–20)* — Oma Desala engage Anubis en combat éternel sur le plan ascendé, le retirant définitivement de la réalité. *Simultané avec ARC-G03 conclusion.*
 
 **➡️ Débloque :** ARC-G05 conditions partielles, ARC-P00 conditions partielles
 
 ---
 
-#### ARC-G05 — Les Ori, les Nouveaux Dieux `[v2]`
+#### ARC-G05 — Les Ori, les Nouveaux Dieux `[V2]`
 
-> ⚠️ *Arc hors scope v1 — planifié pour la version 2.*
+> ⚠️ *Arc hors scope V1 — planifié pour la version 2.*
 
 **🔓 Déblocage :** ARC-G04 conclusion + ARC-A02 conclusion
+**Source arc-analysis :** `arc-sg1-ori.md` (ORI-01→08) + `arc-sg1-merlin.md` (MER-01→03) + `arc-sg1-adria.md` (ADR-01→03)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| G05-1 | Le Trésor d'Avalon | Mitchell rejoint le SGC. Sous Glastonbury, le trésor de Merlin et les pierres de communication. *(S9E01-02)* | — | G05-2 immédiatement |
-| G05-2 | L'Autre Rive | Le commandant de SG-1 et la spécialiste Goa'uld sont possédés par deux habitants de la galaxie des Ori. Première vue directe des Ori et de leurs Priors. *(S9E02-03)* | G05-1 | — |
-| G05-3 | Les Priors débarquent | Émissaires dans la Voie Lactée. Foi armée de technologie incompréhensible. *(S9)* | G05-2 | — |
-| G05-4 | La Superporte | Les Ori ouvrent un passage supergalactique. La flotte peut traverser. *(S9E20)* | G05-3 | — |
-| G05-5 | Adria, l'Orici | Fille des Ori née sur Terre, dotée de leurs pouvoirs. *(S10)* | G05-4 | — |
-| G05-6 | La Quête de la Sangraal | L'arme de Merlin. Morgan Le Fay. Merlin réactivé. *(S10E10-11)* | G05-5 | — |
-| G05-7 | Le Testament des Asgards | Extinction inévitable. Ils offrent l'intégralité de leur savoir avant de s'autodétruire. *(S10E20)* | G05-6 | Technologie Asgard intégrale débloquée |
+| G05-1 | Le Trésor d'Avalon | Nouveau membre SG-1. Sous Glastonbury, le trésor de Merlin et les pierres de communication Anciennes. *(S9E01–02)* | — | G05-2 immédiatement |
+| G05-2 | L'Autre Rive | **L'Archéologue** et Vala, liés par bracelets Anciens, se retrouvent dans la galaxie Ori. Ils voient brûler vifs des réfractaires. Les Ori découvrent l'existence de la Voie Lactée. *(S9E02–03 *Origin*)* | G05-1 | — |
+| G05-3 | Les Priors débarquent — Tête de Pont | Supergate construit. Premier vaisseau-arche. Plague biologique lancée sur Terre — Orlin sacrifie son intelligence pour un vaccin. Foi armée de technologie incompréhensible. *(S9E06–10)* | G05-2 | — |
+| G05-4 | La Croisade Commence — Adria, l'Orici | Vala donne naissance à Adria. Adria grandit en jours — commandante de terrain des Ori. La flotte Ori écrase la coalition Tau'ri/Tok'ra/Jaffa. *(S9E19–20)* | G05-3 | — |
+| G05-5 | Invasion Progressive | La flotte Ori prend monde après monde. Croisement avec Atlantis (*The Pegasus Project*). La Voie Lactée à 40% sous domination Ori. *(S10E01–05 diffus)* | G05-4 | — |
+| G05-6 | Merlin & le Sangraal | La trace de Merlin (Myrddyn — Ancien descendu créateur d'une arme contre les Ascendés). Le Sangraal est trouvé sur Valos Cor — Merlin transfère sa conscience dans **L'Archéologue** pour finir l'arme. Ba'al et Adria cherchent aussi. *(S9E19 + S10E10–11)* | G05-5 | — |
+| G05-7 | Daniel Priori — Le Coup Fatal | **L'Archéologue**, converti en Priori par Adria mais maintenant sa conscience, envoie le Sangraal dans la galaxie Ori via le Supergate. Les dieux Ori ascendés sont tués. Adria récupère toute leur puissance — brièvement, avant d'être stoppée par Morgan La Fay. *(S10E14 + S10E19)* | G05-6 | — |
+| G05-8 | Le Testament des Asgards | Les Asgards, dégénérescence irréversible, choisissent l'extinction collective. Ils transmettent l'intégralité de leur patrimoine à l'*Odyssey*. SG-1 bloquée 50 ans en bulle temporelle — réinitialisée. *(S10E20)* | G05-7 | Technologie Asgard intégrale débloquée |
 
-**🏁 Conclusion — L'Arche de la Vérité** *(Film 1)* — La foi des Ori s'effondre de l'intérieur. **Épilogue — Continuum** *(Film 2)* — Ba'al réécrit l'histoire. L'équipe restaure la bonne timeline.
+**🏁 Conclusion — L'Arche de la Vérité** *(Film 1)* — L'Arche révèle aux croyants Ori que leurs dieux sont des imposteurs. La foi s'effondre de l'intérieur. **Épilogue — Continuum** *(Film 2)* — Ba'al réécrit l'histoire via voyage temporel. L'équipe restaure la bonne timeline.
 
 **➡️ Débloque :** Fin du jeu Voie Lactée
 
 ---
 
-#### ARC-G06 — Ba'al, le Survivant `[v2]`
+#### ARC-G06 — Ba'al, le Survivant `[V2]`
 
-> ⚠️ *Arc hors scope v1 — planifié pour la version 2 (lié à ARC-G05).*
+> ⚠️ *Arc hors scope V1 — planifié pour la version 2 (lié à ARC-G05).*
 
 **🔓 Déblocage :** ARC-G02 étape 2 *(System Lords identifiés individuellement)*
+**Source arc-analysis :** `arc-sg1-baal.md` · Beats BAL-01 → BAL-07
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| G06-1 | Ba'al en coulisses | Toujours présent, jamais vraiment atteignable. Il joue le long jeu. *(S3-S9)* | — | — |
-| G06-2 | Clonage et manipulation | Ba'al clone son armée, infiltre les gouvernements terrestres. *(S9-S10)* | G05-4 | — |
+| G06-1 | Le Bourreau | Ba'al tue et ressuscite **Le Commandant** en boucle pour obtenir des informations. **L'Archéologue** (ascendé) l'observe impuissant. Ba'al = cruel mais calculateur — l'antagoniste le plus récurrent. *(S6E06 *Abyss*)* | — | — |
+| G06-2 | Alliance Forcée | Face aux Réplicateurs, les System Lords résiduels (Ba'al dominant) demandent l'aide Asgard. Ba'al aide ses ennemis quand c'est dans son intérêt. *(S8E01–02)* | G05-2 conditions + G03-4 | — |
+| G06-3 | Guerre d'Attrition | Ba'al envoie ses forces contre les bases Jaffa rebelles — défaites répétées. Dernier verrou Goa'uld avant la libération totale. *(S8E09–11 diffus)* | G06-2 + ARC-A05 A05-7 | — |
+| G06-4 | La Fuite | Face aux Réplicateurs et à la Rébellion Jaffa, Ba'al perd ses territoires. Disparaît en hyperespace — fantôme galactique. *(S8E16–18 *Reckoning*)* | G06-3 | — |
+| G06-5 | Vol des Portes | Ba'al utilise un dispositif pour téléporter des Portes des Étoiles de plusieurs planètes — réseau privé. Sans empire, reconverti en opérateur d'infrastructure. *(S9E16 *Off the Grid*)* | G06-4 | — |
+| G06-6 | Les Clones | Ba'al se clone en dizaines de copies. Les Tok'ra procèdent à des extractions — un clone à la fois. Ba'al prime introuvable. L'hydre Goa'uld. *(S10E04–06 diffus)* | G06-5 | G05-7 croisement |
 
-**🏁 Conclusion :** Continuum *(Film 2)* — Ba'al réécrit l'histoire via voyage temporel. Extraction définitive. *(Lié à ARC-G05 conclusion)*
+**🏁 Conclusion :** Continuum *(Film 2)* — Ba'al voyage dans le temps pour reconstruire son empire dans une timeline alternative. SG-1 restaure la timeline. Ba'al extrait définitivement par les Tok'ra.
+
+**➡️ Débloque :** Fin du jeu Voie Lactée *(lié à ARC-G05 conclusion)*
 
 ---
 
@@ -390,15 +646,17 @@ l'avancement narratif propre à chacune.
 #### ARC-A01 — Les Grandes Races, la Cinquième
 
 **🔓 Déblocage :** Automatique — premier passage de Porte
+**Source arc-analysis :** `arc-sg1-cultures-nox.md` (NOX-01) + `arc-sg1-anciens.md` (ANC-01) + `arc-sg1-asgard.md` (ASG-01→02)
 
 > *Les Quatre Grandes Races : Anciens, Asgards, Nox, Furlings — quatre civilisations qui se sont partagé la galaxie des millénaires avant l'humanité. L'arc vise à les (re)découvrir une à une.*
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| A01-1 | Les Nox | Premier contact avec une civilisation vraiment avancée. Pacifistes invincibles — l'humanité est au bas de l'échelle galactique. *(S1E07 "The Nox")* | — | — |
-| A01-2 | Le Supplice de Tantale — Le Lieu de Rencontre | Ernest Littlefield, disparu en 1945, retrouvé vivant sur P3X-972. Dans une salle millénaire, les symboles des Quatre Grandes Races gravés ensemble. Les Furlings : une présence sans visage dans l'histoire galactique. *(S1E11 "The Torment of Tantalus")* | A01-1 | — |
-| A01-3 | Les Asgards — Thor | Une civilisation ancienne qui nous protégeait discrètement depuis des siècles. Thor se révèle. *(S2E06 "Thor's Chariot")* | A01-2 | ARC-A03, ARC-G03, ARC-A04 débloqués |
-| A01-4 | Les Anciens — La Cinquième Race | Le commandant de SG-1 télécharge accidentellement la connaissance des Anciens et doit rejoindre les Asgards pour la leur transmettre. Là, ils reconnaissent l'humanité : la Cinquième Grande Race en devenir. *(S2E15 "The Fifth Race")* | A01-3 | ARC-A02 débloqué |
+| A01-1 | Les Nox | Premier contact avec une civilisation vraiment avancée. Pacifistes invincibles — l'humanité est au bas de l'échelle galactique. Lya ressuscite SG-1 tuée par Apophis. Leurs capacités de camouflage dépassent toute technologie connue. *(S1E07–08 *The Nox*)* | — | — |
+| A01-2 | Héliopolis — Le Lieu de Rencontre | Ernest Littlefield, disparu en 1945, retrouvé vivant sur P3X-972. Dans une salle millénaire, les symboles des Quatre Grandes Races gravés ensemble. Les Furlings : une présence sans visage dans l'histoire galactique. *(S1E11 *The Torment of Tantalus*)* | A01-1 | — |
+| A01-3a | Les Asgards — Le Marteau de Thor | Cimmeria, planète protégée par un dispositif Asgard. La destruction du bouclier est nécessaire pour sauver **Le Combattant Jaffa** — au prix de vulnérabiliser les habitants. Thor identifié. *(S1E10 *Thor's Hammer*)* — *Lié à ARC-A03 A03-1* | A01-2 | ARC-A03 A03-1 simultané |
+| A01-3b | Thor en Personne | Retour sur Cimmeria envahie par des Réplicateurs. Thor intervient physiquement — les Asgards observent et protègent activement. *(S2E06 *Thor's Chariot*)* — *Lié à ARC-A03 A03-2 + ARC-G03 G03-1* | A01-3a | ARC-A03 A03-2, ARC-G03 G03-1 simultanés |
+| A01-4 | Les Anciens — La Cinquième Race | **Le Commandant** télécharge accidentellement la connaissance des Anciens et doit rejoindre les Asgards pour la leur transmettre. Là, ils reconnaissent l'humanité : la Cinquième Grande Race en devenir. *(S2E15 *The Fifth Race*)* | A01-3b | ARC-A02 débloqué, ARC-A03 A03-3 simultané |
 
 **🏁 Conclusion :** Les quatre races sont identifiées — ou du moins esquissées. L'humanité ne sait pas encore ce qu'elle deviendra, mais quelqu'un le sait déjà.
 
@@ -409,16 +667,17 @@ l'avancement narratif propre à chacune.
 #### ARC-A02 — Les Anciens, la Connaissance Interdite
 
 **🔓 Déblocage :** ARC-A01 étape 4
+**Source arc-analysis :** `arc-sg1-ascension-daniel.md` (ASC-01→05) + `arc-sg1-anciens.md` (ANC-02)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| A02-1 | Oma Desala et la Voie de l'Ascension | Sur une planète perdue, l'équipe rencontre Oma Desala — un Ancien ascendé qui guide les mortels vers l'ascension. Le bébé Harsesis Shifu est sauvé. L'ascension n'est pas une légende. *(S3E20 "Maternal Instinct")* | — | — |
-| A02-2 | Pouvoir Absolu | Shifu, désormais enfant, offre au membre-archéologue une vision cauchemardesque de ce que deviendrait le monde s'il utilisait la mémoire génétique Goa'uld. La connaissance des Anciens est un piège autant qu'une arme. *(S4E17 "Absolute Power")* | A02-1 | — |
-| A02-3 | Le membre-archéologue s'ascende | Irradié mortellement lors d'une mission critique, il/elle refuse la mort et choisit l'ascension via Oma Desala. L'équipe perd son âme pensante. *(S5E21 "Meridian")* | A02-2 | ARC-I04 / I05 si pas encore déclenchés |
-| A02-4 | Ayiana — L'Ancienne de Glace | En Antarctique, une femme est retrouvée sous la glace — identifiée comme Ancienne par ses traits génétiques. Elle guérit par contact avant de succomber à la contagion. Les Anciens ont vécu sur Terre. Ce lieu cache plus qu'on ne le croit. *(S6E04 "Frozen")* | A02-3 | — |
-| A02-5 | L'Interdit Brisé | Le membre-archéologue (toujours ascendé) transgresse les règles des Anciens pour défendre Abydos contre Anubis. Puni(e) par les Anciens, il/elle est contraint(e) de redescendre — sans mémoire. *(S6E22 + S7E01 "Full Circle / Fallen")* | A02-4 + ARC-G04 étape 3 | — |
-| A02-6 | Vis Uban — La Cité Oubliée | L'équipe retrouve le membre-archéologue amnésique sur la planète Vis Uban, refuge d'une cité Ancienne abandonnée. La mémoire revient par fragments. Les Anciens avaient des colonies dans toute la galaxie. *(S7E01-02 "Fallen / Homecoming")* | A02-5 | — |
-| A02-7 | L'Avant-poste Antarctique — La Cité Perdue | Le second téléchargement de connaissance Ancienne *(lié à G04-5)* complète le tableau : l'avant-poste sous la glace antarctique — là même où Ayiana dormait — est le dernier vestige terrestre des Anciens. Une cité entière les attend ailleurs. La quête d'Atlantis est officielle. *(S7E21-22, lié à G04-5)* | A02-6 + ARC-G04 étape 5 | ARC-P00 débloqué |
+| A02-1 | Oma Desala et la Voie de l'Ascension | Sur Kheb, **L'Archéologue** rencontre Oma Desala — Ancienne ascendée qui guide les mortels. L'ascension n'est pas une légende. *Scène partagée avec ARC-G01b G01b-2 (même planète déclenchante).* *(S3E20 *Maternal Instinct*)* | — | — |
+| A02-2 | La Vision de Shifu — Le Miroir de la Tentation | Shifu offre à **L'Archéologue** une vision cauchemardesque de la corruption par la connaissance Goa'uld. La connaissance des Anciens est un piège autant qu'une arme. *Scène partagée avec ARC-G01b G01b-3.* *(S4E17 *Absolute Power*)* | A02-1 | — |
+| A02-3 | L'Archéologue s'ascende | Irradié mortellement lors d'une mission critique, **L'Archéologue** refuse la mort et choisit l'ascension via Oma Desala. Jonas Quinn rejoint l'équipe. L'âme pensante de SG-1 disparaît. *(S5E21 *Meridian*)* | A02-2 | ARC-I04 / I05 si pas encore déclenchés |
+| A02-4 | Ayiana — L'Ancienne de Glace | En Antarctique, une femme est retrouvée sous la glace — Ancienne. Elle guérit par contact avant de succomber à la contagion. Les Anciens ont vécu sur Terre elle-même. *(S6E04 *Frozen*)* | A02-3 | — |
+| A02-5 | L'Interdit Brisé | **L'Archéologue** (ascendé) transgresse les règles des Anciens pour défendre Abydos contre Anubis. Puni, il est contraint de redescendre — sans mémoire. *Lié à ARC-G04 G04-3 (Abydos détruite).* *(S6E22 + S7E01 *Full Circle / Fallen*)* | A02-4 + ARC-G04 G04-3 | — |
+| A02-6 | Vis Uban — La Cité Oubliée | L'équipe retrouve **L'Archéologue** amnésique sur Vis Uban, refuge d'une cité Ancienne abandonnée. La mémoire revient par fragments. Jonas retourne sur Langara. SG-1 réunie. *(S7E01–02 *Fallen / Homecoming*)* | A02-5 | — |
+| A02-7 | L'Avant-poste Antarctique — La Cité Perdue | Le second téléchargement de connaissance Ancienne *(lié à G04-5)* complète le tableau : l'avant-poste sous la glace antarctique — là même où Ayiana dormait — est le dernier vestige terrestre des Anciens. **Le Soldat à Gène ATA** active l'arme Ancienne. La quête d'Atlantis est officielle. *(S7E21–22, lié à G04-5)* | A02-6 + ARC-G04 G04-5 | ARC-P00 débloqué |
 
 **🏁 Conclusion :** L'expédition Atlantis est lancée. Le fil reliant Ayiana, l'avant-poste, et la cité perdue est établi.
 
@@ -428,14 +687,17 @@ l'avancement narratif propre à chacune.
 
 #### ARC-A03 — Les Asgards, les Protecteurs Silencieux
 
-**🔓 Déblocage :** ARC-A01 étape 3 *(Thor révélé — condition logique pour l'alliance formelle)*
+**🔓 Déblocage :** ARC-A01 étape 3b *(contact physique avec Thor)*
+**Source arc-analysis :** `arc-sg1-asgard.md` · Beats ASG-01 → ASG-05
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| A03-1 | Alliance formelle | Collaboration militaire et technologique. Les Asgards partagent — prudemment. | — | ARC-G03 débloqué, ARC-I02 conditions |
-| A03-2 | Le Vaisseau Thor en crise | Un vaisseau Asgard envahi par les Réplicateurs. L'alliance a un prix. *(S3E22, lié à G03-1)* | G03-1 | — |
+| A03-1 | Le Marteau de Thor | Cimmeria protégée par un dispositif Asgard. Destruction nécessaire pour sauver **Le Combattant Jaffa**. Thor identifié comme entité réelle. *(S1E10)* — *Lié à ARC-A01 A01-3a* | — | — |
+| A03-2 | Thor en Personne | Retour sur Cimmeria envahie par les Réplicateurs. Thor intervient physiquement. Alliance Asgard amorcée. *(S2E06)* — *Lié à ARC-A01 A01-3b + ARC-G03 G03-1* | A03-1 | ARC-G03 débloqué |
+| A03-3 | La Cinquième Race | **Le Commandant** absorbe la base de connaissance Ancienne. Thor le guérit — les Asgards confirment : les Tau'ri sont la Cinquième Grande Race en devenir. Alliance formalisée. *(S2E15)* — *Lié à ARC-A01 A01-4* | A03-2 + A01-4 | — |
+| A03-4 | Le *Prométhée* Équipé | En remerciement de la lutte contre les Réplicateurs, les Asgards équipent le *Prométhée* de boucliers et de moteurs. La Terre entre dans l'ère des vaisseaux de guerre. *(S8E01–02)* — *Lié à ARC-I02 conclusion* | A03-3 + ARC-I02 I02-2 | — |
 
-**🏁 Conclusion :** Le Testament des Asgards *(S10E20, lié à ARC-G05 étape 7)* — Extinction inévitable. Ils offrent tout leur savoir et s'autodétruisent.
+**🏁 Conclusion :** Le Testament des Asgards *(S10E20)* — Extinction inévitable. Ils transmettent l'intégralité de leur patrimoine à l'*Odyssey* et s'autodétruisent. *Lié à ARC-G05 G05-8.*
 
 **➡️ Débloque :** Technologie Asgard intégrale, Archives Asgards
 
@@ -443,15 +705,18 @@ l'avancement narratif propre à chacune.
 
 #### ARC-A04 — Les Tok'ra, l'Alliance Fragile
 
-**🔓 Déblocage :** ARC-A01 étape 3 *(Les Asgards — les races alliées commencent à se révéler)*
+**🔓 Déblocage :** ARC-A01 étape 4 *(les races alliées commencent à se révéler)*
+**Source arc-analysis :** `arc-sg1-tokra.md` · Beats TOK-01 → TOK-08
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| A04-1 | Alliance formalisée | Échange d'agents, partage de renseignements. Les Tok'ra ont des yeux partout. *(S3)* | — | Missions d'infiltration Goa'uld débloquées |
-| A04-2 | La confiance à l'épreuve | Un détecteur Za'tarc révèle des tensions internes. Les alliances fragiles se fissurent. *(S4E05)* | A04-1 | — |
-| A04-3 | La chute des alliés | Pertes successives dans les opérations communes. L'alliance rétrécit. | A04-2 | — |
+| A04-1 | Jolinar dans La Scientifique | **La Scientifique** est prise comme hôte involontaire de Jolinar, Tok'ra fuyant un Ashrak. Jolinar meurt pour la sauver. **La Scientifique** porte désormais les mémoires Tok'ra partielles — pont vers l'alliance. *(S2E02 *In the Line of Duty*)* | — | — |
+| A04-2 | La Base Secrète — Alliance Scellée | Les visions de Jolinar guident l'équipe vers la base Tok'ra. Jacob Carter, père de **La Scientifique**, atteint de cancer, devient hôte de Selmak. Alliance scellée par ce sacrifice. *(S2E11–12)* | A04-1 | Jacob Carter = relais permanent |
+| A04-3 | L'Alliance Testée | Un détecteur Za'tarc révèle que Martouf est conditionné à son insu. Les Tok'ra ne peuvent pas garantir l'intégrité de leurs propres agents. *(S4E05 *Divide and Conquer*)* | A04-2 | — |
+| A04-4 | Quasi-Extinction | Osiris (émissaire d'Anubis) décime le Haut Conseil Tok'ra. Jacob = survivant principal. Alliance structurellement rompue. *Simultané avec ARC-G04 G04-1.* *(S5E14–16 *Summit / Last Stand*)* | A04-3 | — |
+| A04-5 | Egeria — L'Extinction Confirmée | Sur Pangar, Egeria (reine Tok'ra originelle) est retrouvée maintenue en vie pour produire le Tretonin. Elle meurt — les Tok'ra ne peuvent plus se reproduire. Extinction confirmée. *(S6E10 *Cure*)* | A04-4 | Tretonin débloqué pour les Jaffa |
 
-**🏁 Conclusion :** Alliance maintenue mais fragilisée. Les Tok'ra ne sont plus ce qu'ils étaient.
+**🏁 Conclusion :** Mort de Jacob / Selmak *(S8E18–19)* — Jacob trop affaibli pour survivre à Selmak. Sa mort clôt la génération fondatrice de l'alliance. La lignée personnelle de **La Scientifique** se referme sur une mort digne.
 
 **➡️ Débloque :** Capacités de renseignement réduites selon la gestion de l'alliance
 
@@ -460,14 +725,21 @@ l'avancement narratif propre à chacune.
 #### ARC-A05 — La Révolte des Jaffa, la Liberté au Prix du Sang
 
 **🔓 Déblocage :** ARC-G01 étape 1 *(premier Jaffa allié)* + ARC-G02 étape 1
+**Source arc-analysis :** `arc-sg1-jaffa.md` · Beats TEA-01 → TEA-11
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| A05-1 | Bra'tac et la résistance | Le maître Jaffa organise discrètement une rébellion depuis des années. *(S1-S3)* | — | — |
-| A05-2 | Le Guerrier | Kytano inspire une insurrection massive — c'est le Goa'uld Imhotep déguisé. La résistance est manipulée. *(S5E18)* | A05-1 | — |
-| A05-3 | Le combat continue | La trahison révélée renforce la méfiance mais pas la résignation. | A05-2 | — |
+| A05-1 | La Trahison Fondatrice | **Le Combattant Jaffa** trahit Apophis pour sauver des civils — seul contre tous. **Le Maître Jaffa** (Bra'tac) organise discrètement une résistance depuis des années. L'espoir se sème. *(S1E02)* | — | — |
+| A05-2 | Le Paradoxe Paternel | **Le Combattant Jaffa** sauve son fils de l'implantation — en lui injectant lui-même une larve Goa'uld juventa. Sauver son fils en perpétuant ce qu'il combat. *(S1E12 *Bloodlines*)* | A05-1 | — |
+| A05-3 | Le Procès de Cartago | Les Byrsa jugent **Le Combattant Jaffa** pour ses crimes de Premier. **Le Combattant Jaffa** assume sa culpabilité historique — libérateur psychologique. *(S1E16 *Cor-Ai*)* | A05-2 | — |
+| A05-4 | Rya'c Weaponisé | Apophis conditionne le fils du **Combattant Jaffa** comme vecteur biologique contre le SGC. Déprogrammation réussie. *Lié à ARC-G01 G01-5.* *(S2E08 *Family*)* | A05-3 | — |
+| A05-5 | Skaara Libéré | Tribunal Tollan/Nox : **Le Jeune Allié Capturé** est libéré de son hôte Goa'uld (Klorel). Premier succès légal pour les droits des hôtes. *(S3E15 *Pretense*)* | A05-4 | — |
+| A05-6 | Déprogrammation | Après la mort d'Apophis, **Le Combattant Jaffa** est reprogrammé par ses loyautés passées. **Le Maître Jaffa** orchestre le rite de déprivation. Libre arbitre restauré. *(S5E02 *Threshold*)* | A05-5 + ARC-G01 G01-10 | — |
+| A05-7 | Le Faux Messie | K'tano inspire une insurrection massive — c'est le Goa'uld Imhotep déguisé. **Le Combattant Jaffa** le tue en duel. La Rébellion ne peut pas se permettre de faux prophètes. *(S5E18 *The Warrior*)* | A05-6 | — |
+| A05-8 | Alliance Tripartite | Base commune SGC–Tok'ra–Jaffa rebelles attaquée. Tensions explosent puis se résolvent face à l'ennemi commun. Coalition tripartite cimentée. *(S6E09 *Allegiance*)* | A05-7 | — |
+| A05-9 | La Libération de Dakara | **Le Combattant Jaffa** et **Le Maître Jaffa** prennent Dakara — le lieu sacré des Goa'uld. **La Nation Jaffa Libre** proclamée. Millénaires de servitude achevés. *Simultané avec ARC-G03 conclusion (Arme de Dakara).* *(S8E16–18 *Reckoning / Threads*)* | A05-8 + ARC-G03 conclusion | Dakara capitale Jaffa ; recrutement Jaffa libres |
 
-**🏁 Conclusion :** Dakara et la Nation Jaffa Libre *(S8)* — Le monde sacré de Dakara devient la capitale du premier peuple affranchi des System Lords.
+**🏁 Conclusion `[V2]` :** Nation Jaffa fragmentée *(S9–S10)* — Les Sodan (Jaffa libres depuis 5000 ans) découverts et détruits par les Ori. Certains Jaffa convertis aux Ori. La liberté est fragile — la démocratie, difficile.
 
 **➡️ Débloque :** Alliances militaires Jaffa libres, recrutement Jaffa dans les équipes SG
 
@@ -477,32 +749,46 @@ l'avancement narratif propre à chacune.
 
 ---
 
-#### ARC-I01 — Kinsey, l'Ennemi dans le Couloir
+#### ARC-I01 — Kinsey, le NID et l'IOA — L'Ennemi dans le Couloir
+
+> 🔗 *Partiellement actif en V1 : I01-1 se déclenche lors de G01-2 (APO-04a). Les étapes I01-1b à I01-5 sont V2.*
 
 **🔓 Déblocage :** Première perte d'équipe OU Confiance Gouvernementale ≤ 60%
+**Source arc-analysis :** `arc-sg1-politique-nid.md` · Beats KIN-01 → IOA-02
 
-| ID | Étape | Événement | Prérequis | Déclenche |
-|---|---|---|---|---|
-| I01-1 | Kinsey à la Tribune | Kinsey présente devant le Sénat pour fermer le programme. Le général défend le SGC face au monde politique. *(S1E20)* | ARC-G01 étape 1 | Dynamique politique permanente |
-| I01-2 | Kinsey frappe le Général | Chantage politique pour retirer le général du commandement. La confiance présidentielle est le seul rempart. *(S4E15)* | I01-1 + (ARC-A04 étape 2 conclue — chute des Tollan imminente OU ARC-G02 étape 2 — événement astéroïde déclenché) | Si échec : conséquences majeures sur toute la partie |
-| I01-3 | Écran de fumée | Quelqu'un imite le commandant de SG-1 pour tenter d'assassiner Kinsey. Le SGC doit prouver son innocence. *(S6E14)* | I01-2 + ARC-G04 étape 1 | Kinsey Vice-Président |
+**Déclencheurs dynamiques Kinsey :**
+- Confiance Gouvernementale < 70% → commentaires publics
+- < 50% → I01-1 (Kinsey à la Tribune)
+- < 30% → I01-2 (Kinsey frappe le Général)
+- Incidents diplomatiques majeurs, pertes d'équipes médiatisables
 
-**🏁 Conclusion :** Kinsey Vice-Président — L'arc ne se ferme pas : il change de nature. Kinsey devient une pression permanente intégrée à tous les arcs actifs. Ses interventions coûtent désormais plus cher en ressources politiques.
+| ID | Étape | Événement | Prérequis | Déclenche | Scope |
+|---|---|---|---|---|---|
+| I01-1 | Kinsey à la Tribune | Kinsey présente devant le Sénat pour fermer le programme. **Le Général** défend le SGC face au monde politique. SG-1 désobéit et sauve la Terre malgré la fermeture officielle — Kinsey partiellement discrédité. *(S1E21 *Politics*)* | ARC-G01 G01-1 | Dynamique politique permanente | `[V1]` |
+| I01-1b | La Pierre de Madrona | Un appareil atmosphérique Goa'uld est volé sur Madrona par le NID via la Porte Antarctique. Le SGC n'est pas l'unique agence sur le réseau. *(S2E14 *Touchstone*)* | I01-1 | NID Rogue identifié | `[V2]` |
+| I01-1c | Le Commandant Infiltre le NID | **Le Commandant** feint de rejoindre le NID rogue. Réseau exposé, Maybourne arrêté. Le SGC opère contre ses propres services. *(S3E18 *Shades of Grey*)* | I01-1b | NID rogue affaibli | `[V2]` |
+| I01-2 | Kinsey Frappe le Général | Chantage politique pour retirer **Le Général** du commandement. Le NID force la démission du supérieur — quasi-catastrophe au naquadah évitée de justesse. La confiance présidentielle est le seul rempart. *(S4E15 *Chain Reaction*)* | I01-1c + (ARC-A04 A04-2 OU ARC-G02 G02-2) | Si échec : conséquences majeures sur toute la partie | `[V2]` |
+| I01-2b | Le Coût Humain | **La Médecin** (Janet Fraiser) est tuée sur le terrain d'un coup de feu Goa'uld. La guerre a un prix réel — même pour les non-combattants. Perte irremplaçable. *(S7E17 *Heroes*)* | I01-2 | — | `[V2]` |
+| I01-3 | Écran de Fumée | Quelqu'un imitant **Le Commandant** tente d'assassiner Kinsey. Le NID rogue derrière. Agent Barrett (NID loyaliste) aide le SGC. La scission NID se confirme. *(S6E11–12 *Smoke and Mirrors*)* | I01-2b + ARC-G04 G04-1 | Kinsey Vice-Président | `[V2]` |
+| I01-4 | Kinsey Vice-Président et Chute | Kinsey devient Vice-Président des États-Unis — puis est compromis par le NID. Il disparaît sous protection NID. *(S8E08–09 *Covenant / Sacrifices*)* | I01-3 | — | `[V2]` |
+| I01-5 | L'IOA Prend le Contrôle | L'IOA remplace progressivement le contrôle militaire du SGC. Financement international maintenu — autonomie opérationnelle réduite. Atlantis devient concernée. *(S9E04 + diffus)* | I01-4 | ARC-P series conditions | `[V2]` |
+
+**🏁 Conclusion :** L'arc ne se ferme pas — il change de nature. Kinsey parti, l'IOA prend le relais. Le visage de l'opposition change ; sa nature reste identique.
 
 ---
 
-#### ARC-I02 — Le Prométhée, l'Indépendance Militaire
+#### ARC-I02 — Le *Prométhée*, l'Indépendance Militaire
 
-**🔓 Déblocage :** ARC-A03 étape 1 + 3 technologies alien maîtrisées *(arc Technologie — section Succès Annales)*
+**🔓 Déblocage :** ARC-A03 étape 3 + 3 technologies alien maîtrisées *(arc Technologie — section Succès Annales)*
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| I02-1 | Construction secrète | Sous la Zone 51, le premier vaisseau humain est presque prêt. Un journaliste menace de tout révéler. *(S6E11)* | — | — |
-| I02-2 | Le Prométhée opérationnel | Premier vol. L'humanité a son propre capital ship. *(S6)* | I02-1 | Missions spatiales autonomes débloquées |
+| I02-1 | Construction secrète | Sous la Zone 51, le premier vaisseau humain est presque prêt. Un journaliste menace de tout révéler. *(S6E11 *Prometheus*)* | — | — |
+| I02-2 | Le *Prométhée* opérationnel | Premier vol. L'humanité a son propre capital ship. Les Asgards l'équipent ensuite de boucliers et de moteurs. *Lié à ARC-A03 A03-4.* | I02-1 | Missions spatiales autonomes débloquées |
 
-**🏁 Conclusion :** Flotte terrestre en développement. Le Prométhée est le premier d'une lignée.
+**🏁 Conclusion :** Flotte terrestre en développement. Le *Prométhée* est le premier d'une lignée (*Daedalus*, *Odyssey*).
 
-**➡️ Débloque :** Missions à longue portée, Daedalus *(requis pour ARC-P02 étape 1)*
+**➡️ Débloque :** Missions à longue portée, *Daedalus* *(requis pour ARC-P02 étape 1)*
 
 ---
 
@@ -520,97 +806,109 @@ l'avancement narratif propre à chacune.
 
 ---
 
-#### ARC-I04 — L'Œil de Kinsey *(Liaison Atlantis — Scientifique)*
+#### ARC-I04 — L'Œil de Kinsey *(Liaison Atlantis — Le Scientifique Imposé)*
 
-**🔓 Déblocage :** ARC-I01 étape 2 + Incident de récupération technologique Goa'uld raté
+> 🔗 *Peut se déclencher en fin de V1 si les conditions sont réunies rapidement, ou en début V2. Le personnage est créé et réservé dès son apparition.*
+
+**🔓 Déblocage :** ARC-I01 I01-1 (active) + Incident de récupération technologique Goa'uld raté *(peut survenir dès G01-2 ou G01-3)*
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| I04-1 | Le Scientifique Imposé | Kinsey use de l'incident pour imposer un scientifique de Zone 51 comme "superviseur civil". Le joueur **crée ce personnage**. Brillant, insupportable, rapporteur de Kinsey — et futur pilier d'Atlantis. | — | Personnage créé et réservé pour Atlantis |
+| I04-1 | **Le Scientifique Imposé** | Kinsey use de l'incident pour imposer un scientifique de Zone 51 comme "superviseur civil". Le joueur **crée ce personnage** (nom, apparence, stats libres — archétype Scientifique suggéré). Brillant, insupportable, rapporteur de Kinsey — et futur pilier d'Atlantis. *Bonus canon : nommer le personnage "Rodney McKay" + Tau'ri débloque les bonus canoniques Atlantis.* | ARC-I01 I01-1 + incident tech raté | Personnage créé et réservé pour Atlantis |
 
-**🏁 Conclusion :** Le scientifique est incontournable au SGC. Sa loyauté migre progressivement : de rapporteur de Kinsey à membre indispensable du programme.
+**🏁 Conclusion :** La loyauté du **Scientifique Imposé** migre progressivement : rapporteur de Kinsey → membre indispensable du programme. Sa relation avec l'équipe évolue de "génie insupportable" à "coéquipier irremplaçable" via ses arcs propres à Atlantis *(V2)*.
 
-**➡️ Débloque :** ARC-A02 conditions assouplies
+**➡️ Débloque :** ARC-A02 conditions assouplies *(V2)*
 
 ---
 
-#### ARC-I05 — Le Hasard des Coïncidences *(Liaison Atlantis — Soldat)*
+#### ARC-I05 — Le Hasard des Coïncidences *(Liaison Atlantis — Le Soldat à Gène ATA)*
 
-**🔓 Déblocage :** ARC-A02 étape 2 + Opération conjointe inter-agences
+> 🔗 *Trigger avancé par rapport au canon (original : ARC-A02 étape 2 / S3). Décision de design : la victoire orbitale d'APO-05 donne une visibilité suffisante au programme pour déclencher une opération inter-agences. Atteignable en fin de V1 ou très début V2.*
+
+**🔓 Déblocage :** ARC-G01 G01-3 (APO-05 — victoire orbitale) + Opération conjointe inter-agences *(la visibilité du programme post-victoire crée le contexte)*
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| I05-1 | Le Soldat au Gène Ancien | Par enchaînement de coïncidences, un soldat d'une autre unité se retrouve impliqué dans une opération SGC. Test génétique : gène ATA naturel de pleine puissance. Transfert immédiat. Le joueur **crée ce personnage**. | — | Personnage créé et disponible pour les équipes SG |
+| I05-1 | **Le Soldat au Gène Ancien** | Par enchaînement de coïncidences issu de la victoire orbitale, un soldat d'une autre unité (Delta Force ou Air Force) se retrouve impliqué dans une opération SGC. Test génétique : gène ATA naturel de pleine puissance. Transfert immédiat au programme. Le joueur **crée ce personnage** (nom, apparence, stats libres — archétypes Combattant ou Commandant). **Aptitude Gène ATA naturel forcée.** *Bonus canon : nommer le personnage "John Sheppard" + Tau'ri débloque les bonus canoniques Atlantis.* | ARC-G01 G01-3 + opération inter-agences | Personnage créé et disponible pour les équipes SG |
 
-**🏁 Conclusion :** Le soldat intègre le programme. Il sera automatiquement membre de l'expédition Atlantis.
+**🏁 Conclusion :** Le **Soldat à Gène ATA** intègre le programme. Disponible pour les équipes SG jusqu'à la transition Atlantis. Il sera automatiquement membre de l'expédition *(V2)*.
 
-**➡️ Débloque :** Missions avec ATA pré-Atlantis, transition facilitée vers ARC-P00
+**➡️ Débloque :** Missions avec activation ATA pré-Atlantis, transition facilitée vers ARC-P00 *(V2)*
 
 ---
 
 ### 🌊 Arcs Pégase `[v2]`
 
-> ⚠️ *Tous les arcs de cette section sont hors scope v1 — planifiés pour la version 2.*
+> ⚠️ *Tous les arcs de cette section sont hors scope V1 — planifiés pour la version 2.*
 
 ---
 
 #### ARC-P00 — Transition Atlantis
 
 **🔓 Déblocage :** ARC-A02 conclusion + ARC-G04 étape 5
+**Source arc-analysis :** `arc-sga-expedition.md` (SGA-EXP-01) + `arc-sga-crossovers.md` (CROSS-01)
 
 *Voir section "Système de Transition Atlantis" pour le détail complet : choix du directeur, composition de l'équipe, personnages narratifs imposés.*
 
-**➡️ Débloque :** Tous les arcs Pégase (ARC-P01 à ARC-P05)
+**Le Scientifique Imposé** et **Le Soldat à Gène ATA** sont automatiquement intégrés à l'expédition.
+*Note crossover :* Le lancement de l'expédition est simultané à O'Neill dégelé de sa stase — deux fronts s'ouvrent en même temps *(CROSS-01)*.
+
+**➡️ Débloque :** Tous les arcs Pégase (ARC-P01 à ARC-P06)
 
 ---
 
 #### ARC-P01 — La Découverte, Atlantis et les Athosiens
 
 **🔓 Déblocage :** ARC-P00 complété
+**Source arc-analysis :** `arc-sga-expedition.md` (SGA-EXP-01→04) + `arc-sga-anciens-lanteans.md` (SGA-ANC-01→02) + `arc-sga-teyla.md` (SGA-TEY-01)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
 | P01-1 | L'aller simple | L'expédition franchit la Porte vers Pégase. Aller simple. *(SGA S1E01)* | — | — |
-| P01-2 | Atlantis sous l'océan | La cité est là, endormie sous les flots. L'émerveillement absolu. *(SGA S1E01)* | P01-1 | — |
-| P01-3 | Les Athosiens | Premier contact avec l'humanité de Pégase. Leurs cicatrices racontent une histoire que le programme ne comprend pas encore. *(SGA S1E01-02)* | P01-2 | — |
-| P01-4 | Le Réveil des Wraith | L'expédition a brisé le sommeil des ruches. La culpabilité s'installe. *(SGA S1E01-02)* | P01-3 | ARC-P02 débloqué |
-| P01-5 | Atlantis émerge | La cité monte de l'océan. La base est réelle. *(SGA S1E01)* | P01-4 | — |
+| P01-2 | Atlantis sous l'océan | La cité est là, endormie sous les flots. L'émerveillement absolu. ZPM quasi vide — la survie est immédiate. *(SGA S1E01)* | P01-1 | — |
+| P01-3 | L'Ancienne Survivante | Une version âgée du Directeur de l'Expédition en stase (10.000 BCE). Elle a tout préparé pour cette expédition — Atlantis attendait ce moment depuis 10.000 ans. *(SGA S1E15 *Before I Sleep*)* | P01-2 | — |
+| P01-4 | Les Athosiens — Teyla | Premier contact avec l'humanité de Pégase. Teyla Emmagan, chef Athosienne, rejoint l'expédition. Elle possède un lien génétique avec les Wraith — atout tactique permanent. *(SGA S1E01–02)* | P01-3 | ARC-P02 débloqué |
+| P01-5 | Le Réveil des Wraith | Les signaux d'Atlantis réveillent les Wraith en hibernation. L'expédition porte la responsabilité de ce réveil — la culpabilité s'installe. Atlantis émerge de l'océan. *(SGA S1E01–02)* | P01-4 | — |
+| P01-6 | Le Premier Siège — Le *Prométhée* arrive | Siège Wraith massif. Le *Prométhée* arrive depuis la Voie Lactée. Le ZPM est sacrifié pour le bouclier. Contact rétabli avec la Terre. Le *Daedalus* assurera la liaison régulière. *(SGA S1E19–20 + S2E01)* | P01-5 + ARC-I02 conclusion | ARC-P02, ARC-P06 débloqués |
 
-**🏁 Conclusion :** Base Atlantis établie. Position défensive en place.
+**🏁 Conclusion :** Base Atlantis établie. Le *Daedalus* (équipé Asgard) assure la liaison régulière avec la Terre.
 
-**➡️ Débloque :** ARC-P02, opérations Pégase niveau 1
+**➡️ Débloque :** ARC-P02, ARC-P06, opérations Pégase niveau 1
 
 ---
 
 #### ARC-P02 — Les Wraith, les Anciens Prédateurs
 
-**🔓 Déblocage :** ARC-P01 étape 4
+**🔓 Déblocage :** ARC-P01 étape 5 *(réveil des Wraith)*
+**Source arc-analysis :** `arc-sga-wraith.md` · Beats SGA-WR-01→05
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| P02-1 | Le Siège d'Atlantis | Première grande attaque Wraith. Le Daedalus arrive de la Voie Lactée. *(SGA S1E14-15, S2E01)* | ARC-I02 conclusion *(Daedalus requis)* | — |
-| P02-2 | La Reine Silencieuse | Une Reine d'une puissance hors-norme commence à unifier des factions rivales. | P02-1 | — |
-| P02-3 | Rétrovirus Wraith | Un rétrovirus peut humaniser les Wraith. Question éthique immédiate. | P02-2 | ARC-P04 débloqué |
-| P02-4 | Alliance tactique avec l'ennemi | Négociation avec une faction Wraith contre les autres. Le bien et le mal perdent leurs contours. | P02-3 | — |
+| P02-1 | Ronon Dex — Le Survivant | Ronon Dex, Satedan Runner pendant 7 ans, libéré de son émetteur Wraith. Il rejoint l'équipe. Il EST ce que les Wraith font aux survivants. *(SGA S2E03–05)* | ARC-I02 conclusion (*Daedalus* requis) | — |
+| P02-2 | Guerre Inter-Wraith | Rétrovirus Wraith développé et testé (Michael — voir ARC-P04). Les factions Wraith se divisent. L'Expédition exploite les guerres internes. *(SGA S2–S3)* | P02-1 + ARC-P04 P04-1 | ARC-P04 débloqué |
+| P02-3 | Alliance Tactique avec l'Ennemi | Négociation avec une faction Wraith ("Todd") contre les autres. Le bien et le mal perdent leurs contours. *(SGA S4–S5)* | P02-2 | — |
+| P02-4 | L'Assaut Final — La Ruche au ZPM | Un Super-Hive Wraith équipé d'un ZPM peut atteindre la Terre. La menace quitte Pégase. Todd aide en dernier recours. *(SGA S5E19–20)* | P02-3 | ARC-P05 débloqué |
 
-**🏁 Conclusion :** Fragmentation des ruches — les Wraith ne présentent plus un front uni. La menace subsiste mais est fragmentée.
+**🏁 Conclusion :** Super-Hive détruit. Fragmentation des ruches — les Wraith ne présentent plus un front uni.
 
-**➡️ Débloque :** ARC-P03, opérations avancées Pégase
+**➡️ Débloque :** ARC-P03, ARC-P05 conditions
 
 ---
 
 #### ARC-P03 — Les Asurans, les Enfants Rejetés
 
 **🔓 Déblocage :** ARC-P01 conclusion + ARC-P02 étape 2
+**Source arc-analysis :** `arc-sga-asurans.md` (SGA-ASU-01→03) + `arc-sga-anciens-lanteans.md` (SGA-ANC-03)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| P03-1 | Premier contact | Les Asurans révélés : réplicateurs créés par les Anciens pour combattre les Wraith, puis abandonnés avec la haine programmée. *(SGA S3E05)* | — | — |
-| P03-2 | Frappe orbitale | Les Asurans attaquent Atlantis depuis l'orbite. La base n'est plus un sanctuaire. *(SGA S3E20)* | P03-1 | — |
-| P03-3 | Atlantis en fuite | La cité quitte Lantéa. Voyage dans l'espace jusqu'à une nouvelle planète. | P03-2 | — |
-| P03-4 | Alliance impossible | SGC + Wraith contre les Asurans. L'ennemi de mon ennemi ne sera jamais mon ami — mais ça devra suffire. | P03-3 | — |
+| P03-1 | Asuras — Les Faux Anciens | Asuras révélée : Réplicateurs humanoïdes créés par les Anciens contre les Wraith, puis abandonnés avec la haine programmée. Irréconciliables. *(SGA S3E05 *Progeny*)* | — | — |
+| P03-2 | Frappe Orbitale — Le Directeur Compromis | Les Asurans attaquent Atlantis depuis l'orbite. Le Directeur de l'Expédition est infecté de nanites Asurans. La base n'est plus un sanctuaire. *(SGA S3E20 + S4E01–02)* | P03-1 | — |
+| P03-3 | Vol du ZPM — Sacrifice du Directeur | McKay conçoit un plan pour voler un ZPM à Asuras. Le Directeur, infecté, reste sur Asuras pour influencer les Asurans depuis l'intérieur. Il/elle disparaît — asuranisé(e). L'IOA désigne un remplaçant civil. *(SGA S4E01–02 *Adrift / Lifeline*)* | P03-2 | — |
+| P03-4 | Alliance Impossible | Coalition Atlantis–Wraith–Genii. McKay programme les nanites à se regrouper. Asuras détruite depuis l'orbite. *(SGA S4E11–12 *Be All My Sins Remember'd*)* | P03-3 | ARC-P05 conditions partielles |
 
-**🏁 Conclusion :** Destruction des Asurans *(SGA S4E11)* — La planète oblitérée. Le directeur de l'expédition est perdu. Un nouveau commandant prend les rênes.
+**🏁 Conclusion :** Asuras oblitérée. Le Directeur de l'Expédition est perdu. L'IOA impose un commandant civil. L'ère de gouvernance civile d'Atlantis commence.
 
 **➡️ Débloque :** ARC-P05 conditions partielles, Technologie Ancienne niveau max
 
@@ -618,15 +916,17 @@ l'avancement narratif propre à chacune.
 
 #### ARC-P04 — Michael, l'Erreur Scientifique
 
-**🔓 Déblocage :** ARC-P02 étape 3 *(rétrovirus développé)*
+**🔓 Déblocage :** ARC-P02 étape 2 *(rétrovirus développé)*
+**Source arc-analysis :** `arc-sga-michael.md` (SGA-MCH-01→04) + `arc-sga-teyla.md` (SGA-TEY-02)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| P04-1 | Michael — ni Wraith ni humain | Le rétrovirus transforme un Wraith. Il ne peut être accepté ni par les siens ni par l'humanité. *(SGA S2)* | — | — |
-| P04-2 | L'armée d'hybrides | Michael développe une troisième espèce issue de ses expériences. *(SGA S4-S5)* | P04-1 | — |
-| P04-3 | Teyla capturée | Michael enlève le membre-Athosien pour ses expériences. L'équipe doit la sauver. *(SGA S5E01)* | P04-2 | — |
+| P04-1 | Michael — ni Wraith ni Humain | Le rétrovirus transforme un Wraith en humain amnésique. Michael découvre sa vraie nature — s'échappe. Ni Wraith ni humain, rejeté des deux côtés. L'Expédition a fabriqué son propre ennemi en croyant bien faire. *(SGA S2E18 *Michael*)* | — | — |
+| P04-2 | L'Île des Convertis | Planète entière de Wraith convertis. Michael manipule depuis l'intérieur. Le rétrovirus = impasse éthique et scientifique. *(SGA S3E07–08 *Misbegotten*)* | P04-1 | — |
+| P04-3 | L'Empire Hybride / L'Athosienne Capturée | Michael crée une armée de Hybrides Wraith-humains. Il capture l'**Athosienne** (Teyla) enceinte pour expérimenter sur son enfant. Atlantis doit assumer sa création et la détruire. *(SGA S4E18–20 *The Kindred*)* | P04-2 | — |
+| P04-4 | Mort de Michael | L'**Athosienne** repousse Michael du haut d'une tour d'Atlantis. Sa mort clôt l'arc de responsabilité éthique. L'Expédition en sort transformée. *(SGA S5E07–12)* | P04-3 | ARC-P05 conditions complètes |
 
-**🏁 Conclusion :** Élimination de Michael *(SGA S5)* — Une conséquence directe des expériences éthiquement douteuses de l'expédition elle-même.
+**🏁 Conclusion :** Michael éliminé. Armée Hybride dispersée. L'Expédition assume : elle a créé son ennemi le plus dangereux en croyant bien faire.
 
 **➡️ Débloque :** ARC-P05 conditions complètes
 
@@ -635,11 +935,12 @@ l'avancement narratif propre à chacune.
 #### ARC-P05 — Le Retour sur Terre
 
 **🔓 Déblocage :** ARC-P03 conclusion + ARC-P04 conclusion
+**Source arc-analysis :** `arc-sga-wraith.md` (SGA-WR-05) + `arc-sga-expedition.md` (SGA-EXP-04)
 
 | ID | Étape | Événement | Prérequis | Déclenche |
 |---|---|---|---|---|
-| P05-1 | La Ruche au ZPM | Un vaisseau-ruche Wraith équipé d'un ZPM peut atteindre la Terre. La menace quitte Pégase. *(SGA S5E20)* | — | — |
-| P05-2 | Atlantis décolle | La cité-vaisseau quitte New Lantea en direction de la Terre. Un moment impossible devient réalité. *(SGA S5E20)* | P05-1 | — |
+| P05-1 | La Ruche au ZPM | Un vaisseau-ruche Wraith équipé d'un ZPM peut atteindre la Terre. La menace quitte Pégase pour la Voie Lactée. *(SGA S5E19–20)* | — | — |
+| P05-2 | Atlantis Décolle | La cité-vaisseau quitte New Lantea en direction de la Terre. Todd (Wraith) aide en dernier recours. Super-Hive détruit. Un moment impossible devient réalité. *(SGA S5E20 *Enemy at the Gate*)* | P05-1 | — |
 
 **🏁 Conclusion :** Atlantis se pose sur Terre *(Océan Pacifique, SGA S5E20)* — L'ère du secret absolu est terminée pour toujours. Les deux programmes convergent.
 
@@ -647,13 +948,33 @@ l'avancement narratif propre à chacune.
 
 ---
 
+#### ARC-P06 — Les Géniis, l'Ennemi Miroir `[V2]`
+
+> ⚠️ *Arc hors scope V1. Les Géniis sont le miroir de l'Expédition : une civilisation qui cache sa vraie nature et développe des armes pour survivre face aux Wraith.*
+
+**🔓 Déblocage :** ARC-P01 étape 4 *(premières alliances de Pégase)*
+**Source arc-analysis :** `arc-sga-genii.md` · Beats SGA-GNI-01 → SGA-GNI-04
+
+| ID | Étape | Événement | Prérequis | Déclenche |
+|---|---|---|---|---|
+| P06-1 | La Double Société | Derrière les silos agricoles : bunkers nucléaires et armée secrète. Les Géniis ont des bombes de type 1940. Toute la galaxie de Pégase développe des secrets. *(SGA S1E08 *Underground*)* | — | — |
+| P06-2 | Prise d'Atlantis par Kolya | Tempête ionique = Atlantis sans boucliers. Kolya s'empare de la cité avec des soldats Genii. Le héros de l'Expédition seul contre tous — Atlantis récupérée, alliance Genii brisée. Kolya = ennemi personnel pour toujours. *(SGA S1E11–12 *The Storm / The Eye*)* | P06-1 | — |
+| P06-3 | La Vendetta de Kolya | Kolya ressurgit hors structure Genii officielle. Il livre Ronon aux Wraith comme Runner à nouveau. Antagoniste personnel — pas politique. *(SGA S2E10 + S3E04 *Sateda*)* | P06-2 | — |
+| P06-4 | Mort de Kolya — La Paix des Ennemis | Le héros de l'Expédition tue Kolya en duel. Ladon Radim (nouveau chef Genii) choisit la coopération. L'arc se ferme par changement de direction, pas par victoire militaire. *Les Géniis participent à la coalition contre les Asurans (ARC-P03 P03-4).* *(SGA S3E17 *Sunday*)* | P06-3 | ARC-P03 coalition facilitée |
+
+**🏁 Conclusion :** Les Géniis deviennent des partenaires difficiles mais fiables sous Ladon. La méfiance demeure — la coopération aussi.
+
+---
+
 ### Rythme & Densité Narrative
 
 | Phase de jeu | Arcs actifs simultanément | Rythme | Émotion dominante |
 |---|---|---|---|
-| Début | G01, A01, I01 (si déclencheur) | Lent → croissant | Émerveillement + danger immédiat |
-| Montée | G01-G03, A01-A04, I01-I02 | Soutenu | Tension politique + alliances fragiles |
-| Crise | G04, A02, G03, I01-I04-I05 | Rapide | Poids du commandement |
-| Apogée | G05, A02 conclusion, Pégase parallèle | Maximum | Épique + mélancolie |
+| **Tutoriel** | *(aucun arc actif — onboarding pur)* | Très lent → guidé | Émerveillement + découverte |
+| **V1 — Début** | G01 (1–2), I01-1 (si déclenché) | Lent → croissant | Émerveillement + danger immédiat |
+| **V1 — Fin** | G01-3, I01-1, I04 possible, I05 possible | Soutenu | Tension du commandement |
+| **Montée V2** | G01 étendu, G01b, G02, A01–A04, I01-I02 | Soutenu | Tension politique + alliances fragiles |
+| **Crise V2** | G03, G04, A02, A05, I01-I04-I05 | Rapide | Poids du commandement |
+| **Apogée V2** | G05, G06, A02 conclusion, A05 conclusion, Pégase parallèle | Maximum | Épique + mélancolie |
 
 **Moments de respiration obligatoires** — chaque arc antagoniste majeur inclut au moins un beat de camaraderie ou de victoire partielle avant l'escalade suivante. La densité narrative ne doit jamais étouffer l'émerveillement fondateur du programme.
