@@ -14,10 +14,12 @@ Base canonique des arcs narratifs SG-1, structurée pour `gds-create-narrative`.
 
 | ID | Saison/Épisode | Étape | Protagoniste | Résumé Clé | Story Beat | Gains SGC | Pertes SGC | Conséquences | Pré-requis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **APO-01** | S1E01–02 *Children of the Gods* | Premier Contact & Chulak | O'Neill / Daniel / Teal'c | Activation de la Porte, retour sur Abydos. Sha're et Skaara pris comme hôtes. Teal'c rejoint SG-1. | **L'Appel de l'aventure** : Le réseau est galactique ; Apophis remplace Râ. | Cartouche de coordonnées, Armes Jaffa, Teal'c | Sha're & Skaara capturés ; équipe quasi-anéantie | Apophis devient ennemi n°1 ; réseau de portes confirmé | Film (1994) |
+| **APO-01a** | S1E01 *Children of the Gods (Partie 1)* | Abydos — Le Réseau Révélé | O'Neill / Daniel | Retour sur Abydos : Apophis attaque le campement. Sha're et Skaara capturés et emmenés sur Chulak pour être pris comme hôtes Goa'uld. | **L'Appel de l'aventure** : Le réseau de portes est galactique — et la menace s'attaque directement aux proches. | Cartouche de coordonnées Goa'uld, identité d'Apophis confirmée | Sha're & Skaara capturés comme hôtes | Apophis = ennemi n°1 ; mission de sauvetage impérative sur Chulak | Film (1994) |
+| **APO-01b** | S1E02 *Children of the Gods (Partie 2)* | Chulak — La Trahison de Teal'c | O'Neill / Teal'c | SG-1 s'infiltre sur Chulak, monde natal des Jaffa, pour libérer les captifs. Teal'c trahit Apophis et guide SG-1 hors de la cité sainte. SG-1 constituée. | **L'Allié Inattendu** : Un Premier Jaffa choisit la conscience — acte fondateur de toute la rébellion. | Teal'c (recruté), armes Jaffa, topographie de Chulak | Équipe quasi-anéantie lors de l'évasion, captifs non retrouvés | Teal'c = premier transfuge Jaffa ; posture militaire de Chulak cartographiée | APO-01a |
 | **APO-02** | S1E03 *The Enemy Within* | L'Ennemi Intérieur | Kawalsky | Kawalsky infecté par un larve Goa'uld. Mort lors de l'extraction échouée. | **La Menace Intime** : Le danger est déjà au cœur du SGC. | Données biologiques Goa'uld partielles | Kawalsky (mort), confiance interne ébranlée | Protocole de décontamination nécessaire | APO-01 |
 | **APO-03** | S1E20 *There But for the Grace of God* | Le Miroir Quantique | Daniel | Réalité alternative : la Terre tombe. Daniel récupère les coordonnées de l'assaut d'Apophis. | **Le Présage** : L'échec futur est déjà visible — et évitable. | Miroir Quantique, coordonnées d'attaque | Aucune (mission unilatérale) | Assaut Ha'tak anticipé ; urgence politique | APO-01 |
-| **APO-04** | S1E21–22 *Politics / Within the Serpent's Grasp* | L'Assaut Annoncé | O'Neill / Teal'c | SGC fermé par Kinsey. SG-1 désobéit, s'infiltre dans les Ha'taks d'Apophis. | **Le Climax de Saison** : Sans désobéissance, la Terre tombe. | Zat'nik'tel (récupéré), accès Ha'tak | SGC fermé temporairement ; risque cours martial | Crédibilité de Kinsey ruinée ; SG-1 héroïsé | APO-03, KIN-01 |
+| **APO-04a** | S1E21 *Politics* | Le SGC Fermé par Kinsey | Hammond / O'Neill | Kinsey présente son réquisitoire devant le Sénat : le SGC est une menace irresponsable. Programme suspendu officiellement. SG-1 privée de tout moyen d'action légal — sur Terre. | **L'Hiver Bureaucratique** : Le plus grand danger peut porter un costume. | Temps gagné via témoignages SG-1, Kinsey partiellement discrédité | SGC officiellement fermé | Opposition politique institutionnalisée ; SG-1 doit agir hors protocole | APO-03, KIN-01 |
+| **APO-04b** | S1E22 *Within the Serpent's Grasp* | Infiltration des Ha'taks | O'Neill / Teal'c | SG-1 désobéit aux ordres et compose les coordonnées du miroir quantique. Infiltre les Ha'taks en route vers la Terre. Confrontation avec Klorel (Skaara). Cliffhanger orbital. | **Le Sacrifice de la Légalité** : Sans désobéissance, la Terre tombe — le héros doit choisir sa conscience. | Zat'nik'tel récupéré, accès Ha'tak, sabotage amorcé | Risque de cour martiale ; SG-1 seule dans l'espace ennemi | SG-1 héroïsée ; Klorel/Skaara = enjeu en suspens pour S2E01 | APO-04a |
 | **APO-05** | S2E01 *The Serpent's Lair* | Victoire Orbitale | O'Neill / Teal'c / Bra'tac | Destruction des deux Ha'taks depuis l'intérieur. Apophis fuit. Bra'tac sauve SG-1. | **La Victoire Fondatrice** : Première défense spatiale de la Terre. | Glider Goa'uld, confiance en Bra'tac | Aucune (victoire totale) | Apophis affaibli mais vivant ; Sokar monte | APO-04 |
 | **APO-06** | S2E09 *Secrets* | Sha're et l'Enfant Harsèsis | Daniel / Sha're | Daniel retrouve Sha're enceinte sur Abydos. L'enfant (Shifu) possédera toute la connaissance Goa'uld. | **Le Double Enjeu** : L'enfant est arme ET espoir. | Connaissance Goa'uld héréditaire (potentielle) | Sha're reste captive ; Daniel traumatisé | Harsèsis : objectif secondaire critique | APO-01 |
 | **APO-07** | S2E08 *Family* | Rya'c Conditionné | Teal'c / Bra'tac | Apophis brainwash Rya'c comme vecteur biologique contre le SGC. | **La Famille comme Arme** : Les liens de Teal'c weaponisés. | Rya'c déprogrammé | Confiance de Teal'c en Rya'c durablement affectée | Apophis exploite les failles personnelles | TEA-01 |
@@ -68,7 +70,7 @@ Base canonique des arcs narratifs SG-1, structurée pour `gds-create-narrative`.
 
 | ID | Saison/Épisode | Étape | Protagoniste | Résumé Clé | Story Beat | Gains SGC | Pertes SGC | Conséquences | Pré-requis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TEA-01** | S1E02 *Children of the Gods* | La Trahison Fondatrice | Teal'c | Teal'c trahit Apophis pour sauver des civils. | **L'Allié Inattendu** : Un Jaffa choisit sa conscience. | Teal'c (expertise militaire Jaffa), confiance naissante | Statut de traître de Teal'c sur Chulak | Teal'c : moteur de la future Rébellion Jaffa | APO-01 |
+| **TEA-01** | S1E02 *Children of the Gods (Partie 2)* | La Trahison Fondatrice | Teal'c | Teal'c trahit Apophis pour sauver des civils capturés depuis Abydos. Acte de désobéissance définitif sur Chulak. | **L'Allié Inattendu** : Un Jaffa choisit sa conscience. | Teal'c (expertise militaire Jaffa), confiance naissante | Statut de traître de Teal'c sur Chulak | Teal'c : moteur de la future Rébellion Jaffa | APO-01a |
 | **TEA-02** | S1E12 *Bloodlines* | Rya'c & L'Implantation | Teal'c | Retour clandestin pour empêcher l'implantation de Rya'c. Teal'c lui injecte un Goa'uld juventa — paradoxe. | **Le Sacrifice Paternel** : Sauver son fils en perpétuant ce qu'il combat. | Rya'c sauvé temporairement | Teal'c blessé, Bra'tac exposé | Rya'c porteur d'un larve Goa'uld — vulnérabilité future | TEA-01 |
 | **TEA-03** | S1E16 *Cor-Ai* | Le Procès sur Cartago | Teal'c | Les Byrsa jugent Teal'c pour ses crimes de Premier. Sauvé par SG-1. | **La Rédemption par le Passé** : Assumer ses crimes pour mériter la liberté. | Alliance Cartago/Byrsa, reconnaissance Jaffa coupable | Réputation de Teal'c entachée officiellement | Teal'c accepte sa culpabilité historique — libérateur psychologique | TEA-02 |
 | **TEA-04** | S2E08 *Family* | Rya'c Weaponisé | Teal'c / Bra'tac | Apophis weaponise Rya'c comme vecteur biologique. Déprogrammation réussie. | **La Famille comme Arme** : Les liens de Teal'c retournés contre le SGC. | Rya'c libéré, Bra'tac consolide confiance | Rya'c traumatisé durablement | Apophis confirmé comme ennemi des Jaffa rebelles | TEA-02, APO-07 |
@@ -134,15 +136,15 @@ Base canonique des arcs narratifs SG-1, structurée pour `gds-create-narrative`.
 
 ```
 Film (1994)
-  └→ APO-01 ──┬→ APO-02 [Kawalsky]
-              ├→ TEA-01 → TEA-02 → TEA-03 → TEA-04
-              ├→ ANC-01 [Héliopolis]
-              ├→ ASG-01 [Cimmeria] → ASG-02 [Thor] → ASG-03 [Fifth Race/ANC-03]
-              ├→ HAT-01 [Hathor] → HAT-02 [Out of Mind]
-              ├→ APO-03 → APO-04 ──┬→ KIN-01 → NID-01
-              │                    └→ APO-05 → APO-06, APO-07, APO-08
-              │                                        └→ SOK-01
-              │                                        └→ APO-09 ← HAT-02
+  └→ APO-01a [Abydos] → APO-01b [Chulak] ──┬→ APO-02 [Kawalsky]
+                                             ├→ TEA-01 → TEA-02 → TEA-03 → TEA-04
+                                             ├→ ANC-01 [Héliopolis]
+                                             ├→ ASG-01 [Cimmeria] → ASG-02 [Thor] → ASG-03 [Fifth Race/ANC-03]
+                                             ├→ HAT-01 [Hathor] → HAT-02 [Out of Mind]
+                                             ├→ APO-03 → APO-04a [Kinsey/Sénat] → APO-04b [Ha'taks] ──┬→ KIN-01 → NID-01
+                                             │                                                         └→ APO-05 → APO-06, APO-07, APO-08
+                                             │                                                                             └→ SOK-01
+                                             │                                                                             └→ APO-09 ← HAT-02
 TOK-01 → TOK-02 → TOK-03
 ANC-02 [Antarctique] → NID-01 [NID vole la Porte]
 ```

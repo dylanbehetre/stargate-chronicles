@@ -1,4 +1,4 @@
-# Stargate — Index Maître des Arcs Narratifs 🌌
+# Stargate — Index Maître des Arcs Narratifs 
 
 Index de navigation pour la base de connaissance narrative complète de SG-1 et Atlantis.
 
@@ -89,7 +89,7 @@ FILM STARGATE (1994)
 | Arcs SG-1 documentés | 20 arcs |
 | Arcs SGA documentés | 9 arcs |
 | Arcs Crossover | 3 arcs |
-| Étapes narratives totales (beats) | ~90 story beats |
+| Étapes narratives totales (beats) | ~103 story beats (dont 13 nouveaux issus du découpage multi-planètes) |
 | Épisodes couverts (SG-1) | ~180 épisodes canoniques + 2 films |
 | Épisodes couverts (SGA) | ~95 épisodes canoniques |
 | Portée temporelle in-universe | 1997 → 2009 |

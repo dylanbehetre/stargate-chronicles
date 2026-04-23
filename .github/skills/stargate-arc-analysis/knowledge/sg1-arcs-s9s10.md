@@ -13,7 +13,8 @@ Continuation de `sg1-arcs-s6s8.md`. IDs séquentiels.
 
 | ID | Saison/Épisode | Étape | Protagoniste | Résumé Clé | Story Beat | Gains SGC | Pertes SGC | Conséquences | Pré-requis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **ORI-01** | S9E01–03 *Avalon / Origin* | Premier Contact — Le Livre des Origines | Daniel / Vala | Daniel et Vala, liés par bracelets Anciens, se retrouvent dans la galaxie Ori. Ils voient brûler vifs des réfractaires. Les Ori découvrent l'existence de la Voie Lactée. | **L'Évangile de la Terreur** : Les Ori convertissent — et tuent ceux qui refusent. | Connaissance partielle des Ori et du Livre des Origines | Vala et Daniel temporairement déconnectés de la réalité | Les Ori savent que la Voie Lactée existe — invasion planifiée | ASC-05 |
+| **ORI-01a** | S9E01–02 *Avalon (Partie 1 & 2)* | Glastonbury — Le Trésor d'Avalon | Mitchell / Vala / Daniel | Vala lie Daniel à elle par bracelets Anciens. Ils découvrent le caveau souterrain de Myrddyn/Merlin sous Glastonbury. Activation des pierres de communication Anciennes. | **Le Vestibule de l'Arc** : L'héritage de Merlin ouvre une fenêtre sur une galaxie inconnue — à un prix corporel. | Pierres de communication Anciennes opérationnelles, trésor d'Avalon (artefacts), Mitchell intégré à SG-1 | Daniel et Vala temporairement déconnectés de leur corps sur Terre | Possibilité de contact à distance avec d'autres galaxies établie ; Merlin = fil directeur | ASC-05 |
+| **ORI-01b** | S9E03 *Origin* | Galaxie Ori — Le Livre des Origines | Daniel / Vala (en Harrid & Sallis) | Via les pierres de communication, Daniel et Vala se retrouvent dans la galaxie Ori, dans les corps de villageois dévots. Ils assistent — impuissants — au brûlage de réfractaires. Les Ori découvrent l'existence de la Voie Lactée. | **L'Évangile de la Terreur** : Les Ori convertissent — et tuent ceux qui refusent. Leur doctrine = *l'Origine*. | Connaissance du Livre des Origines, structure de la foi Ori documentée | Vala brûlée vive dans le corps de Sallis (traumatisme), couple Harrid/Sallis exécuté | Les Ori savent que la Voie Lactée existe — invasion planifiée ; Priori envoyés | ORI-01a |
 | **ORI-02** | S9E06–07 *Beachhead / Ex Deus Machina* | Tête de Pont Ori | SG-1 / Vala | Les Ori construisent un Supergate dans la Voie Lactée. Première démonstration des Vaisseaux-Arches. | **L'Invasion par la Foi** : Les Ori ont des équivalents Anciens pour tout — en plus grand. | Intel sur Supergate, architecture des vaisseaux Ori | Planète sacrifiée pour créer le Supergate | Supergate = autoroute d'invasion permanente | ORI-01 |
 | **ORI-03** | S9E10 *The Fourth Horseman* | La Plague d'Ori | Carter / Orlin | Les Ori envoient une plague de conversion biologique sur Terre. Orlin (Ancien décendé) aide Carter. Il perd son intelligence dans le processus. | **L'Arme Biologique Divine** : Les Ori weaponisent la maladie comme extension de volonté divine. | Vaccin anti-plague Ori | Orlin sacrifie son intelligence pour aider, plusieurs milliers infectés | Preuve qu'Ori peuvent frapper la Terre directement | ORI-02 |
 | **ORI-04** | S9E19–20 *Camelot / Crusade* | La Croisade Commence | SG-1 / Vala / Adria | Vala donne naissance à Adria — l'Orici. Grande bataille spatiale : coalition Tau'ri/Tok'ra/Jaffa détruite par la flotte Ori. | **La Naissance de l'Antéchrist** : Adria combine apparence humaine et puissance Ori. | Aucun (défaite totale) | Flotte alliée quasi-anéantie, nombreuses planètes perdues | Adria = commandante des forces Ori ; invasion massive | ORI-03 |
@@ -89,10 +90,10 @@ Continuation de `sg1-arcs-s6s8.md`. IDs séquentiels.
 ## Carte des Dépendances S9–S10
 
 ```
-ASC-05 (S7) → ORI-01 [Premier contact] → ORI-02 [Tête de pont] → ORI-03 [Plague]
-                                        → ORI-04 [Croisade/Adria] → ORI-05 [Invasion]
-                                        → ORI-06 [Daniel Priori] → ORI-07 [Unending/Asgard]
-                                        → ORI-08 [Ark of Truth ← MER-03]
+ASC-05 (S7) → ORI-01a [Avalon/Terre] → ORI-01b [Galaxie Ori/Origine] → ORI-02 [Tête de pont] → ORI-03 [Plague]
+                                                                        → ORI-04 [Croisade/Adria] → ORI-05 [Invasion]
+                                                                        → ORI-06 [Daniel Priori] → ORI-07 [Unending/Asgard]
+                                                                        → ORI-08 [Ark of Truth ← MER-03]
 
 ANC-03 (S2) → MER-01 [Camelot] → MER-02 [Sangraal] → MER-03 [Envoi/Ori tués]
 
