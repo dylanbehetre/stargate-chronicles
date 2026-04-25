@@ -4,8 +4,8 @@ project: 'Stargate Chronicles'
 date: '2026-04-23'
 author: 'Dylan'
 version: '1.2'
-stepsCompleted: [1, 2, 3, 4]
-status: 'in-progress'
+stepsCompleted: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+status: 'complete'
 narrativeComplexity: 'Heavy'
 gdd: '_bmad-output/gdd.md'
 v1Scope: 'Tutoriel + ARC-G01 étapes 1–3'
@@ -1167,3 +1167,311 @@ Davis est le vecteur des ordres de Kinsey. À chaque livraison d'ordre difficile
 | **Apogée V2** | G05, G06, A02 conclusion, A05 conclusion, Pégase parallèle | Maximum | Épique + mélancolie |
 
 **Moments de respiration obligatoires** — chaque arc antagoniste majeur inclut au moins un beat de camaraderie ou de victoire partielle avant l'escalade suivante. La densité narrative ne doit jamais étouffer l'émerveillement fondateur du programme.
+
+---
+
+## Livraison Narrative
+### Cutscènes
+**Quantité :** 4 cutscènes majeures (périmètre V1)
+**Durée moyenne :** Courte à moyenne (style économique graphic novel)
+**Style :** Motion Comic — illustrations du projet animées (pan/zoom, légère animation)
+**Passables :** Oui, par le joueur à tout moment
+**Cutscènes majeures (V1) :**
+1. **Composition de l'équipe** — Première formation de l'équipe SG, présentation des membres
+2. **Envoi de la sonde** — Activation de la Porte, lancement de la MALP vers une destination inconnue
+3. **Envoi de l'équipe** — Traversée de la Porte pour la première mission off-world
+4. **Cérémonie de deuil** — Hommage à un membre de l'équipe disparu en mission (conditionnelle)
+---
+### Narration en Cours de Jeu
+**Style principal :** Narration illustrée contée — illustrations statiques avec texte narratif en dessous, style graphic novel interactif
+**Système de choix :** À chaque exploration, le joueur se voit proposer des embranchements narratifs. Certains choix sont conditionnés aux statistiques des membres de l'équipe présents.
+**Arcs narratifs multiples :** Une même exploration peut se dérouler selon plusieurs chemins avec des conséquences différentes sur l'histoire et les ressources.
+**Montrer vs Expliquer :** Priorité au "montrer" — l'histoire avance par les illustrations et les conséquences visibles des choix plutôt que par l'exposition directe.
+**Contrôle joueur :** Les dialogues et textes narratifs sont passables / accélérables.
+---
+### Contenu Optionnel
+Aucun contenu optionnel prévu pour la V1.
+*(Les arcs secondaires et lore collectible sont réservés aux versions futures.)*
+---
+### Structure des Fins
+**Nombre de fins :** 3 fins à conséquences cumulées
+**Déterminant principal :** Score de Confiance Gouvernementale accumulé tout au long de l'ARC-G01, combiné au bilan des membres d'équipe survivants.
+**Calcul du score de fin :**
+- ✅ Objectifs de mission atteints
+- ✅ Membres d'équipe survivants (pertes = impact politique)
+- ✅ Choix discrets sans incident diplomatique
+- ❌ Membres perdus (rapports, familles, exposition publique)
+- ❌ Incidents diplomatiques / dommages collatéraux
+- ❌ Menaces non neutralisées (Apophis en fuite)
+  **Les 3 fins :**
+  | Fin | Condition | Cutscène | Ton | Conséquence V2 |
+  |-----|-----------|----------|-----|----------------|
+  | 🥇 **Mandat Renforcé** | Mission réussie + confiance haute | Le joueur reçoit feux verts et budget étendu | Légitimité du programme confirmée | Nouvelles missions autorisées sans friction |
+  | ⚔️ **Mandat Fragilisé** | Mission réussie + confiance basse | Réunion tendue avec les tutelles gouvernementales | Victoire tactique, fragilité politique | Restrictions opérationnelles en V2 |
+  | 🚁 **Mandat Suspendu** | Mission échouée ou lourdes pertes | Enquête, programme sous surveillance | Survie du programme en question | V2 commence sous contrainte d'audit |
+  **Fin "vraie" / dorée :** Mandat Renforcé — atteignable sur tous les runs avec les bons choix.
+  **Rejouabilité :** Les 3 fins sont accessibles en rejouant l'arc avec des stratégies différentes.
+---
+
+## Intégration Gameplay
+
+### Connexion Narration-Gameplay
+
+**Approche d'intégration :**
+La narration et le gameplay forment une boucle vertueuse dans Stargate Chronicles : chaque avancée narrative ouvre de nouvelles possibilités de gameplay, et chaque session de gameplay génère de nouvelles avancées narratives. Les deux systèmes se nourrissent mutuellement — l'histoire est le moteur de la progression, et la progression est le vecteur de l'histoire.
+
+**Alignement Mécanique-Thème :**
+| Thème narratif | Mécanique correspondante |
+|---|---|
+| Danger et sacrifice | Permadeath des membres d'équipe |
+| Fragilité institutionnelle | Score de Confiance Gouvernementale |
+| Exploration comme moteur de découverte | Déblocage de connaissances, technologies et destinations via les explorations |
+| Responsabilité du commandant | Choix aux conséquences immédiates et à long terme |
+| Progrès scientifique incrémental | Arbre de recherche conditionné aux découvertes archéologiques |
+
+**Boucle Narrative-Gameplay :**
+1. **Recherche archéologique** → débloque la capacité d'exploration
+2. **Exploration** → génère découvertes (connaissances, matériel, destinations, lore)
+3. **Connaissances** → alimentent les recherches et ouvrent de nouveaux arcs narratifs
+4. **Recherches** → débloquent technologies, fabrications, infrastructures et bonus d'exploration
+5. **Équipement** → améliore les statistiques des équipes en mission
+6. **Avancée dans les arcs** → via explorations ET événements narratifs à la base (attaques extérieures, interventions de Kinsey)
+
+**Équilibre Histoire / Gameplay :**
+Les sections narratives (cutscènes, choix, événements de base) servent de jalons entre les phases de gestion et d'exploration. L'histoire progresse naturellement au fil du jeu — elle n'interrompt pas le flux, elle le récompense.
+
+**Considérations Ludonarratives :**
+Harmonie forte : le joueur incarne un commandant dont les décisions ont un poids réel (pertes = deuil, choix diplomatiques = confiance, équipement = survie). Ce que le joueur FAIT raconte la même histoire que ce que le jeu LUI DIT.
+
+---
+
+### Verrouillage Narratif (Story Gating)
+
+**Approche :** Verrous durs + déclencheurs conditionnels
+
+**Éléments verrouillés par l'histoire :**
+- Les destinations d'exploration sont débloquées par la progression narrative (glyphes, contacts, découvertes)
+- Certains arcs sont inaccessibles sans avoir complété leurs prérequis narratifs
+- Les technologies avancées (off-world, Goa'uld) nécessitent des découvertes narratives préalables
+
+**Déclencheurs de Cutscènes :**
+Chaque cutscène se déclenche lorsque sa condition narrative est atteinte (seuil de Confiance, état de mission, statut d'un membre, battement d'arc accompli).
+
+**Battements Narratifs Obligatoires (ARC-G01) :**
+| Code | Battement | Caractère |
+|---|---|---|
+| APO-01a | Première détection de la menace Apophis | 🔒 Obligatoire |
+| APO-01b | Confirmation de l'intention hostile | 🔒 Obligatoire |
+| APO-04a | Confrontation directe avec Apophis | 🔒 Obligatoire |
+| G01-6b | Point de bascule — choix critique de commandement | 🔒 Obligatoire |
+| G01-8 | Impact institutionnel — rapport gouvernemental | 🔒 Obligatoire |
+| G01-9 | Crise finale — décision sous pression | 🔒 Obligatoire |
+| G01-10 | Résolution de l'arc — fin déterminée | 🔒 Obligatoire |
+
+**Battements Narratifs Facultatifs (ARC-G01) :**
+| Code | Type | Impact si manqué |
+|---|---|---|
+| APO-02 | Arc secondaire Apophis | Lore manqué, ressources potentiellement non obtenues |
+| APO-03 | Arc secondaire Apophis | Idem |
+| APO-04b | Variante de confrontation | Option stratégique alternative |
+| APO-05 | Épilogue arc Apophis | Lore et contexte V2 |
+| G01-4 | Événement de base | Bonus de ressources / relation |
+| G01-5 | Événement de base | Idem |
+| G01-6 | Précurseur du point de bascule | Contexte enrichi pour G01-6b |
+| G01-7 | Événement pré-crise | Préparation narrative à G01-9 |
+
+**Rôle de la narration dans la progression :**
+La narration ne se contente pas de raconter — elle débloque. Chaque battement narratif peut ouvrir une recherche, révéler une destination inédite, ou activer une option de gameplay dormante que le joueur pourra exploiter à sa guise.
+
+---
+
+### Agentivité du Joueur
+
+**Niveau d'agentivité :** Choix significatifs — le joueur façonne les issues
+
+**Influence du joueur :**
+Le joueur exerce une influence directe sur le déroulement de l'ARC-G01 et sur la fin obtenue. Ses décisions au fil des explorations et des événements de base déterminent le Score de Confiance Gouvernementale et le bilan humain — les deux piliers du calcul de fin.
+
+**Système de Choix :**
+- **Types de choix :** Tactiques (quelle mission prioriser, quelle équipe envoyer), Diplomatiques (comment répondre aux tutelles, à Kinsey), Moraux (sacrifier un membre pour sauver une mission, révéler ou cacher une information) — et potentiellement d'autres à définir selon les arcs
+- **Portée des conséquences :** Principalement immédiates (ressources, moral, pertes, score de Confiance) — le système reste ouvert à des conséquences à long terme en V2
+- **Timing :** Les choix interviennent lors des explorations (embranchements narratifs conditionnés aux statistiques d'équipe) et lors des événements narratifs à la base
+
+**Liberté de Roleplay :**
+Le joueur incarne ce qu'il veut. Aucun archétype de commandant imposé — qu'il joue le stratège froid, le diplomate prudent, le chef protecteur ou le commandant ambitieux, le jeu honore son style de commandement par ses conséquences plutôt que par un jugement explicite.
+---
+
+## Planification de Production
+
+### Volume d'Écriture
+
+**Volume estimé :** Narration Lourde — objectif 50 000–70 000 mots (V1)
+*(La fourchette haute de 150 000 mots est écartée pour maintenir un scope réalisable en solo)*
+
+**Décomposition du contenu :**
+
+| Catégorie | Description | Poids relatif |
+|---|---|---|
+| Narration principale | Textes des explorations, embranchements narratifs, choix | Majeur |
+| Battements d'arc | 7 battements obligatoires + 8 facultatifs (ARC-G01) | Significatif |
+| Événements de base | Dialogues Kinsey, tutelles gouvernementales, équipe | Modéré |
+| Cutscènes | 4 cutscènes majeures (texte motion comic) | Léger |
+| Textes UI / Système | Descriptions recherches, technologies, fabrications, infrastructures | Modéré |
+
+**Nombre de scènes :** ~15 scènes narratives majeures (7 obligatoires + 8 facultatives) + tutoriel + résolution
+
+**Complexité des embranchements :**
+Architecture d'écriture modulaire en arbre (troncs communs + branches) — les chemins alternatifs partagent des troncs narratifs pour maximiser l'expérience perçue tout en contenant le volume réel d'écriture. Cette approche permet une expérience "Heavy" avec un volume maîtrisé en solo.
+
+---
+
+### Localisation
+
+**Langues cibles :** Français (FR) · Anglais (EN)
+
+**Pipeline de localisation :**
+- **V1** : Français uniquement — langue de développement principale, première release
+- **V1.1** : Traduction anglaise complète — patch rapide post-lancement pour la communauté internationale
+
+**Justification :** Découpler les deux langues permet de shipper la V1 sans bloquer sur la traduction, tout en garantissant la qualité des deux versions. La communauté anglophone est adressée rapidement en V1.1.
+
+**Adaptation Culturelle :**
+- Les références canon Stargate respecteront les conventions officielles de chaque version linguistique de la série
+- Définir une **charte de voix narrative** par langue avant l'écriture pour garantir la cohérence du registre (VF vs VO de la série)
+- Le ton et le registre seront adaptés : français légèrement plus formel, anglais aligné sur le style des dialogues de la série TV
+
+**Considérations Techniques :**
+- Prévoir un buffer UI de ~15–20% intégré dès le développement Godot pour accueillir les variations FR/EN
+- Le système de narration illustrée (texte sous illustration) doit supporter les deux langues sans recadrage des visuels
+
+---
+
+### Voice Acting
+
+**Approche :** Texte uniquement — aucun voice acting
+
+**Justification :**
+Projet solo à budget zéro. Le format graphic novel interactif (illustrations statiques + texte narratif) est cohérent avec l'absence de voix — le style visuel et la narration écrite portent l'immersion. L'absence de voice acting préserve également la liberté d'itérer sur les dialogues après les premiers playtests sans contrainte de re-recording.
+
+**Ambiance sonore :**
+La dimension sonore sera assurée par la musique et les effets sonores (hors scope narratif), sans dialogue vocal.
+---
+
+## Annexe A — Carte des Relations Personnages
+
+### Carte Relationnelle
+
+```
+                           [APOPHIS]
+                               |
+                          (menace directe)
+                               |
+              [KINSEY] ---(pression politique)--- [LE GÉNÉRAL]
+                                                       |
+                    ┌──────────────────────────────────┼──────────────────────────────┐
+                    |                                  |                              |
+             [L'ARCHÉOLOGUE]                  [LA SCIENTIFIQUE]          [LE COMBATTANT JAFFA]
+                    |                                  |                              |
+           (pont diplomatique)                  (soutien tech)              (ex-loyauté Apophis)
+                    |
+          [LA COMPAGNE CAPTIVE]
+          [LE JEUNE ALLIÉ CAPTURÉ]
+                (captifs d'Apophis)
+
+[MAJOR DAVIS] ---(liaison institutionnelle / Pentagone)--- [LE GÉNÉRAL]
+[HAMMOND] ---(miroir / héritage du silence 1969)--- [LE GÉNÉRAL]
+```
+
+### Clé des Relations
+
+| Personnage A | Relation | Personnage B |
+|---|---|---|
+| Le Général | Commande / Protège | Équipe SG — Archéologue, Scientifique, Combattant, Combattant Jaffa |
+| Le Général | Sous pression politique de | Kinsey |
+| Le Général | Liaison institutionnelle via | Major Davis (Pentagone) |
+| Le Général | Miroir / héritage partagé avec | General Hammond (deux gardiens du silence, 1969) |
+| Apophis | Antagoniste existentiel de | Le Général / tout le SGC |
+| Le Combattant Jaffa | Transfuge retourné contre | Apophis |
+| Kinsey | Adversaire politique de | Le Général |
+| La Compagne Captive | Déclencheur émotionnel pour | L'Archéologue |
+| Le Jeune Allié Capturé | Déclencheur d'action pour | Le Commandant de SG-1 |
+
+---
+
+## Annexe B — Ligne Temporelle Narrative
+
+### Chronologie des Événements
+
+```
+[BACKSTORY — 1928 / 1969]
+Découverte de la Porte à Gizeh (1928)
+Le parent du Général voit la Porte s'activer accidentellement (1969)
+Décennies de silence et de rapports de routine
+|
+v
+[TUTORIEL — ACTIVATION DU PROGRAMME]
+├── TUTO-0 : Bienvenue, Général — prise de commandement du SGC
+├── TUTO-1 : Déchiffrer les Glyphes — recrutement de l'Archéologue, première recherche
+├── TUTO-2 : Première Activation — envoi de la MALP vers Abydos
+├── TUTO-3 : Constituer la Première Équipe SG
+└── TUTO-4 : À Travers la Porte ! — première exploration d'Abydos
+|
+v
+[ARC-G01 — ACTE 1 : LA MENACE]
+├── APO-01a [🔒] : Apophis attaque Abydos — captifs enlevés vers Chulak
+├── APO-01b [🔒] : Infiltration de Chulak — Le Combattant Jaffa rejoint le SGC
+├── APO-02  [opt] : Mort du Combattant de la Première Heure — première perte permanente
+└── APO-03  [opt] : Répercussions internes — protocoles de décontamination
+|
+v
+[ARC-G01 — ACTE 2 : ESCALADE]
+├── G01-4  [opt] : Événement de base — relations d'équipe, ressources
+├── G01-5  [opt] : Événement de base — pression institutionnelle croissante
+├── G01-6  [opt] : Précurseur du point de bascule — premières fissures
+├── G01-6b [🔒] : Point de bascule — choix critique de commandement
+└── APO-04a [🔒] : Confrontation directe avec Apophis
+     └── APO-04b [opt] : Variante stratégique de confrontation
+|
+v
+[ARC-G01 — ACTE 3 : CRISE & RÉSOLUTION]
+├── G01-7  [opt] : Événement pré-crise — préparation narrative
+├── G01-8  [🔒] : Impact institutionnel — rapport gouvernemental (Kinsey intervient)
+├── G01-9  [🔒] : Crise finale — décision sous pression maximale
+├── APO-05 [opt] : Épilogue arc Apophis — lore V2
+└── G01-10 [🔒] : Résolution — fin déterminée par le Score de Confiance Gouvernementale
+|
+v
+[FINS — 3 ISSUES POSSIBLES]
+├── 🥇 Mandat Renforcé  — Mission réussie + confiance haute
+├── ⚔️  Mandat Fragilisé — Mission réussie + confiance basse
+└── 🚁 Mandat Suspendu  — Échec ou lourdes pertes
+```
+
+### Notes Timeline
+
+- Les battements `[opt]` sont accessibles según les conditions narratives et les choix du joueur
+- Entre chaque battement canonique, des explorations de planètes libres (procédurales) enrichissent les ressources et le contexte sans interrompre la progression
+
+---
+
+## Annexe C — Références & Inspirations
+
+### Référence Principale
+
+**Le Canon Stargate** — source narrative absolue et autorité de référence du projet.
+
+| Série / Média | Rôle dans le projet |
+|---|---|
+| **Stargate SG-1** (Saisons 1–10) | Source principale — arcs, personnages, lore, ton, registre narratif |
+| **Stargate Atlantis** (Saisons 1–5) | Source V2 — arcs Pégase, personnages Atlantis, extension de l'univers |
+| **Stargate : Le Film (1994)** | Point de départ canonique du programme — état initial du jeu |
+| **Stargate Universe** | Référence lore étendu (scope post-V2) |
+
+### Principes de Fidélité Canon
+
+- Les noms de personnages canoniques (O'Neill, Carter, Jackson, Teal'c, etc.) déclenchent des bonus spécifiques uniquement si la race correspondante est sélectionnée
+- Les événements canoniques (épisodes référencés par code SxExx) servent de base aux battements narratifs obligatoires
+- Les dialogues et le ton respectent les conventions de chaque version linguistique officielle de la série (VF / VO)
+- Le système de bonus canoniques est documenté dans le GDD §Bonus Canons
+---
+
