@@ -62,15 +62,31 @@ Toute implémentation doit être couverte. La couverture de tests fait partie de
 
 ## ⚙️ Stack Technique
 
-> **En cours d'évaluation** — chaque décision sera arbitrée selon les critères Technology-Fit First et documentée dans [`agent.md`](./agent.md).
+> Stack validée — décisions documentées dans [`agent.md`](./agent.md) et
+> [`_bmad-output/game-architecture.md`](./_bmad-output/game-architecture.md).
 
-| Domaine | Statut | Notes |
+| Domaine | Statut | Décision |
 |---|---|---|
-| Moteur de jeu | 🔍 À évaluer | Godot, Unity, custom… |
-| Backend | 🔍 À évaluer | Ouvert à toute stack adaptée au besoin |
-| Frontend / UI | 🔍 À évaluer | Ouvert à toute stack adaptée au besoin |
-| Tests | 🔍 À évaluer | Selon stack retenue (ex : Vitest, Playwright…) |
+| Moteur de jeu | ✅ Acté | **Godot 4.6.2** — Open-source, MIT, export PC natif |
+| Langage | ✅ Acté | **GDScript** typé statiquement — optimal IA co-pilote |
+| Renderer | ✅ Acté | **Compatibility (OpenGL)** — 2D pur, compatible mobile v2 |
+| Architecture | ✅ Acté | Domain-Driven + EventBus central + ECA déclaratif JSON |
+| Tests | ✅ Acté | **GUT ≥ 7.4** — TU + TI par domaine |
 | Agent IA | ✅ Acté | Antigravity + GitHub Copilot (IntelliJ) |
+| MCP Servers | ✅ Acté | `bradypp/godot-mcp` + `upstash/context7` |
+
+---
+
+## 📊 État d'Avancement
+
+| Jalon | Statut | Document |
+|---|---|---|
+| Game Brief | ✅ Complété | `_bmad-output/planning-artifacts/game-brief.md` |
+| GDD (Game Design Document) | ✅ Complété | `_bmad-output/gdd.md` |
+| Narrative Design | ✅ Complété | `_bmad-output/narrative-design.md` |
+| **Game Architecture** | ✅ **Complété** | `_bmad-output/game-architecture.md` |
+| Epics & Stories | 🔜 Prochain | — |
+| Implémentation MVP | ⏳ À venir | — |
 
 ---
 
@@ -79,8 +95,10 @@ Toute implémentation doit être couverte. La couverture de tests fait partie de
 2. Extrayez l'archive.
 3. Lancez `StargateChronicles.exe`.
 
-*(Pour les développeurs)* : 
+*(Pour les développeurs)* :
 - Clonez le repo : `git clone https://github.com/dylanbehetre/stargate-command.git`
+- Voir [`_bmad-output/game-architecture.md`](./_bmad-output/game-architecture.md)
+  pour la configuration Godot et l'ordre d'initialisation des Autoloads.
 
 ---
 

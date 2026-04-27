@@ -79,9 +79,21 @@ Toute implémentation **doit** être couverte par :
 
 ## 🛠️ Stack Retenue
 
-*(Ce bloc est mis à jour par l'agent au fil des décisions actées)*
+*(Mis à jour le 2026-04-26 — Workflow Game Architecture complété, 9/9 étapes)*
 
-> Aucune stack validée à ce stade — en attente des premières décisions techniques.
+| Domaine | Décision | Rationale |
+|---|---|---|
+| Moteur | **Godot 4.6.2** | Open-source MIT, export PC natif, optimal LLM |
+| Langage | **GDScript typé statiquement** | Natif Godot, coverage LLM excellent, pas d'overhead .NET |
+| Renderer | **Compatibility (OpenGL)** | 2D pur, mémoire réduite, prépare mobile v2 |
+| Architecture | **Domain-Driven + EventBus central** | 9 domaines isolés, communication découplée |
+| Débloquage organique | **ECA déclaratif JSON** | Règles externalisées, IA peut ajouter sans toucher au code |
+| Persistence | **JSON versionné** (`schema_version`) | Lisible, debuggable LLM, extensible sans migration |
+| Chronologie | **Timer continu + pause automatique** | Élimine les race conditions narratives par design |
+| Tests | **GUT ≥ 7.4** | Framework de tests GDScript natif (TU + TI) |
+| Agents IA | Antigravity + GitHub Copilot | MCP : `bradypp/godot-mcp` + `upstash/context7` |
+
+**Document de référence :** `_bmad-output/game-architecture.md` (status: complete)
 
 ---
 

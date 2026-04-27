@@ -1107,64 +1107,84 @@ La progression suit trois axes simultanés :
 
 ### Économie et Ressources
 
-#### Ressources Primaires
+### I. Revenus : La Dotation Mensuelle
+Le budget du SGC repose sur une dotation versée le **1er de chaque mois** (temps de jeu).
 
-| Ressource               | Source                                         | Usage                                   |
-|-------------------------|------------------------------------------------|-----------------------------------------|
-| **Budget (USD simulé)** | Gouvernement US, alliances, technologie vendue | Infrastructure, équipement, recrutement |
-| **Naquadah**            | Missions terrain, alliances Goa'uld/Tok'ra     | Armement, énergie, recherche            |
-| **Trinium**             | Missions planètes spécifiques                  | Construction renforcée, armure          |
-| **Cristaux aliens**     | Missions Anciens/Tollan                        | Recherche technologie avancée           |
+**Formule :** `Dotation = Base Statut × Facteur Confiance × Facteur Menace`
 
-#### Ressources Secondaires *(débloquées par progression)*
+| Statut Programme | Déclencheur Narratif | Dotation Base (mensuelle) |
+|------------------|----------------------|---------------------------|
+| **Sommeil**      | Début de partie      | 2 000 000 $               |
+| **Actif**        | 1ère activation Porte| 8 000 000 $               |
+| **Stratégique**  | 1er contact alien    | 20 000 000 $              |
+| **Priorité Nat.**| Menace Apophis/Anubis| 50 000 000 $              |
 
-| Ressource     | Source                         | Usage                                                       |
-|---------------|--------------------------------|-------------------------------------------------------------|
-| **ZPM**       | Missions exceptionnelles, rare | Alimentation Atlantis, technologie Ancienne haute puissance |
-| **Naquadria** | Alliance Langarienne           | Armement surpuissant, risque instabilité                    |
-| **Kino**      | Pégase uniquement              | Reconnaissance avancée en mission                           |
-
-#### Inventaire & Réserve d'Équipements
-
-En plus des ressources brutes, le joueur accumule dans sa **réserve d'équipements** les objets fabriqués, récupérés en
-mission ou obtenus via des alliances. Ces équipements sont **assignables aux membres d'équipe** avant une mission ou
-stockés au SGC.
-
-**Distinction fondamentale :**
-
-- **Ressources** = matériaux bruts consommés pour construire, rechercher ou fabriquer
-- **Équipements** = objets utilisables, assignables aux membres, stockés dans la réserve
-
-**Exemples d'équipements fabriqués / récupérés :**
-
-| Équipement                                 | Source                             | Effet en mission                                                        |
-|--------------------------------------------|------------------------------------|-------------------------------------------------------------------------|
-| **P90 amélioré**                           | Fabrication (Armurerie)            | Dommages +1, fiabilité accrue                                           |
-| **Armure Tau'ri (v2)**                     | Fabrication (Armurerie + Trinium)  | Absorption blessure légère                                              |
-| **Zat'nik'tel**                            | Récupéré / Alliances Jaffa         | Effet 3 stades (étourdissement / mort / désintégration)                 |
-| **Gant de force Goa'uld**                  | Mission exceptionnelle             | Choix de combat narratif exclusif ; nécessite Adaptateur ou Ancien Hôte |
-| **Intar**                                  | Fabrication SGC                    | Arme d'entraînement non létale — réduit risque blessure en exercice     |
-| **T.E.R. (Trans-Phase Eradication Rifle)** | Recherche débloquée via Arc Anubis | Seule arme infligeant des dégâts aux soldats Kull                       |
-| **E2PZ**                                   | Fabrication (haute technologie)    | *(Émetteur Zéro-Point portatif — usage à définir selon arc narratif)*   |
-| **ZPM portable**                           | Mission rare / Anciens             | Alimentation équipements Anciens en mission                             |
-| **MALP amélioré**                          | Fabrication (Labo)                 | Reconnaissance avant mission — réduit risque surprise                   |
-
-> **Réserve limitée :** La capacité de stockage d'équipements est liée à l'infrastructure (Armurerie, Entrepôt).
-> Améliorer ces sections du SGC augmente le nombre d'emplacements disponibles.
+**Multiplicateurs :**
+- **Confiance Gouvernementale :** De 0.5x (Confiance < 30%) à 1.5x (Confiance > 85%).
+- **Menace Galactique :** De 1.0x (Nulle) à 1.25x (Critique). Actif uniquement à partir du Statut Stratégique.
 
 ---
 
-**Revenus :** Dotation gouvernementale mensuelle (modulée par Confiance Gouvernementale) + bonus missions réussies + *
-*transfert technologique exceptionnel** *(événement narratif rare — voir ci-dessous)*
+### II. Structure des Dépenses
 
-**Dépenses fixes :** Salaires membres, maintenance infrastructure, incidents
+| Type | Poste | Impact |
+|------|-------|--------|
+| **Fixes** | Personnel de base | Lié au statut du programme (non gérable directement). |
+| **Fixes** | Salaires équipes SG | Coût par équipe active (incite à optimiser le roster). |
+| **Fixes** | Maintenance Infra | Coût par section construite au SGC. |
+| **Variables** | Recherche | Coût de lancement (one-shot) + Burn Rate mensuel. |
+| **Variables** | Fabrication | Coût USD (one-shot) + Ressources (Naquadah/Trinium). |
+| **Variables** | Infrastructure | Coût de construction ou d'amélioration. |
+| **Variables** | Infirmerie | Coût des soins en cas de blessure grave. |
 
-**Dépenses variables :** Construction, recherche, équipement, soins Infirmerie
+---
 
-**Tension économique :** Un budget serré force des missions risquées pour les ressources → augmente le risque de
-pertes → impact moral et budget → spirale négative à gérer.
+### III. Recherche vs Fabrication (Distinction Nette)
 
-> **Commerce de technologie — Principe narratif**
+#### 1. Système de Recherche (Le Savoir)
+La recherche produit de la **connaissance** (blueprints, capacités narratives).
+- **Coûts :** Lancement (USD) + Burn Rate mensuel (USD) + Artefact prérequis (optionnel).
+- **Modificateurs :** Traits de membres (ex: *Méthodique*), Alliances (Tok'ra, Jaffa).
+
+#### 2. Système de Fabrication (Le Matériel)
+La fabrication produit des **objets tangibles** assignables.
+- **Coûts :** Blueprint (issu de la recherche) + Coût USD (one-shot) + Ressources brutes.
+- **Produits :** P90 améliorés, Zat'nik'tel, Armures au Trinium, MALP améliorés, etc.
+- **Limite :** Nombre de fabrications simultanées limité par le niveau de l'Armurerie.
+
+---
+
+### IV. Gestion du Déficit : L'Ultimatum de Kinsey
+
+Si le solde devient négatif au 1er du mois, le programme entre en **Phase de Crise**.
+
+1. **Le Premier Mois (Déficit) :** Intervention du Sénateur Kinsey.
+   - **Contraintes :** Interdiction totale de construire, fabriquer, recruter ou lancer des recherches.
+   - **Gel :** La Confiance Gouvernementale ne peut plus augmenter.
+2. **Le Deuxième Mois (Déficit persistant) :** **Game Over Narratif**.
+   - **Illustration :** La Porte des Étoiles éteinte, couverte d'une bâche du NID.
+   - **Épilogue :** Kinsey place un général à sa solde. Le programme est démantelé ou détourné. La Terre est aveugle.
+
+#### Actions de Survie (Pour repasser dans le vert) :
+- **Mise en sommeil d'infrastructure :** Désactiver une section pour supprimer sa maintenance (met en pause les projets associés).
+- **Dissolution d'équipe SG :** Licencier ou réaffecter une équipe pour supprimer son salaire.
+- **Annulation :** Stopper une recherche ou une fabrication en cours.
+
+#### Solutions d'Urgence (Axe Canon) :
+- **Le Pacte de Maybourne :** Vendre un artefact non-étudié au NID (Cash immédiat, baisse massive de Confiance).
+- **Extraction Forcée :** Mission spéciale de minage (Naquadah) sous haute pression politique (Risque élevé).
+- **Requête Tok'ra :** Aide en ressources en échange d'un service diplomatique/militaire dangereux.
+
+---
+
+### V. Ressources Spécifiques (Inventaire)
+
+| Ressource | Source | Usage |
+|-----------|--------|-------|
+| **Naquadah** | Missions de minage, Alliances | Énergie, Armement, Fabrication avancée. |
+| **Trinium** | Missions planètes spécifiques | Blindages, Armures, MALP avancés. |
+| **Cristaux Anciens** | Ruines, Arcs Narratifs | Technologie Ancienne, ZPM (rare). |
+| **Naquadria** | Arc Langara | Armes de destruction massive (Instable). |
 > Le transfert ou l'échange de technologie avec des alliés n'est **jamais une ligne budgétaire ordinaire**.
 > C'est un **événement diplomatique exceptionnel** : une négociation scénarisée avec enjeux narratifs,
 > fidèle à la série où ce type d'accord était rare, tendu et à double tranchant.
