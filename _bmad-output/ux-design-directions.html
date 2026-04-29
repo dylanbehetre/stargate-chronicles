@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargate Chronicles - Design Directions Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-slate: #2b2d31;
+            --bg-black: #141419;
+            --accent-yellow: #f5b914;
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
+            --border-ui: rgba(255,255,255,0.08);
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-slate);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Sidebar Selector */
+        .sidebar {
+            width: 300px;
+            background: var(--bg-black);
+            border-right: 1px solid var(--border-ui);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 100;
+        }
+
+        .direction-card {
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-ui);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .direction-card:hover {
+            border-color: var(--accent-yellow);
+        }
+
+        .direction-card.active {
+            background: rgba(245, 185, 20, 0.05);
+            border-color: var(--accent-yellow);
+        }
+
+        .direction-card h3 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            font-family: var(--font-mono);
+            color: var(--accent-yellow);
+        }
+
+        .direction-card p {
+            margin: 0;
+            font-size: 12px;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+
+        /* Main Viewport */
+        .viewport {
+            flex: 1;
+            position: relative;
+            background: var(--bg-slate);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* Common Components */
+        .mockup-container {
+            width: 100%;
+            height: 100%;
+            display: none !important; /* Force hide everything by default */
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .mockup-container.active {
+            display: flex !important; /* Standard flex for V1 and V3 */
+        }
+
+        #v2.mockup-container.active {
+            display: grid !important; /* Specific grid for V2 */
+        }
+
+        /* V1: Narrative Focus */
+        .v1-layout {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .v1-popup {
+            width: 700px;
+            background: var(--bg-black);
+            border: 1px solid var(--border-ui);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+        }
+
+        .v1-image {
+            width: 100%;
+            height: 350px;
+            background: #1a1a1a;
+            position: relative;
+        }
+
+        .v1-image::after {
+            content: "GRANDE ILLUSTRATION CONCEPT ART";
+            position: absolute;
+            top: 50%; left: 50%; transform: translate(-50%, -50%);
+            font-family: var(--font-mono);
+            font-size: 14px; color: #444;
+        }
+
+        .v1-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .v1-text {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .v1-choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        /* V2: Tactical Terminal */
+        .v2-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr 280px;
+            gap: 20px;
+        }
+
+        .v2-panel {
+            background: var(--bg-black);
+            border: 1px solid var(--border-ui);
+            padding: 20px;
+            font-family: var(--font-mono);
+        }
+
+        .v2-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .v2-image {
+            height: 250px;
+            background: #1a1a1a;
+            border: 1px solid var(--border-ui);
+        }
+
+        .v2-narrative {
+            background: var(--bg-black);
+            padding: 30px;
+            border: 1px solid var(--border-ui);
+        }
+
+        /* V3: Diegetic Bureau */
+        .v3-layout {
+            position: relative;
+            background: #1a1f26; /* Simulate wood/desk */
+            border-radius: 10px;
+        }
+
+        .v3-paper {
+            background: #e8e8e8;
+            color: #222;
+            padding: 50px;
+            width: 500px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+            transform: rotate(-1deg);
+            font-family: 'Times New Roman', serif;
+        }
+
+        .v3-folder {
+            position: absolute;
+            top: 50px; left: 50px;
+            width: 300px; height: 400px;
+            background: #c2a67e;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+            z-index: -1;
+        }
+
+        /* Buttons */
+        .btn-choice {
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-ui);
+            color: var(--text-main);
+            font-size: 14px;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+        }
+
+        .btn-choice:hover {
+            border-color: var(--accent-yellow);
+            background: rgba(245, 185, 20, 0.05);
+        }
+
+        .key-hint {
+            color: var(--accent-yellow);
+            font-family: var(--font-mono);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 style="font-size: 16px; margin-bottom: 20px; font-family: var(--font-mono);">DIRECTIONS DESIGN</h2>
+        
+        <div class="direction-card active" onclick="showMockup('v1')">
+            <h3>V1 - FOCUS NARRATIF</h3>
+            <p>Immersion maximale. L'image est la star. Layout centré et épuré pour l'émerveillement.</p>
+        </div>
+
+        <div class="direction-card" onclick="showMockup('v2')">
+            <h3>V2 - TACTIQUE TERMINAL</h3>
+            <p>Structure rigide SGC. Sidebars de données d'équipe. Focus sur le contrôle et les stats.</p>
+        </div>
+
+        <div class="direction-card" onclick="showMockup('v3')">
+            <h3>V3 - DIÉGÉTIQUE BUREAU</h3>
+            <p>Le bureau du Général. Dossiers papier, rapports physiques. Look "analogue" rétro.</p>
+        </div>
+
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border-ui); font-size: 11px; color: var(--text-dim);">
+            SGC_UX_SPEC v0.9<br>
+            CHEYENNE MOUNTAIN COMPLEX
+        </div>
+    </div>
+
+    <div class="viewport">
+        
+        <!-- V1 Mockup -->
+        <div id="v1" class="mockup-container v1-layout active">
+            <div class="v1-popup">
+                <div class="v1-image"></div>
+                <div class="v1-content">
+                    <div class="v1-text">
+                        La Porte se referme derrière vous. Vous êtes sur P3X-984. Devant vous, une cité de cristal s'élève vers un ciel pourpre. Deux gardes Jaffa approchent, lance à la main. Que faites-vous ?
+                    </div>
+                    <div class="v1-choices">
+                        <div class="btn-choice"><span>Tenter la diplomatie</span> <span class="key-hint">[1]</span></div>
+                        <div class="btn-choice"><span>Ouvrir le feu</span> <span class="key-hint">[2]</span></div>
+                        <div class="btn-choice"><span>Se mettre à couvert</span> <span class="key-hint">[3]</span></div>
+                        <div class="btn-choice"><span>Demander des renforts</span> <span class="key-hint">[4]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- V2 Mockup -->
+        <div id="v2" class="mockup-container v2-layout">
+            <div class="v2-panel">
+                <h4 style="font-size: 12px; color: var(--accent-yellow);">ÉTAT ÉQUIPE SG-1</h4>
+                <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <div style="font-size: 11px;">O'NEILL [SANTÉ: 90%]</div>
+                    <div style="font-size: 11px;">CARTER [SANTÉ: 100%]</div>
+                    <div style="font-size: 11px;">TEAL'C [SANTÉ: 100%]</div>
+                    <div style="font-size: 11px;">JACKSON [SANTÉ: 75%]</div>
+                </div>
+            </div>
+            <div class="v2-main">
+                <div class="v2-image"></div>
+                <div class="v2-narrative">
+                    <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-yellow); margin-bottom: 10px;">> FLUX_MISSION_TRANS: 04.2</div>
+                    <div class="v1-text" style="font-size: 15px; text-align: left;">
+                        Analyse environnementale terminée. Atmosphère respirable. Les Jaffa sont à 50 mètres. Daniel Jackson identifie leurs marques comme appartenant à Apophis.
+                    </div>
+                    <div class="choices" style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="btn-choice"><span>Négocier au nom de la Terre</span> <span class="key-hint">[1]</span></div>
+                        <div class="btn-choice"><span>Repli immédiat vers la Porte</span> <span class="key-hint">[2]</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="v2-panel">
+                <h4 style="font-size: 12px; color: var(--accent-yellow);">DONNÉES PLANÉTAIRES</h4>
+                <div style="margin-top: 20px; font-size: 11px; line-height: 1.6;">
+                    ADRESSE: ᛗ ᚦ ᚠ ᚢ ᚱ ᚷ<br>
+                    TEMP: 24°C<br>
+                    FACTION: GOA'ULD (APOPHIS)
+                </div>
+            </div>
+        </div>
+
+        <!-- V3 Mockup -->
+        <div id="v3" class="mockup-container v3-layout" style="align-items: center; justify-content: center;">
+            <div class="v3-folder"></div>
+            <div class="v3-paper">
+                <h2 style="text-align: center; font-size: 24px; text-decoration: underline;">RAPPORT DE MISSION</h2>
+                <p style="font-size: 14px; margin-top: 30px;">
+                    Objet: Rencontre sur P3X-984<br>
+                    Équipe: SG-1<br><br>
+                    Le Colonel O'Neill rapporte une rencontre avec une patrouille de Jaffa. La situation est tendue. Les ordres du Général sont requis immédiatement.
+                </p>
+                <div class="choices" style="margin-top: 40px; display: flex; flex-direction: column; gap: 10px;">
+                    <div class="btn-choice" style="background: none; border: 1px solid #999; color: #222;"><span>Signer l'ordre d'attaque</span> <span class="key-hint" style="color: #666;">[A]</span></div>
+                    <div class="btn-choice" style="background: none; border: 1px solid #999; color: #222;"><span>Ordonner le repli</span> <span class="key-hint" style="color: #666;">[R]</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showMockup(id) {
+            document.querySelectorAll('.mockup-container').forEach(m => m.classList.remove('active'));
+            document.querySelectorAll('.direction-card').forEach(c => c.classList.remove('active'));
+            
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

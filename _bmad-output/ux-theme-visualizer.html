@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargate Chronicles - UX Theme Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #2b2d31; /* Gris Ardoise plus clair */
+            --panel-bg: rgba(20, 20, 25, 0.98);
+            --primary: #3f4248;
+            --accent: #f5b914;
+            --text: #f0f0f0;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
+        }
+
+        body {
+            background-color: #050505;
+            color: white;
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .theme-switcher {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: #1a1a1a;
+            color: white;
+            cursor: pointer;
+            font-family: var(--font-mono);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--bg-color);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 40px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            border-radius: 4px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 200px;
+        }
+
+        .nav-item {
+            padding: 10px;
+            border-left: 3px solid transparent;
+            font-family: var(--font-mono);
+            font-size: 14px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .nav-item.active {
+            border-left: 3px solid var(--accent);
+            background: rgba(255, 204, 0, 0.1);
+            opacity: 1;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+        }
+
+        .narrative-popup {
+            background: var(--panel-bg);
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .landscape-img {
+            width: 100%;
+            height: 200px;
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            position: relative;
+        }
+
+        .landscape-img::after {
+            content: "CONCEPT ART PLACEHOLDER";
+            font-family: var(--font-mono);
+            font-size: 12px;
+        }
+
+        .narrative-content {
+            padding: 25px;
+        }
+
+        .narrative-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: var(--text);
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .choice-btn {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 12px 15px;
+            text-align: left;
+            font-family: var(--font-main);
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .choice-btn:hover {
+            border-color: var(--accent);
+            background: rgba(255,204,0,0.05);
+        }
+
+        .choice-key {
+            font-family: var(--font-mono);
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .squad-bar {
+            background: rgba(0,0,0,0.3);
+            padding: 15px 25px;
+            display: flex;
+            gap: 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .squad-member {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .portrait {
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .health-bar {
+            width: 40px;
+            height: 4px;
+            background: #333;
+            margin-top: 4px;
+        }
+
+        .health-fill {
+            height: 100%;
+            background: var(--success);
+            width: 80%;
+        }
+
+        /* Themes */
+        .theme-blue {
+            --bg-color: #0a111a;
+            --primary: #2a4d69;
+            --accent: #ffcc00;
+            --text: #d0d8e0;
+        }
+
+        .theme-green {
+            --bg-color: #0d110d;
+            --primary: #2d3d2d;
+            --accent: #00ff88;
+            --text: #c0ccc0;
+        }
+
+        .theme-industrial {
+            --bg-color: #121212;
+            --panel-bg: rgba(20, 20, 20, 0.95);
+            --primary: #333333;
+            --accent: #f5b914; /* Jaune Industriel */
+            --text: #e0e0e0;
+        }
+
+    </style>
+</head>
+<body class="theme-industrial" id="root">
+
+    <h1>Explorateur de Style - Stargate Chronicles</h1>
+    
+    <div class="theme-switcher">
+        <button onclick="setTheme('theme-blue')">SGC DEEP BLUE</button>
+        <button onclick="setTheme('theme-industrial')">INDUSTRIAL SGC</button>
+        <button onclick="setTheme('theme-green')">RADAR TACTICAL</button>
+        <button onclick="setTheme('theme-command')">COMMAND CENTER</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">SGC_COMMAND_OS v1.0</div>
+            <div style="font-family: var(--font-mono); font-size: 12px; opacity: 0.5;">DATE: 27-04-1997 | CHEYENNE MOUNTAIN</div>
+        </div>
+
+        <div class="main-grid">
+            <div class="nav-menu">
+                <div class="nav-item active">BUREAU DU GÉNÉRAL</div>
+                <div class="nav-item">SALLE D'EMBARQUEMENT</div>
+                <div class="nav-item">LABORATOIRE</div>
+                <div class="nav-item">INFIRMERIE</div>
+            </div>
+
+            <div class="content">
+                <div class="narrative-popup">
+                    <div class="landscape-img"></div>
+                    <div class="narrative-content">
+                        <div class="narrative-text">
+                            L'équipe SG-1 vient de franchir la porte. Vous vous trouvez face à une structure pyramidale massive qui surplombe une jungle dense. Un signal radio faible émane de l'intérieur de l'édifice. Le Colonel O'Neill attend vos ordres.
+                        </div>
+                        <div class="choices">
+                            <div class="choice-btn">
+                                <span>Investiguer la structure avec prudence</span>
+                                <span class="choice-key">[1]</span>
+                            </div>
+                            <div class="choice-btn">
+                                <span>Établir un périmètre de défense autour de la Porte</span>
+                                <span class="choice-key">[2]</span>
+                            </div>
+                            <div class="choice-btn">
+                                <span>Tenter d'amplifier le signal radio</span>
+                                <span class="choice-key">[3]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="squad-bar">
+                        <div class="squad-member">
+                            <div class="portrait"></div>
+                            <div>
+                                <div style="font-size: 10px; font-family: var(--font-mono);">O'NEILL</div>
+                                <div class="health-bar"><div class="health-fill"></div></div>
+                            </div>
+                        </div>
+                        <div class="squad-member">
+                            <div class="portrait"></div>
+                            <div>
+                                <div style="font-size: 10px; font-family: var(--font-mono);">CARTER</div>
+                                <div class="health-bar"><div class="health-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            document.getElementById('root').className = theme;
+        }
+    </script>
+</body>
+</html>
