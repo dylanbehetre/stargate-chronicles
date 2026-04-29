@@ -1,0 +1,81 @@
+# generated: 2026-04-29T12:41:15+02:00
+# last_updated: 2026-04-29T12:41:15+02:00
+# project: stargate-command
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-04-29T12:41:15+02:00
+last_updated: 2026-04-29T12:41:15+02:00
+project: stargate-command
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  epic-1: backlog
+  1-0-initialisation-de-l-architecture-ddd-et-des-autoloads-core: backlog
+  1-1-initialisation-du-bureau-du-general-hub-principal: backlog
+  1-2-systeme-de-dashboard-financier-budget-usd-et-ressources: backlog
+  1-3-construction-du-centre-de-recherche-archeologique-cra: backlog
+  1-4-creation-et-recrutement-du-premier-expert-archeologue: backlog
+  1-5-recherche-initiale-et-decouverte-de-la-coordonnee-gizeh: backlog
+  1-6-systeme-de-sauvegarde-et-chargement-persistance-json: backlog
+  epic-1-retrospective: optional
+  epic-2: backlog
+  2-1-construction-de-la-salle-de-briefing: backlog
+  2-2-amenagement-du-niveau-25-quartiers-du-sgc: backlog
+  2-3-systeme-de-composition-et-resolution-tactique-3-6-membres: backlog
+  2-4-entrainement-et-specialisation-des-membres: backlog
+  epic-2-retrospective: optional
+  epic-3: backlog
+  3-1-interface-de-composition-dhd-et-sequence-d-activation: backlog
+  3-2-le-field-feed-narratif-abydos: backlog
+  3-3-collecte-de-ressources-et-transmission-du-code-gdo: backlog
+  3-4-systeme-d-evacuation-de-mission-retrait-volontaire: backlog
+  epic-3-retrospective: optional
+  epic-4: backlog
+  4-1-resolution-de-combat-probabiliste: backlog
+  4-2-systeme-d-etats-de-sante-et-blessures-graves: backlog
+  4-3-l-infirmerie-et-le-personnel-medical: backlog
+  4-4-permadeath-et-memorial-du-sgc: backlog
+  epic-4-retrospective: optional
+  epic-5: backlog
+  5-1-construction-du-laboratoire-de-recherche-niveau-19: backlog
+  5-2-systeme-de-recherche-dynamique-moteur-eca: backlog
+  5-3-fabrication-d-equipements-et-inventaire-d-equipe: backlog
+  epic-5-retrospective: optional
+  epic-6: backlog
+  6-1-confiance-gouvernementale-et-cycle-budgetaire: backlog
+  6-2-diplomatie-et-alliances-factions: backlog
+  6-3-les-annales-du-programme-succes-et-victoire: backlog
+  epic-6-retrospective: optional
