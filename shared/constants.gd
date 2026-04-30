@@ -6,6 +6,13 @@ extends RefCounted
 const VERSION = "0.1.0"
 const STARTING_FUNDS = 1000000
 
+enum Room {
+	BUREAU,
+	PORTE,
+	CASERNE,
+	LABO
+}
+
 enum Faction {
 	TAU_RI,
 	TOK_RA,
