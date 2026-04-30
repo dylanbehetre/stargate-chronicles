@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Stargate Chronicles"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+
+[autoload]
+
+LogManager="*res://autoloads/log_manager.gd"
+GameState="*res://autoloads/game_state.gd"
+SaveManager="*res://autoloads/save_manager.gd"
+EventBus="*res://autoloads/event_bus.gd"
+ErrorHandler="*res://autoloads/error_handler.gd"
+TimelineManager="*res://autoloads/timeline_manager.gd"
+ResourceManager="*res://autoloads/resource_manager.gd"
+NarrativeEngine="*res://autoloads/narrative_engine.gd"
+FactionManager="*res://autoloads/faction_manager.gd"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
