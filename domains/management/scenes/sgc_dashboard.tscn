@@ -1,0 +1,76 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8n6v4j2m5b1r"]
+
+[ext_resource type="Script" path="res://domains/management/scenes/sgc_dashboard.gd" id="1_script"]
+[ext_resource type="Theme" path="res://ui/theme/sgc_theme.tres" id="2_theme"]
+
+[node name="SgcDashboard" type="MarginContainer"]
+offset_right = 1152.0
+offset_bottom = 40.0
+theme = ExtResource("2_theme")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.0784314, 0.0784314, 0.0980392, 0.784314)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="BudgetGroup" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/BudgetGroup"]
+layout_mode = 2
+text = "BUDGET:"
+horizontal_alignment = 2
+
+[node name="BudgetValue" type="Label" parent="HBoxContainer/BudgetGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+text = "$1,000,000"
+
+[node name="NaquadahGroup" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/NaquadahGroup"]
+layout_mode = 2
+text = "NAQ:"
+
+[node name="NaquadahValue" type="Label" parent="HBoxContainer/NaquadahGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+text = "0"
+
+[node name="TriniumGroup" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/TriniumGroup"]
+layout_mode = 2
+text = "TRI:"
+
+[node name="TriniumValue" type="Label" parent="HBoxContainer/TriniumGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+text = "0"
+
+[node name="ZpmGroup" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/ZpmGroup"]
+layout_mode = 2
+text = "ZPM:"
+
+[node name="ZpmValue" type="Label" parent="HBoxContainer/ZpmGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+text = "0"

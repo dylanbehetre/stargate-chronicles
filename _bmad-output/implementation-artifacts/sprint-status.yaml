@@ -35,7 +35,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: 2026-04-29T12:41:15+02:00
-last_updated: 2026-04-30T16:55:00+02:00
+last_updated: 2026-04-30T18:08:18+02:00
 project: stargate-command
 project_key: NOKEY
 tracking_system: file-system
@@ -45,8 +45,8 @@ development_status:
   epic-1: in-progress
   1-0-initialisation-de-l-architecture-ddd-et-des-autoloads-core: review
   1-1-initialisation-du-bureau-du-general-hub-principal: review
-  1-2-systeme-de-dashboard-financier-budget-usd-et-ressources: backlog
-  1-3-construction-du-centre-de-recherche-archeologique-cra: backlog
+  1-2-systeme-de-dashboard-financier-budget-usd-et-ressources: review
+  1-3-construction-du-centre-de-recherche-archeologique-cra: ready-for-dev
   1-4-creation-et-recrutement-du-premier-expert-archeologue: backlog
   1-5-recherche-initiale-et-decouverte-de-la-coordonnee-gizeh: backlog
   1-6-systeme-de-sauvegarde-et-chargement-persistance-json: backlog

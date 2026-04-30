@@ -19,5 +19,10 @@ enum Faction {
 	GOA_ULD,
 	ASGARD,
 	NOX,
-	ANCIENTS
+}
+
+enum ResourceType {
+	NAQUADAH,
+	TRINIUM,
+	ZPM
 }

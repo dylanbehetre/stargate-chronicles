@@ -4,6 +4,7 @@
 [ext_resource type="Theme" path="res://ui/theme/sgc_theme.tres" id="2_theme"]
 
 [ext_resource type="Texture2D" path="res://assets/illustrations/sgc/general_office.jpg" id="3_bg_image"]
+[ext_resource type="PackedScene" path="res://domains/management/scenes/sgc_dashboard.tscn" id="4_dashboard"]
 
 [node name="GeneralOffice" type="Control"]
 layout_mode = 3
@@ -106,6 +107,16 @@ offset_left = 250.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="TopBar" type="PanelContainer" parent="MainContent"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="SgcDashboard" parent="MainContent/TopBar" instance=ExtResource("4_dashboard")]
+layout_mode = 2
 
 [node name="BottomInfoPanel" type="PanelContainer" parent="MainContent"]
 layout_mode = 1
