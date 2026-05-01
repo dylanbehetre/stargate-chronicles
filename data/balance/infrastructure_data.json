@@ -1,0 +1,20 @@
+{
+  "archaeology_lab": {
+    "name": "Réactiver le Niveau 21 (Archéologie)",
+    "description": "Réhabiliter les anciens silos pour installer le laboratoire d'archéologie du SGC. Indispensable pour l'analyse des glyphes et des artefacts anciens.",
+    "cost_usd": 50000,
+    "build_duration_seconds": 86400,
+    "unlocks_menus": ["archaeology", "control"],
+    "requires": [],
+    "illustration": "res://assets/illustrations/sgc/arch_lab.jpg"
+  },
+  "science_lab": {
+    "name": "Réactiver le Niveau 19 (Sciences)",
+    "description": "Aménager le niveau 19 pour les recherches scientifiques sur les technologies extra-terrestres et les générateurs d'énergie.",
+    "cost_usd": 150000,
+    "build_duration_seconds": 172800,
+    "unlocks_menus": ["science"],
+    "requires": ["archaeology_lab"],
+    "illustration": "res://assets/illustrations/sgc/science_lab.jpg"
+  }
+}

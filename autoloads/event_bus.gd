@@ -8,6 +8,9 @@ signal game_loaded(slot: int)
 signal room_changed(room_id: Constants.Room)
 signal budget_changed(new_amount: int)
 signal resource_changed(type: int, new_amount: int)
+signal infrastructure_built(infra_id: String)
+signal infrastructure_unlocked(infra_id: String)
+signal infrastructure_started(infra_id: String)
 
 func _ready() -> void:
 	LogManager.info("EventBus initialized")

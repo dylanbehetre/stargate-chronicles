@@ -1,7 +1,7 @@
 # Story 1.2 : Système de Dashboard Financier (Budget USD et Ressources)
 
 ## Statut
-**Statut :** REVIEW
+**Statut :** DONE
 **Epic :** 1 - Initialisation du Commandement SGC et Infrastructure
 **Priorité :** Haute
 

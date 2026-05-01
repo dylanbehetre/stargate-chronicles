@@ -114,7 +114,9 @@ L'expérience de **Stargate Chronicles** repose sur la dualité entre le command
 ### Rationale for Selection
 - **Navigation Clavier Native :** Godot gère de manière robuste le focus et l'ordre de tabulation, ce qui est indispensable pour la contrainte "Keyboard-Only".
 - **Performance et Réactivité :** Utiliser les nœuds natifs garantit une interface instantanée (zéro délai), l'un de nos principes d'expérience.
-- **Maintenabilité Solo-Dev :** Créer un thème global permet d'assurer la cohérence visuelle sur toutes les infrastructures (Labo, Porte, etc.) sans avoir à redessiner chaque élément.
+    - **Infrastructures :** Utilisation de miniatures illustrées avec effet de zoom "percutant" (1.3x) centré au survol (micro-animation 0.1s).
+    - **Données Chiffrées :** Utilisation de labels séparés pour les intitulés (blanc) et les valeurs (jaune #f5b914). Utilisation systématique du séparateur de milliers pour la lisibilité (ex: 50 000 USD).
+    - **Cohérence :** Assurer la cohérence visuelle sur toutes les infrastructures (Labo, Porte, etc.) avec le style "Concept Art Graphic Novel".
 
 ### Implementation Approach
 - Création d'une ressource `.theme` unique héritée par la scène racine.

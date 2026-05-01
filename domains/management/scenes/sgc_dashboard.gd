@@ -11,9 +11,14 @@ extends MarginContainer
 func _ready() -> void:
 	# Initial display
 	_update_budget(ResourceManager.get_budget())
+	_update_resource_visibility(Constants.ResourceType.NAQUADAH)
+	_update_resource_visibility(Constants.ResourceType.TRINIUM)
+	_update_resource_visibility(Constants.ResourceType.ZPM)
+	
 	_update_resource(Constants.ResourceType.NAQUADAH, ResourceManager.get_resource_amount(Constants.ResourceType.NAQUADAH))
 	_update_resource(Constants.ResourceType.TRINIUM, ResourceManager.get_resource_amount(Constants.ResourceType.TRINIUM))
 	_update_resource(Constants.ResourceType.ZPM, ResourceManager.get_resource_amount(Constants.ResourceType.ZPM))
+
 	
 	# Connect signals
 	EventBus.budget_changed.connect(_update_budget)
@@ -29,10 +34,24 @@ func _update_resource(type: int, amount: int) -> void:
 	match type:
 		Constants.ResourceType.NAQUADAH:
 			naquadah_label.text = str(amount)
+			_update_resource_visibility(type)
 		Constants.ResourceType.TRINIUM:
 			trinium_label.text = str(amount)
+			_update_resource_visibility(type)
 		Constants.ResourceType.ZPM:
 			zpm_label.text = str(amount)
+			_update_resource_visibility(type)
+
+func _update_resource_visibility(type: int) -> void:
+	var unlocked = ResourceManager.is_resource_unlocked(type)
+	match type:
+		Constants.ResourceType.NAQUADAH:
+			naquadah_label.get_parent().visible = unlocked
+		Constants.ResourceType.TRINIUM:
+			trinium_label.get_parent().visible = unlocked
+		Constants.ResourceType.ZPM:
+			zpm_label.get_parent().visible = unlocked
+
 
 func _format_number(n: int) -> String:
 	var s = str(n)

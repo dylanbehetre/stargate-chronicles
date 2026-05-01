@@ -8,6 +8,8 @@ var _resources: Dictionary = {
 	Constants.ResourceType.TRINIUM: 0,
 	Constants.ResourceType.ZPM: 0
 }
+var _unlocked_resources: Array[Constants.ResourceType] = []
+
 
 func _ready() -> void:
 	LogManager.info("ResourceManager initialized with budget: %d" % _budget)
@@ -50,3 +52,11 @@ func consume_resource(type: Constants.ResourceType, amount: int) -> bool:
 		return true
 	LogManager.warn("Insufficient resource (Type %d): required %d, available %d" % [type, amount, current])
 	return false
+func is_resource_unlocked(type: Constants.ResourceType) -> bool:
+	return type in _unlocked_resources
+
+func unlock_resource(type: Constants.ResourceType) -> void:
+	if not type in _unlocked_resources:
+		_unlocked_resources.append(type)
+		EventBus.resource_changed.emit(type, _resources[type])
+		LogManager.info("Resource unlocked: %d" % type)

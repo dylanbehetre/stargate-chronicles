@@ -7,10 +7,11 @@ const VERSION = "0.1.0"
 const STARTING_FUNDS = 1000000
 
 enum Room {
-	BUREAU,
-	PORTE,
-	CASERNE,
-	LABO
+	GENERAL,
+	CONTROL,
+	BRIEFING,
+	SCIENCE,
+	ARCHAEOLOGY
 }
 
 enum Faction {

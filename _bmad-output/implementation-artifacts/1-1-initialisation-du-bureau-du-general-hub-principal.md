@@ -2,7 +2,7 @@
 title: 'Story 1.1: Initialisation du Bureau du Général (Hub Principal)'
 epic: '1'
 story_id: '1.1'
-status: 'review'
+status: 'done'
 date: '2026-04-30'
 ---
 

@@ -5,6 +5,7 @@
 
 [ext_resource type="Texture2D" path="res://assets/illustrations/sgc/general_office.jpg" id="3_bg_image"]
 [ext_resource type="PackedScene" path="res://domains/management/scenes/sgc_dashboard.tscn" id="4_dashboard"]
+[ext_resource type="PackedScene" path="res://domains/management/scenes/infrastructure_panel.tscn" id="5_infra_panel"]
 
 [node name="GeneralOffice" type="Control"]
 layout_mode = 3
@@ -17,6 +18,7 @@ theme = ExtResource("2_theme")
 script = ExtResource("1_script")
 
 [node name="OfficeIllustration" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -74,28 +76,40 @@ horizontal_alignment = 1
 [node name="HSeparator" type="HSeparator" parent="Sidebar/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="BureauButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+[node name="GeneralButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "[B] BUREAU"
+text = "[G] MON BUREAU"
 alignment = 0
 
-[node name="GateButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+[node name="ControlButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "[G] PORTE"
+text = "[D] SALLE DE CONTRÔLE"
 alignment = 0
 
-[node name="CharactersButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+[node name="BriefingButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "[C] CASERNE"
+text = "[B] SALLE DE BRIEFING"
 alignment = 0
 
-[node name="LabButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+[node name="ScienceButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "[L] LABO"
+text = "[S] LABO SCIENTIFIQUE"
+alignment = 0
+
+[node name="ArchButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "[A] LABO ARCHÉOLOGIE"
+alignment = 0
+
+[node name="LogisticsButton" type="Button" parent="Sidebar/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "[I] LOGISTIQUE SGC"
 alignment = 0
 
 [node name="MainContent" type="Control" parent="."]
@@ -117,6 +131,11 @@ grow_horizontal = 2
 
 [node name="SgcDashboard" parent="MainContent/TopBar" instance=ExtResource("4_dashboard")]
 layout_mode = 2
+
+[node name="InfrastructurePanel" parent="MainContent" instance=ExtResource("5_infra_panel")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
 
 [node name="BottomInfoPanel" type="PanelContainer" parent="MainContent"]
 layout_mode = 1
@@ -140,13 +159,15 @@ layout_mode = 2
 alignment = 1
 
 [node name="RoomTitle" type="Label" parent="MainContent/BottomInfoPanel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
 theme_override_font_sizes/font_size = 28
-text = "BUREAU DU GÉNÉRAL"
+text = "MON BUREAU"
 uppercase = true
 
 [node name="Description" type="Label" parent="MainContent/BottomInfoPanel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
-text = "Hub de commandement central du SGC. Utilisez les touches [G], [C], [L], [B] pour naviguer entre les secteurs."
+				text = "Hub de commandement central du SGC."
 autowrap_mode = 3

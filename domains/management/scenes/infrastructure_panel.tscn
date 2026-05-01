@@ -1,0 +1,135 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://domains/management/scenes/infrastructure_panel.gd" id="1_script"]
+[ext_resource type="Theme" path="res://ui/theme/sgc_theme.tres" id="2_theme"]
+
+[node name="InfrastructurePanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="PanelContainer"]
+layout_mode = 2
+split_offset = 280
+
+[node name="ListContainer" type="VBoxContainer" parent="PanelContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/HSplitContainer/ListContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+text = "PROJETS DE LOGISTIQUE"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HSplitContainer/ListContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InfraList" type="VBoxContainer" parent="PanelContainer/HSplitContainer/ListContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailsPanel" type="VBoxContainer" parent="PanelContainer/HSplitContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="InfraName" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Nom de l'infrastructure"
+
+[node name="InfraDesc" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Description technique détaillée."
+autowrap_mode = 3
+
+[node name="InfraIllustration" type="TextureRect" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+mouse_filter = 0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StatsBar" type="HBoxContainer" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="CostBox" type="HBoxContainer" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar/CostBox"]
+layout_mode = 2
+text = "Budget requis : "
+
+[node name="InfraCostValue" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar/CostBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+theme_override_font_sizes/font_size = 20
+text = "0 USD"
+
+[node name="TimeBox" type="HBoxContainer" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar/TimeBox"]
+layout_mode = 2
+text = "Temps estimé : "
+
+[node name="InfraTimeValue" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel/StatsBar/TimeBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.72549, 0.0784314, 1)
+theme_override_font_sizes/font_size = 20
+text = "0 h"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="BuildButton" type="Button" parent="PanelContainer/HSplitContainer/DetailsPanel/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "LANCER LA CONSTRUCTION"
+
+[node name="FinalizeButton" type="Button" parent="PanelContainer/HSplitContainer/DetailsPanel/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+text = "⚡ FINALISER"
+
+[node name="ProgressBar" type="ProgressBar" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+step = 1.0
+show_percentage = false
+
+[node name="StatusLabel" type="Label" parent="PanelContainer/HSplitContainer/DetailsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+text = "Statut: Disponible"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="PanelContainer/HSplitContainer/DetailsPanel/HBoxContainer/BuildButton" to="." method="_on_build_button_pressed"]
+[connection signal="pressed" from="PanelContainer/HSplitContainer/DetailsPanel/HBoxContainer/FinalizeButton" to="." method="_on_finalize_button_pressed"]

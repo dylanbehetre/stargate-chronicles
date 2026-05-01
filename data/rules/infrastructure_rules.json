@@ -1,0 +1,40 @@
+[
+  {
+    "id": "unlock_archaeology_functions",
+    "trigger": "infrastructure_built",
+    "conditions": [
+      {
+        "type": "infrastructure_id",
+        "value": "archaeology_lab"
+      }
+    ],
+    "actions": [
+      {
+        "type": "unlock_menu",
+        "value": "archaeology"
+      },
+      {
+        "type": "unlock_menu",
+        "value": "control"
+      }
+    ],
+    "description": "Débloque le labo d'archéologie et la salle de contrôle une fois le labo construit."
+  },
+  {
+    "id": "unlock_science_functions",
+    "trigger": "infrastructure_built",
+    "conditions": [
+      {
+        "type": "infrastructure_id",
+        "value": "science_lab"
+      }
+    ],
+    "actions": [
+      {
+        "type": "unlock_menu",
+        "value": "science"
+      }
+    ],
+    "description": "Débloque le labo scientifique."
+  }
+]
