@@ -79,10 +79,14 @@ Ne JAMAIS laisser l'IA générer des Space Marines du futur en armure blindée i
 > L'architecture du SGC (Niveau 28) est unique et incontournable. C'est un silo de missile reconverti.
 
 **Règles structurelles strictes du SGC :**
-1. **La vitre blindée** : Sépare la salle de commande (dans l'obscurité relative) de la salle d'embarquement (fortement éclairée). Elle est toujours inclinée vers le bas.
-2. **Le pupitre de composition** : Ordinateurs massifs des années 90 (moniteurs CRT cathodiques), écrans affichant des *symboles de chevrons rouges sur fond noir*. Pas d'hologrammes. Un gros micro sur pied rouge ou noir.
-3. **La carte stellaire** : Un immense panneau lumineux gravé en verre affichant une constellation galactique.
-4. **La rampe de la Porte** : La Porte ne touche pas le sol, elle trône au sommet d'une lourde rampe métallique en pente grillagée.
+1. **La vitre blindée** : Sépare la salle de commande (dans l'obscurité relative) de la salle d'embarquement (fortement éclairée). Elle est toujours inclinée vers le bas. Vue plongeante (top-down view) vers la Porte.
+2. **Le pupitre de composition** : Ordinateurs massifs des années 90 (moniteurs CRT cathodiques), écrans affichant des *symboles de chevrons rouges sur fond noir*. Quelques écrans, pas une multitude chaotique. AUCUN MICROPHONE DE RADIO CLASSIQUE.
+3. **La carte stellaire** : Un immense panneau lumineux gravé en verre affichant une constellation galactique sur le mur arrière de la salle de contrôle.
+4. **La rampe de la Porte** : La Porte ne touche pas le sol, elle trône au sommet d'une lourde rampe métallique en pente grillagée. 
+5. **Le mur arrière du Gateroom** : Directement derrière la Porte se trouve un mur de béton massif (blast wall). IL N'Y A JAMAIS DE SALLE OU DE PERSONNES DERRIÈRE LA PORTE.
+6. **Murs du bunker** : Toujours en béton brut coulé. JAMAIS de murs en pierre (pas de château). JAMAIS de fenêtres vers l'extérieur (le complexe est profondément enfoui sous la montagne).
+7. **Taille des laboratoires (Niveau 19)** : Espaces vastes et dégagés, pas de petites pièces étriquées.
+
 
 | | Couleur | Hex |
 |---|---|---|
