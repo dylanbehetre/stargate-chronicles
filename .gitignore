@@ -4,4 +4,12 @@
 .agent/skills/bmad-*/
 .agent/skills/gds-*/
 
+# Godot — cache généré automatiquement (ne pas versionner)
+.godot/
 
+# Addons externes — dépendances (réinstallables via l'Asset Library)
+addons/
+
+# Fichiers de diff temporaires
+diff.txt
+diff_utf8.txt
