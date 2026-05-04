@@ -2,7 +2,7 @@
 title: 'Story 1.0: Initialisation de l''Architecture DDD et des Autoloads Core'
 epic: '1'
 story_id: '1.0'
-status: 'ready-for-dev'
+status: 'done'
 date: '2026-04-29'
 ---
 
@@ -56,7 +56,7 @@ So that disposer d'un cadre technique robuste conforme à l'Architecture validé
 ---
 
 ## ✅ Story Completion Status
-*Status: review*
+*Status: done*
 
 ### Tasks/Subtasks
 - [x] Create project structure

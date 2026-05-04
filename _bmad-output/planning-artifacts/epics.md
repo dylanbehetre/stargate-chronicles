@@ -136,19 +136,37 @@ So that disposer d'un cadre technique robuste conforme à l'Architecture validé
 **Then** Les 9 Autoloads (GameState, SaveManager, EventBus, TimelineManager, ResourceManager, NarrativeEngine, FactionManager, ErrorHandler, Logger) sont créés et configurés dans l'ordre strict de l'architecture.
 **And** Le script constants.gd est accessible globalement.
 
-### Story 1.1: Initialisation du Bureau du Général (Hub Principal)
+### Story 1.0b : Scène SGC Base Builder 2D
 
 As a Commandant du SGC,
-I want accéder à mon bureau central avec une interface "Slate Industrial",
-So that disposer d'un hub de commandement immersif pour piloter le programme.
+I want voir le SGC en vue de coupe 2D scrollable,
+So that naviguer et interagir physiquement avec mes infrastructures.
+
+**Acceptance Criteria:**
+
+**Given** Le jeu est lancé.
+**When** La scène principale se charge.
+**Then** `SgcBaseView.tscn` charge un `ScrollContainer` vertical représentant les niveaux du SGC.
+**And** Chaque niveau contient N salles représentées par des `Area2D` cliquables avec un `Sprite2D` (3 états : Abandonné / En chantier / Opérationnel).
+**And** Le `Camera2D` se centre sur la salle focalisée lors de la navigation clavier (`Tab`).
+**And** Cliquer ou appuyer sur `Entrée` sur une salle instancie la modale `RoomModal.tscn`.
+**And** Le focus par défaut est sur la salle "Bureau du Général".
+
+### Story 1.1: Initialisation du SGC en Vue de Coupe (Hub Principal Refondu)
+
+As a Commandant du SGC,
+I want accéder à un SGC en vue de coupe 2D avec un header permanent "Slate Industrial",
+So that disposer d'un hub de commandement immersif et spatial pour piloter le programme.
 
 **Acceptance Criteria:**
 
 **Given** Le lancement d'une nouvelle partie de Stargate Chronicles.
 **When** Le jeu initialise la scène principale du SGC.
-**Then** Le bureau du Général s'affiche avec la palette de couleurs "Slate Industrial" (Gris #2b2d31 et Jaune #f5b914).
+**Then** La scène `SgcBaseView` affiche le SGC en coupe 2D avec la palette de couleurs "Slate Industrial" (Gris #2b2d31 et Jaune #f5b914).
+**And** Le Header permanent affiche : Date SGC, Budget USD, Naquadah, contrôles de temps (⏸▶▶▶) et Confiance Gouvernementale.
 **And** Les polices Roboto Mono (données) et Plus Jakarta Sans (narration) sont correctement appliquées.
-**And** Le menu latéral de navigation (G, C, L, B) est visible et réagit au focus clavier.
+**And** Le Bureau du Général (niveau 27) reçoit le focus clavier par défaut au lancement.
+**And** Les niveaux non encore débloqués sont dans l'obscurité (Fog of War).
 
 ### Story 1.2: Système de Dashboard Financier (Budget USD et Ressources)
 
@@ -164,18 +182,21 @@ So that prendre des décisions financières éclairées pour le programme.
 **And** Les stocks de Naquadah, Trinium et ZPM sont visibles (à 0 par défaut en début de partie).
 **And** Les valeurs se mettent à jour automatiquement via l'EventBus lors d'une transaction.
 
-### Story 1.3: Construction du Centre de Recherche Archéologique (CRA)
+### Story 1.3: Réhabilitation des Bureaux des Recherches Culturelles
 
 As a Commandant du SGC,
-I want construire le Centre de Recherche Archéologique,
+I want réhabiliter les Bureaux des Recherches Culturelles en cliquant sur la salle dans la vue en coupe,
 So that permettre à mes experts de commencer l'analyse des glyphes de la Porte.
 
 **Acceptance Criteria:**
 
-**Given** La Salle de la Porte existe mais n'a aucune coordonnée (DHD inactif).
-**When** Le joueur valide la construction du "Centre de Recherche Archéologique" dans le menu Infrastructure.
-**Then** Le coût est déduit et le timer est lancé.
-**And** Une fois terminé, le menu "Recrutement/Création" et "Recherche" deviennent accessibles.
+**Given** La vue en coupe du SGC est affichée et la salle "Bureaux des Recherches Culturelles" est dans l'état "Abandonné" (Sprite à l'abandon).
+**When** Le joueur clique (ou `Entrée` au clavier) sur la salle.
+**Then** La modale `RoomModal.tscn` s'ouvre avec la description de la salle, son coût de réhabilitation et la durée estimée.
+**And** Le bouton "Autoriser le Budget" est désactivé si le budget est insuffisant.
+**When** Le joueur valide la réhabilitation.
+**Then** Le coût est déduit via le `ResourceManager` et le `Sprite2D` de la salle passe à l'état "En chantier".
+**And** Une fois le timer écoulé, le `Sprite2D` passe à l'état "Opérationnel" et le menu "Recrutement" et "Recherche" deviennent accessibles depuis cette salle.
 
 ### Story 1.4: Création et Recrutement du premier expert (Archéologue)
 

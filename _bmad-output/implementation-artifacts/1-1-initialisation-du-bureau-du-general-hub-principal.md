@@ -6,7 +6,11 @@ status: 'done'
 date: '2026-04-30'
 ---
 
-# Story 1.1: Initialisation du Bureau du Général (Hub Principal)
+> ⚠️ **[SUPERSEDED — PIVOT BASE BUILDER 2D — 2026-05-01]**
+> Cette story est annulée. L'interface "Bureau du Général avec menu latéral" a été remplacée par la vue en coupe 2D du SGC.
+> Se référer à : `sprint-change-proposal-2026-05-01.md` — Stories 1.0b et 1.1 refondue.
+
+# Story 1.1: Initialisation du Bureau du Général (Hub Principal) [ARCHÍVÉ]
 
 ## 📝 Story Requirements
 

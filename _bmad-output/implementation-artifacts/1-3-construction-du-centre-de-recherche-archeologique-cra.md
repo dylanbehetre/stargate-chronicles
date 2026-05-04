@@ -1,4 +1,9 @@
-# Story 1.3: Construction du Laboratoire d'Archéologie (CAA)
+> ⚠️ **[SUPERSEDED — PIVOT BASE BUILDER 2D — 2026-05-01]**
+> Cette story est annulée. La salle "Centre de Recherche Archéologique" est renommée en **"Bureaux des Recherches Culturelles"**.
+> L'interaction via menu est remplacée par un clic sur la salle dans la vue en coupe 2D + modale contextuelle.
+> Se référer à : `sprint-change-proposal-2026-05-01.md` — Story 1.3 refondue.
+
+# Story 1.3: Construction du Centre de Recherche Archéologique (CRA) [ARCHÍVÉ]
 
 Status: done
 
