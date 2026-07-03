@@ -12,7 +12,7 @@ signal infrastructure_built(infra_id: String)
 signal infrastructure_unlocked(infra_id: String)
 signal infrastructure_started(infra_id: String)
 signal room_modal_requested(room_data: Dictionary)
-signal room_focused(node: Control)
+signal room_focused(node: Node2D)
 
 func _ready() -> void:
 	LogManager.info("EventBus initialized")

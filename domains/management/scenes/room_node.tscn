@@ -1,51 +1,97 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1e2f3g4h5i6j"]
 
 [ext_resource type="Script" path="res://domains/management/scenes/room_node.gd" id="1_script"]
-[ext_resource type="Texture2D" path="res://assets/illustrations/sgc/arch_lab.jpg" id="2_texture"]
 
-[node name="RoomNode" type="MarginContainer"]
-custom_minimum_size = Vector2(320, 180)
-focus_mode = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(280, 180)
+
+[node name="RoomNode" type="Node2D"]
 script = ExtResource("1_script")
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_1")
+
 [node name="Background" type="ColorRect" parent="."]
-layout_mode = 2
+offset_left = -140.0
+offset_top = -90.0
+offset_right = 140.0
+offset_bottom = 90.0
 color = Color(0.1, 0.1, 0.1, 1)
 
-[node name="Sprite2D" type="TextureRect" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 unique_name_in_owner = true
-layout_mode = 2
-texture = ExtResource("2_texture")
-expand_mode = 1
-stretch_mode = 6
+scale = Vector2(0.25, 0.25)
 
-[node name="NameBackground" type="ColorRect" parent="."]
-layout_mode = 2
-size_flags_vertical = 8
-custom_minimum_size = Vector2(0, 25)
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -90.0
+offset_right = 140.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="NameBackground" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -25.0
+grow_horizontal = 2
+grow_vertical = 0
 color = Color(0, 0, 0, 0.6)
 
-[node name="RoomName" type="Label" parent="."]
+[node name="RoomName" type="Label" parent="UI"]
 unique_name_in_owner = true
-layout_mode = 2
-size_flags_vertical = 8
-theme_override_font_sizes/font_size = 14
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
 text = "Room Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StatusIndicator" type="ColorRect" parent="."]
+[node name="StatusIndicator" type="ColorRect" parent="UI"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(10, 10)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 15.0
+offset_bottom = 15.0
 color = Color(0.5, 0.5, 0.5, 1)
 
-[node name="FocusBorder" type="ReferenceRect" parent="."]
+[node name="FocusBorder" type="ReferenceRect" parent="UI"]
 unique_name_in_owner = true
 visible = false
-layout_mode = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 border_color = Color(0.960784, 0.72549, 0.0784314, 1)
 border_width = 2.0
 editor_only = false
+
+[node name="FocusControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -140.0
+offset_top = -90.0
+offset_right = 140.0
+offset_bottom = 90.0
+focus_mode = 2
