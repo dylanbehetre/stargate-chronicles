@@ -26,7 +26,7 @@ Ce jeu, né d'une passion pour l'univers de la Porte des Étoiles, a un double o
 
 ---
 
-## 🤖 Développement Dirigé par IA (Antigravity)
+## 🤖 Développement Dirigé par IA
 
 Ce projet est expérimentalement guidé de bout en bout par **Antigravity** et **GitHub Copilot** (via IntelliJ), jouant le rôle de **Directeur Technique & Lead Game Developer**.
 
