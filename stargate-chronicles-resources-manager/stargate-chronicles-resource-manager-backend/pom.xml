@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dylanbehetre.stargate-chronicles</groupId>
-	<artifactId>game-backend</artifactId>
+	<artifactId>resource-manager-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
@@ -51,6 +51,13 @@
 			<optional>true</optional>
 		</dependency>
 		<!-- Database dependencies -->
+		<!-- PostgreSQL: system of record used by this app to edit/manage all game resources. -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- SQLite: read-only export target generated from PostgreSQL and shipped/pushed to the game client. -->
 		<dependency>
 			<groupId>org.xerial</groupId>
 			<artifactId>sqlite-jdbc</artifactId>

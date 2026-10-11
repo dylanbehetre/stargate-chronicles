@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: resource-manager-backend
+  # Primary datastore: PostgreSQL. All resource authoring/management happens here.
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stargate_chronicles_resources
+    driver-class-name: org.postgresql.Driver
+
+# Export datastore: SQLite file generated from PostgreSQL and pushed to the game
+# (stargate-chronicles-ui), which reads it client-side. Configured separately from the
+# primary `spring.datasource` because it is a build/export artifact, not a JPA-managed store.
+export:
+  sqlite:
+    path: ./export/stargate-chronicles.sqlite

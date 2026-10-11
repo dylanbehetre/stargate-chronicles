@@ -25,10 +25,12 @@ this section only if the convention changes at the repository level.
 components); use Angular Material components first, and fall back to custom components built with Tailwind
 utility classes only when Material has no equivalent.
 
-## Backend (`game-backend`)
+## Backend (`stargate-chronicles-resource-manager-backend`)
 
 - Java 25, Spring Boot 4.1.1.
-- Persistence via Spring Data JPA against SQLite.
+- Persistence via Spring Data JPA against **PostgreSQL** (system of record for all game resources).
+- Publishes resources by exporting the PostgreSQL state to a **SQLite** file, which is the artifact pushed to and
+  read client-side by the game (`stargate-chronicles-ui`). The game itself has no backend.
 - Favor constructor injection and immutable domain objects.
 - Tests use the Spring Boot test starters and Testcontainers already declared in `pom.xml`.
 

@@ -1,4 +1,4 @@
-package dylanbehetre.stargate_chronicles.game_backend;
+package dylanbehetre.stargate_chronicles.resource_manager_backend;
 
 import org.springframework.boot.test.context.TestConfiguration;
 

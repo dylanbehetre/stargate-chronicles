@@ -14,15 +14,14 @@ This guide gathers everything a developer needs to get productive on **Stargate:
 
 ```
 stargate-chronicles/
-├── specs/                                 # Project specifications and documentation
-│   ├── dev-guide/                         # Development guide (this folder)
-│   └── features/                          # Feature specifications, one folder per business domain
-├── stargate-chronicles-game/               # Source code of the playable game
-│   ├── stargate-chronicles-ui/             # Game player interface (Angular)
-│   └── stargate-chronicles-backend/
-│       └── game-backend/                  # Game backend API (Spring Boot)
-└── stargate-chronicles-resources-manager/  # Source code of the community resource manager
-    └── stargate-chronicles-resource-manager/ # Resource manager interface (Angular)
+├── specs/                                          # Project specifications and documentation
+│   ├── dev-guide/                                  # Development guide (this folder)
+│   └── features/                                   # Feature specifications, one folder per business domain
+├── stargate-chronicles-game/                        # Source code of the playable game
+│   └── stargate-chronicles-ui/                      # Game player interface (100% Angular, no backend)
+└── stargate-chronicles-resources-manager/           # Source code of the resource manager
+    ├── stargate-chronicles-resource-manager/         # Resource manager interface (Angular)
+    └── stargate-chronicles-resource-manager-backend/ # Resource manager API (Spring Boot + PostgreSQL)
 ```
 
 See [Architecture](./architecture.md) for details on each application and its responsibilities.

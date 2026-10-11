@@ -40,12 +40,12 @@ Légende :
 🟡 En cours
 ⏳ À venir
 
-| Jalon                           | Statut         | Document                            |
-|---------------------------------|----------------|-------------------------------------|
-| Socle technique Angular         | ⏳ À venir     | `spesc/`                            |
-| Socle technique Java            | ⏳ À venir     | `spesc/`                            |
-| Socle technique Base de données | ⏳ À venir     | `spesc/`                            |
-| Création de personnage          | ⏳ À venir     | `spesc/`                            |
+| Jalon                                                              | Statut         | Document                            |
+|---------------------------------------------------------------------|----------------|-------------------------------------|
+| Socle technique Angular (jeu, 100% client)                          | ⏳ À venir     | `spesc/`                            |
+| Socle technique Angular + Spring Boot (gestionnaire de ressources)  | ⏳ À venir     | `spesc/`                            |
+| Pipeline de publication PostgreSQL → SQLite                        | ⏳ À venir     | `spesc/`                            |
+| Création de personnage                                              | ⏳ À venir     | `spesc/`                            |
 
 ---
 

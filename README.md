@@ -41,12 +41,12 @@ Legend:
 🟡 In progress
 ⏳ Upcoming
 
-| Milestone                         | Status         | Document                            |
-|-----------------------------------|----------------|-------------------------------------|
-| Angular technical foundation       | ⏳ Upcoming    | `spesc/`                            |
-| Java technical foundation         | ⏳ Upcoming    | `spesc/`                            |
-| Database technical foundation     | ⏳ Upcoming    | `spesc/`                            |
-| Character creation                | ⏳ Upcoming    | `spesc/`                            |
+| Milestone                                                     | Status         | Document                            |
+|----------------------------------------------------------------|----------------|-------------------------------------|
+| Angular technical foundation (game, 100% client-side)           | ⏳ Upcoming    | `spesc/`                            |
+| Angular + Spring Boot technical foundation (resource manager)   | ⏳ Upcoming    | `spesc/`                            |
+| PostgreSQL → SQLite publishing pipeline                        | ⏳ Upcoming    | `spesc/`                            |
+| Character creation                                              | ⏳ Upcoming    | `spesc/`                            |
 
 ---
 
