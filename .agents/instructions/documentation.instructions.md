@@ -18,6 +18,7 @@ with design decisions.
 - New/changed coding convention → update `specs/dev-guide/conventions.md`.
 - Related features should link to each other with relative Markdown links rather than duplicating content.
 
+Run the `spec-sync` skill ([`.agents/skills/spec-sync/SKILL.md`](../skills/spec-sync/SKILL.md)) to do this check.
 Follow the detailed process, templates, and rules in
 [`specs/dev-guide/documentation-workflow.md`](../../specs/dev-guide/documentation-workflow.md).
 

@@ -11,7 +11,17 @@ unsure where a piece of information belongs, and it is the reference for the end
 
 This applies equally to human contributors and AI coding agents working on this repository.
 
+## Start of session
+
+Before coding, read [`specs/README.md`](../README.md), then the index of the relevant area
+([`features/README.md`](../features/README.md) or [`dev-guide/README.md`](./README.md)), then only the linked files
+that matter for the task. Index READMEs are the navigation layer: keep them up to date instead of maintaining any
+separate routing table.
+
 ## End-of-session checklist
+
+The `spec-sync` skill ([`.agents/skills/spec-sync/SKILL.md`](../../.agents/skills/spec-sync/SKILL.md)) automates
+this checklist.
 
 Before considering a task done, go through this checklist:
 
@@ -60,9 +70,14 @@ This file describes <feature> specifications.
 ## Rules / Behavior
 <!-- The actual rules, mechanics, constraints -->
 
+## Rationale / Open questions
+<!-- Optional: why key choices were made, and what is still undecided -->
+
 ## Related features
 - [<Other feature>](../<domain>/<file>.md)
 ```
+
+Cross-cutting decisions that belong to no single feature go in [`architecture.md`](./architecture.md).
 
 ## `specs/dev-guide/` rules
 

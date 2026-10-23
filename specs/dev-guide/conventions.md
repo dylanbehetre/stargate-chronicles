@@ -5,18 +5,6 @@
 Both Angular apps follow the same conventions, enforced for AI agents via
 [`stargate-chronicles-ui/AGENTS.md`](../../stargate-chronicles-game/stargate-chronicles-ui/AGENTS.md). Highlights:
 
-- Standalone components only (no NgModules); `standalone: true` must **not** be set explicitly (default since
-  Angular v20).
-- Signals for state (`signal()`, `computed()`, `linkedSignal()`); no `mutate()`, use `update()`/`set()`.
-- `input()` / `output()` / `model()` functions instead of decorators.
-- Native control flow (`@if`, `@for`, `@switch`); no `*ngIf`/`*ngFor`/`*ngSwitch`, no `ngClass`/`ngStyle`.
-- `inject()` instead of constructor injection; services use `providedIn: 'root'`.
-- Accessibility: must pass AXE checks and meet WCAG 2.2 AA.
-- Unit tests run with Vitest (`ng test`).
-
-Refer directly to the instruction files above for the full, authoritative list — do not duplicate it here; update
-this section only if the convention changes at the repository level.
-
 ### UI component library
 
 **Angular Material is the exclusive UI component library** for both Angular apps. Installed via
@@ -27,7 +15,6 @@ utility classes only when Material has no equivalent.
 
 ## Backend (`stargate-chronicles-resource-manager-backend`)
 
-- Java 25, Spring Boot 4.1.1.
 - Persistence via Spring Data JPA against **PostgreSQL** (system of record for all game resources).
 - Publishes resources by exporting the PostgreSQL state to a **SQLite** file, which is the artifact pushed to and
   read client-side by the game (`stargate-chronicles-ui`). The game itself has no backend.
