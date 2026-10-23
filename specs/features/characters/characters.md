@@ -51,13 +51,32 @@ The player may reroll the whole pool up to **3 times** before validating.
 ##### Mode 2: Point-Buy
 
 Every characteristic starts at a base value of **10**.
-The player has a budget of **210 points** to raise or lower characteristics.
+The player has a budget of **20 points** to raise or lower characteristics.
 
-Raising a characteristic by 1 point costs its new value in points.
-Lowering a characteristic by 1 point refunds its current value in points.
+The budget is calibrated on Dice Roll mode: 4D6 (drop lowest) averages about 12.25 per characteristic (about 98 in
+total), and up to 3 rerolls raise the expected best pool to about 104. Point-Buy targets a total of about 100
+(80 base + 20 points).
 
-> *Raising a characteristic from 10 to 11 costs 11 points. Raising it further from 11 to 12 costs 12 more points
-> (23 points in total to go from 10 to 12).*
+Raising a characteristic costs, per step:
+
+| Step    | Cost per step | Cumulative cost from 10 |
+|---------|---------------|-------------------------|
+| 10 → 14 | 1 point       | 4 (value 14)            |
+| 15 → 16 | 2 points      | 8 (value 16)            |
+| 17 → 18 | 3 points      | 14 (value 18)           |
+
+Lowering a characteristic by 1 step below 10 refunds 1 point. Lowering from above 10 refunds the cost of the step
+being undone.
+
+> *Raising a characteristic from 10 to 16 costs 8 points. Raising it to 18 costs 14 points in total.*
+
+##### Point-Buy Interface
+
+- A "remaining points" counter with a gauge is always visible, relative to the 20-point budget.
+- Each increase button shows the cost of the next step and is disabled when it is unaffordable or the value is 18.
+- Each decrease button is disabled at value 3 or when it would break the "four characteristics below 10" rule.
+- Since a 1-point step always exists while any characteristic is below 14, remaining points are never stranded. If
+  every characteristic is at 14 or more, the leftover points are simply unspendable and validation is allowed.
 
 #### Common Rules
 
